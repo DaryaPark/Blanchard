@@ -1,0 +1,1 @@
+new SimpleBar(document.getElementById('.customScroll'), { autoHide: false });
