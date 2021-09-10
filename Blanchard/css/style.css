@@ -74,7 +74,7 @@ ul {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(0, 0, 0, 1);
   align-items: center;
-  padding-top: 42px;
+  padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 160px;
   z-index: 0;
@@ -587,7 +587,7 @@ element.style {
 }
 
 .first-section .swiper-slide-active{
-  animation:loading 7330ms ease-in-out infinite;
+  animation:loading 96650ms ease-in-out infinite;
 }
 
 
@@ -1945,6 +1945,7 @@ transition: opacity .3s ease-in-out;
 .contact-information-section{
 display: flex;
 padding-left: 160px;
+overflow: hidden;
 }
 
 .contact-heading{
