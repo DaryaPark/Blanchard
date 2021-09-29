@@ -1,5 +1,5 @@
 
-const swiper = new Swiper('.slider-section', {
+const swiper = new Swiper('.first-slider', {
   slideClass: 'slide',
   wrapperClass: 'first-section',
   loop: true,

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(){
-    const tabs = document.querySelectorAll('.tabs__btn-lang');
+    const tabs = document.querySelectorAll('.catalog-lang__btn');
     let activeButton= tabs[0];
     tabs.forEach(function(tabsBtn){
       tabsBtn.addEventListener('click' ,function(event){

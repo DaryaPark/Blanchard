@@ -34,225 +34,224 @@
 
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
     </script>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="header container">
-        <picture class="header-logo">
-            <img class="logo" src="img/logo.png" alt="логотип Бланчард ">
-        </picture>
-        <nav class="nav_header-menu">
-            <ul class="header-nav">
-                <li class="header-li">
-                    <a href="#aboutUs" class="header-li-link">
-                        О нас
-                    </a>
-                </li>
-                <li class="header-li">
-                    <a href="#gallery" class="header-li-link">
-                        Галерея
-                    </a>
-                </li>
-                <li class="header-li">
-                    <a href="#katalog" class="header-li-link">
-                        Каталог
-                    </a>
-                </li>
-                <li class="header-li">
-                    <a href="#events" class="header-li-link">
-                        События
-                    </a>
-                </li>
-                <li class="header-li">
-                    <a href="#editions" class="header-li-link">
-                        Издания
-                    </a>
-                </li>
-                <li class="header-li">
-                    <a href="#projects" class="header-li-link">
-                        Проекты
-                    </a>
-                </li>
-                <li class="header-li">
-                    <a href="#contactUs" class="header-li-link">
-                        Контакты
-                    </a>
-                </li>
-            </ul>
-            <button aria-label="Войти" class="header-login">Войти</button>
-        </nav>
+    <header class="header">
+        <div class="menu">
+            <nav class="menu__nav  container">
+                <picture class="logo">
+                    <img class="logo" src="img/logo.png" alt="логотип Бланчард ">
+                </picture>
+                <ul class="menu__ul">
+                    <li class="menu__li">
+                        <a href="#aboutUs" class="menu__link">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="menu__li">
+                        <a href="#gallery" class="menu__link">
+                            Галерея
+                        </a>
+                    </li>
+                    <li class="menu__li">
+                        <a href="#katalog" class="menu__link">
+                            Каталог
+                        </a>
+                    </li>
+                    <li class="menu__li">
+                        <a href="#events" class="menu__link">
+                            События
+                        </a>
+                    </li>
+                    <li class="menu__li">
+                        <a href="#editions" class="menu__link">
+                            Издания
+                        </a>
+                    </li>
+                    <li class="menu__li">
+                        <a href="#projects" class="menu__link">
+                            Проекты
+                        </a>
+                    </li>
+                    <li class="menu__li">
+                        <a href="#contactUs" class="menu__link">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+                <button class="login">Войти</button>
+            </nav>
+        </div>
 
-    </header>
-
-    <section class="slider-section">
-        <nav class="main-menu-1 without-borders">
+        <nav class="menu-1__nav">
             <!-- меню 2 -->
-            <div class="menu-2-container">
-                <li class="menu2-select select">
-                    <div class="select__header">
-                        <span class="main-select">Реализм
-                        </span>
-                        <span class="select__icon"></span>
-                        <ul class="select__body customScroll" data-simplebar>
+            <ul class="menu-1__ul container">
+                <li class="menu-1__li select">
+                    <nav class="menu-2__nav">
+                        <button class="menu-2__button">Реализм
+                        </button>
+                        <ul class="menu-2__ul customScroll" data-simplebar>
                             <li class="rectangle1_1  rectangle-img">
-                                <a href="" class="select__item">Тинторетто</a>
+                                <a href="" class="select-item">Тинторетто</a>
                             </li>
                             <li class="rectangle1_2  rectangle-img">
-                                <a href="" class="select__item">Фридрих</a>
+                                <a href="" class="select-item">Фридрих</a>
                             </li>
                             <li class="rectangle1_3  rectangle-img">
-                                <a href="" class="select__item">Леонардо</a>
+                                <a href="" class="select-item">Леонардо</a>
                             </li>
                             <li class="rectangle1_4  rectangle-img">
-                                <a href="" class="select__item">Верроккью</a>
+                                <a href="" class="select-item">Верроккью</a>
                             </li>
                             <li class="rectangle-img">
                             </li>
                             <li class="rectangle-img">
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </li>
 
 
-                <li class="menu2-select select">
-                    <div class="select__header">
-                        <span class="main-select">Импрессионизм
-                        </span>
-                        <span class="select__icon"></span>
-                        <ul class="select__body customScroll" data-simplebar>
+                <li class="menu-1__li select">
+                    <nav class="menu-2__nav">
+                        <button class="menu-2__button">Импрессионизм
+                        </button>
+                        <ul class="menu-2__ul customScroll" data-simplebar>
                             <li class=" rectangle2_1  rectangle-img">
-                                <a href="" class="select__item">Моне</a>
+                                <a href="" class="select-item">Моне</a>
                             </li>
                             <li class=" rectangle2_2  rectangle-img">
-                                <a href="" class="select__item">Сислей</a>
+                                <a href="" class="select-item">Сислей</a>
                             </li>
                             <li class=" rectangle2_3  rectangle-img">
-                                <a href="" class="select__item">Мане</a>
+                                <a href="" class="select-item">Мане</a>
                             </li>
                             <li class="rectangle2_4  rectangle-img">
-                                <a href="" class="select__item">Ренуар</a>
+                                <a href="" class="select-item">Ренуар</a>
                             </li>
                             <li class="rectangle-img">
                             </li>
                             <li class="rectangle-img">
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </li>
 
-                <li class="menu2-select select">
-                    <div class="select__header">
-                        <span class="main-select">Постимпрессионизм</span>
-                        <span class="select__icon"></span>
-                        <ul class="select__body customScroll" data-simplebar>
+                <li class="menu-1__li select">
+                    <nav class="menu-2__nav">
+                        <button class="menu-2__button">Постимпрессионизм</button>
+                        <ul class="menu-2__ul customScroll" data-simplebar>
                             <li class=" rectangle3_1  rectangle-img">
-                                <a href="" class="select__item">Ван Гог</a>
+                                <a href="" class="select-item">Ван Гог</a>
                             </li>
                             <li class=" rectangle3_2  rectangle-img">
-                                <a href="" class="select__item">Сезанн</a>
+                                <a href="" class="select-item">Сезанн</a>
                             </li>
                             <li class=" rectangle3_3  rectangle-img">
-                                <a href="" class="select__item">Гоген</a>
+                                <a href="" class="select-item">Гоген</a>
                             </li>
                             <li class=" rectangle3_4  rectangle-img">
-                                <a href="" class="select__item">Сёра</a>
+                                <a href="" class="select-item">Сёра</a>
                             </li>
                             <li class="rectangle-img">
                             </li>
                             <li class="rectangle-img">
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </li>
-
-                <li class="menu2-select select">
-                    <div class="select__header">
-                        <span class="main-select">Авангард
-                        </span>
-                        <span class="select__icon"></span>
-                        <ul class="select__body customScroll" data-simplebar>
+                <li class="menu-1__li select">
+                    <nav class="menu-2__nav">
+                        <button class="menu-2__button">Авангард
+                        </button>
+                        <ul class="menu-2__ul customScroll" data-simplebar>
                             <li class=" rectangle4_1  rectangle-img">
-                                <a href="" class="select__item">Кандинский</a>
+                                <a href="" class="select-item">Кандинский</a>
                             </li>
                             <li class=" rectangle4_2  rectangle-img">
-                                <a href="" class="select__item">Маринетти</a>
+                                <a href="" class="select-item">Маринетти</a>
                             </li>
                             <li class=" rectangle4_3  rectangle-img">
-                                <a href="" class="select__item">Малевич</a>
+                                <a href="" class="select-item">Малевич</a>
                             </li>
                             <li class=" rectangle4_4  rectangle-img">
-                                <a href="" class="select__item">Пикассо</a>
+                                <a href="" class="select-item">Пикассо</a>
                             </li>
                             <li class="rectangle-img">
                             </li>
                             <li class="rectangle-img">
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </li>
 
 
-                <li class="menu2-select select">
-                    <div class="select__header">
-                        <span class="main-select">Футуризм
-                        </span>
-                        <span class="select__icon"></span>
-                        <ul class="select__body customScroll" data-simplebar>
+                <li class="menu-1__li select">
+                    <nav class="menu-2__nav">
+                        <button class="menu-2__button">Футуризм
+                        </button>
+                        <ul class="menu-2__ul customScroll" data-simplebar>
                             <li class=" rectangle5_1  rectangle-img">
-                                <a href="" class="select__item">Карра</a>
+                                <a href="" class="select-item">Карра</a>
                             </li>
                             <li class=" rectangle5_2  rectangle-img">
-                                <a href="" class="select__item">Прателла</a>
+                                <a href="" class="select-item">Прателла</a>
                             </li>
                             <li class=" rectangle5_3  rectangle-img">
-                                <a href="" class="select__item">Северини</a>
+                                <a href="" class="select-item">Северини</a>
                             </li>
                             <li class=" rectangle5_4  rectangle-img">
-                                <a href="" class="select__item">Балла</a>
+                                <a href="" class="select-item">Балла</a>
                             </li>
                             <li class="rectangle-img">
                             </li>
                             <li class="rectangle-img">
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </li>
-            </div>
+                <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST"
+                    class="menu-1__form">
+                    <button aria-label="Поиск" class="menu-1__btn"></button>
+                    <input placeholder=" Поиск по сайту" name="user" class="search">
+                </form>
+            </ul>
             <script src="js/menu2-select.js"></script>
-            <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST"
-                class="main-search main-btn-search">
-                <button aria-label="Поиск" class="main-search-btn"></button>
-                <input placeholder="Поиск по сайту" name="user" class="search">
-            </form>
         </nav>
-        <ul class="first-section without-borders">
-            <li class="slide swiper-slide-1">
-            </li>
-            <li class="slide swiper-slide-2">
-            </li>
-            <li class="slide swiper-slide-3">
-            </li>
-        </ul>
-        <div class="first-section-text ">
-            <h1 class=" first-section_text1 ">Прикоснитесь к прекрасному</h1>
-            <p class="first-section_text2 ">Мы вынуждены отталкиваться от того, что реализация намеченных
-                плановых
-                заданий создаёт предпосылки для новых предложений.
-            </p>
-            <button class="main-button-m">
-                <a href="#contactUs" class="main-button">Подписаться на рассылку
-                </a>
-            </button>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-    </section>
-    <main class="container">
+    </header>
+
+    <main class="">
+        <section class="slider-section">
+            <nav class="first-slider">
+                <ul class="first-section">
+                    <li class="slide swiper-slide-1">
+                    </li>
+                    <li class="slide swiper-slide-2">
+                    </li>
+                    <li class="slide swiper-slide-3">
+                    </li>
+                </ul>
+                <div class="first-section-text">
+                    <h1 class="first-section_text1">Прикоснитесь к прекрасному</h1>
+                    <p class="first-section_text2 ">Мы вынуждены отталкиваться от того, что реализация намеченных
+                        плановых
+                        заданий создаёт предпосылки для новых предложений.
+                    </p>
+                    <button class="main-button-m">
+                        <a href="#contactUs" class="main-button">Подписаться на рассылку
+                        </a>
+                    </button>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            </nav>
+        </section>
         <!--О нас-->
-        <section class="second-section" id="aboutUs">
-            <h2 class="heading about-us_heading">О нас</h2>
+        <section class="second-section container" id="aboutUs">
+            <h2 class="heading about-us-heading">О нас</h2>
             <p class="about-us_text">
                 Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет
                 каждого участника как способного принимать собственные решения касаемо распределения внутренних
@@ -266,21 +265,21 @@
         </section>
 
         <!--Галерея-->
-        <section class="gallery without-borders" id="gallery">
-            <div class="gallery-board">
+        <section class="gallery" id="gallery">
+            <div class="gallery-board container">
                 <div class="galery-filters">
                     <h2 class="heading gallery-heading">
                         Галерея
                     </h2>
-                    <h3 class="h3-gallery">
+                    <h3 class="gallery__h3">
                         Фильтр:
                     </h3>
                     <select name="select" id="selectCustom" class="gallery-select">
-                        <option class="select-materials "> Живопись</option>
+                        <option> Живопись</option>
 
-                        <option class="select-materials "> Рисунок</option>
+                        <option> Рисунок</option>
 
-                        <option class="select-materials "> Скульптура</option>
+                        <option> Скульптура</option>
                     </select>
                     <script src="js/choices.min.js"></script>
                     <script src="js/select.js"></script>
@@ -288,383 +287,388 @@
                         скачиваний <span><a href="#" class="gallery-avtorisation"> авторизуйтесь</a></span>, либо
                         воспользуйтесь лицензией. </p>
                 </div>
-            </div>
-            <!-- живопись -->
-            <!-- Slider main container -->
-            <div class="swiper-gallery">
-                <div class="gallery-swiper-container swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="gallery-swiper-wrapper swiper-wrapper">
-                        <!-- Slides -->
+                <!-- живопись -->
+                <!-- Slider main container -->
+                <div class="swiper-gallery">
+                    <div class="gallery-swiper-container swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="gallery-swiper-wrapper swiper-wrapper">
+                            <!-- Slides -->
 
-                        <div class="gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/painting-1.1.jpg" class="galleryImange">
-                                        <img class="galery-pictures" src="img/painting-1.1.jpg" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class="gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/painting-1.1.jpg" class="galleryImange">
+                                            <img class="galery-pictures" src="img/painting-1.1.jpg" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/painting-1.2.jpg" class="galleryImange">
-                                        <img class="galery-pictures" src="img/painting-1.2.jpg" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class="gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/painting-1.2.jpg" class="galleryImange">
+                                            <img class="galery-pictures" src="img/painting-1.2.jpg" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/painting-1.3.jpg" class="galleryImange">
-                                        <img class="galery-pictures" src="img/painting-1.3.jpg" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class="gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/painting-1.3.jpg" class="galleryImange">
+                                            <img class="galery-pictures" src="img/painting-1.3.jpg" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/painting-1.4.jpg" class="galleryImange">
-                                        <img class="galery-pictures" src="img/painting-1.4.jpg" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class="gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/painting-1.4.jpg" class="galleryImange">
+                                            <img class="galery-pictures" src="img/painting-1.4.jpg" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/painting-1.5.jpg" class="galleryImange">
-                                        <img class="galery-pictures" src="img/painting-1.5.jpg" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class="gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/painting-1.5.jpg" class="galleryImange">
+                                            <img class="galery-pictures" src="img/painting-1.5.jpg" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/painting-1.6.jpg" class="galleryImange">
-                                        <img class="galery-pictures" src="img/painting-1.6.jpg" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/painting-1.6.jpg" class="galleryImange">
+                                            <img class="galery-pictures" src="img/painting-1.6.jpg" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/painting-2.1.jpg" class="galleryImange">
-                                        <img class="galery-pictures" src="img/painting-2.1.jpg" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/painting-2.1.jpg" class="galleryImange">
+                                            <img class="galery-pictures" src="img/painting-2.1.jpg" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/painting-2.2.jpg" class="galleryImange">
-                                        <img class="galery-pictures" src="img/painting-2.2.jpg" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/painting-2.2.jpg" class="galleryImange">
+                                            <img class="galery-pictures" src="img/painting-2.2.jpg" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/painting-2.3.jpg" class="galleryImange">
-                                        <img class="galery-pictures" src="img/painting-2.3.jpg" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/painting-2.3.jpg" class="galleryImange">
+                                            <img class="galery-pictures" src="img/painting-2.3.jpg" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/painting-2.4.jpg" class="galleryImange">
-                                        <img class="galery-pictures" src="img/painting-2.4.jpg" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/painting-2.4.jpg" class="galleryImange">
+                                            <img class="galery-pictures" src="img/painting-2.4.jpg" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/painting-2.5.jpg" class="galleryImange">
-                                        <img class="galery-pictures" src="img/painting-2.5.jpg" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/painting-2.5.jpg" class="galleryImange">
+                                            <img class="galery-pictures" src="img/painting-2.5.jpg" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/painting-2.6.jpg" class="galleryImange">
-                                        <img class="galery-pictures" src="img/painting-2.6.jpg" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/painting-2.6.jpg" class="galleryImange">
+                                            <img class="galery-pictures" src="img/painting-2.6.jpg" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/picture-1.1.png" class="galleryImange">
-                                        <img class="galery-pictures" src="img/picture-1.1.png" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/picture-1.1.png" class="galleryImange">
+                                            <img class="galery-pictures" src="img/picture-1.1.png" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/picture-1.2.png" class="galleryImange">
-                                        <img class="galery-pictures" src="img/picture-1.2.png" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/picture-1.2.png" class="galleryImange">
+                                            <img class="galery-pictures" src="img/picture-1.2.png" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/picture-1.3.png" class="galleryImange">
-                                        <img class="galery-pictures" src="img/picture-1.3.png" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/picture-1.3.png" class="galleryImange">
+                                            <img class="galery-pictures" src="img/picture-1.3.png" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/picture-1.4.png" class="galleryImange">
-                                        <img class="galery-pictures" src="img/picture-1.4.png" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/picture-1.4.png" class="galleryImange">
+                                            <img class="galery-pictures" src="img/picture-1.4.png" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/picture-1.5.png" class="galleryImange">
-                                        <img class="galery-pictures" src="img/picture-1.5.png" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/picture-1.5.png" class="galleryImange">
+                                            <img class="galery-pictures" src="img/picture-1.5.png" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/picture-1.6.png" class="galleryImange">
-                                        <img class="galery-pictures" src="img/picture-1.6.png" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/picture-1.6.png" class="galleryImange">
+                                            <img class="galery-pictures" src="img/picture-1.6.png" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/sculpture-1.1.png" class="galleryImange">
-                                        <img class="galery-pictures" src="img/sculpture-1.1.png" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/sculpture-1.1.png" class="galleryImange">
+                                            <img class="galery-pictures" src="img/sculpture-1.1.png" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/sculpture-1.2.png" class="galleryImange">
-                                        <img class="galery-pictures" src="img/sculpture-1.2.png" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/sculpture-1.2.png" class="galleryImange">
+                                            <img class="galery-pictures" src="img/sculpture-1.2.png" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/sculpture-1.3.png" class="galleryImange">
-                                        <img class="galery-pictures" src="img/sculpture-1.3.png" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/sculpture-1.3.png" class="galleryImange">
+                                            <img class="galery-pictures" src="img/sculpture-1.3.png" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/sculpture-1.4.png" class="galleryImange">
-                                        <img class="galery-pictures" src="img/sculpture-1.4.png" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/sculpture-1.4.png" class="galleryImange">
+                                            <img class="galery-pictures" src="img/sculpture-1.4.png" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/sculpture-1.5.png" class="galleryImange">
-                                        <img class="galery-pictures" src="img/sculpture-1.5.png" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/sculpture-1.5.png" class="galleryImange">
+                                            <img class="galery-pictures" src="img/sculpture-1.5.png" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class=" gallery-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-gallery">
-                                    <a href="img/sculpture-1.6.png" class="galleryImange">
-                                        <img class="galery-pictures" src="img/sculpture-1.6.png" alt="живопись">
-                                        <div class="gallery-hover-card">
+                            <div class=" gallery-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-gallery">
+                                        <a href="img/sculpture-1.6.png" class="galleryImange">
+                                            <img class="galery-pictures" src="img/sculpture-1.6.png" alt="живопись">
+                                            <div class="gallery-hover-card">
 
-                                            <img src="img/galery-hover.png" alt="" class="gallery-hover">
-                                        </div>
-                                    </a>
+                                                <img src="img/galery-hover.png" alt="" class="gallery-hover">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
+
+
+                            <!-- следующие слайды -->
                         </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination gallery-swiper-pagination"></div>
+                        <!-- If we need navigation buttons -->
+                        <div class=" gallery-button-prev swiper-button-prev"></div>
+                        <div class=" gallery-button-next swiper-button-next"></div>
 
-
-                        <!-- следующие слайды -->
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
                     </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination gallery-swiper-pagination"></div>
-                    <!-- If we need navigation buttons -->
-                    <div class=" gallery-button-prev swiper-button-prev"></div>
-                    <div class=" gallery-button-next swiper-button-next"></div>
-
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
                 </div>
+                <script src="js/gallery-swiper.js"></script>
             </div>
-            <script src="js/gallery-swiper.js"></script>
         </section>
         <!-- Каталог -->
-        <section class="catalog" id="katalog">
-            <div class="catalog-lang">
+        <section class="catalog container" id="katalog">
+            <nav class="catalog-lang">
                 <h2 class="heading catalog-lang-heading">
                     Каталог
                 </h2>
-                <ul class="catalog-lang-ul">
-                    <li class="catalog-lang-li"><button class="tabs__btn-lang btn-reset-lang lang-1 "
-                            data-path="lang-1"></button>
+                <ul class="catalog-lang__ul">
+                    <li class="catalog-lang_li">
+                        <button class="catalog-lang__btn btn-reset-lang lang-1" data-path="lang-1">
+                        </button>
 
                     </li>
-                    <li class="catalog-lang-li"><button class="tabs__btn-lang  btn-reset-lang lang-2"
-                            data-path="lang-2"></button>
+                    <li class="catalog-lang_li">
+                        <button class="catalog-lang__btn  btn-reset-lang lang-2" data-path="lang-2">
+                        </button>
 
                     </li>
-                    <li class="catalog-lang-li"><button
-                            class="tabs__btn-lang  btn-reset-lang lang-3 tabs__btn-active-lang"
-                            data-path="lang-3"></button>
+                    <li class="catalog-lang_li">
+                        <button class="catalog-lang__btn  btn-reset-lang lang-3 tabs__btn-active-lang"
+                            data-path="lang-3">
+                        </button>
 
                     </li>
-                    <li class="catalog-lang-li"> <button class="tabs__btn-lang  btn-reset-lang lang-4 "
-                            data-path="lang-4"></button>
+                    <li class="catalog-lang_li">
+                        <button class="catalog-lang__btn  btn-reset-lang lang-4" data-path="lang-4">
+                        </button>
 
                     </li>
-                    <li class="catalog-lang-li"> <button class="tabs__btn-lang  btn-reset-lang lang-5"
-                            data-path="lang-5"></button>
+                    <li class="catalog-lang_li">
+                        <button class="catalog-lang__btn  btn-reset-lang lang-5" data-path="lang-5">
+                        </button>
                     </li>
                 </ul>
-            </div>
-            <ul class="text-picture  tab-content__item-lang">
+            </nav>
+            <ul class="text-picture  tab-content-item-lang">
                 <!-- lang-1 французкий-->
-                <li class="tab-content__item-lang tab-content-lang" data-target="lang-1">
+                <li class="tab-content-item-lang tab-content-lang" data-target="lang-1">
                     <p class="catalog-text-1">
                         Actionnaires des plus grandes entreprises qui en sont un exemple
                         de type continental-européen de culture politique sera déclarée violant
@@ -673,7 +677,7 @@
                         libéraux,
                         qui sont désireux d'être fonctionnellement séparés en éléments indépendants.
                     </p>
-                    <div class="catalog-picture-accordion">
+                    <nav class="catalog-picture-accordion">
                         <ul class="picture-container-ul">
                             <li class="catalog-picture catalog-picture-active" data-target="DomenicoGhirlandaio1">
                                 <picture class="lang-picture">
@@ -717,7 +721,7 @@
                                 <button class="btn-picture">
                                     <p class="show-more_text ">De 1400 de 1499 an.</p>
                                 </button>
-                                <div class="colons_of-text">
+                                <nav class="show-more__nav">
                                     <ul class="showMoreText">
                                         <li class="famous-people-btn"><button
                                                 class="famous-people-link famous-people-link-reset "
@@ -796,7 +800,7 @@
                                                 class="famous-people-link famous-people-link-reset"
                                                 data-path="unfamiliar1"> Pinturicchio </button> </li>
                                     </ul>
-                                </div>
+                                </nav>
                             </li>
                             <li class="show-more">
                                 <button class="btn-picture">
@@ -913,11 +917,11 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </li>
 
                 <!-- немецкий -->
-                <li class="tab-content__item-lang tab-content-lang" data-target="lang-2">
+                <li class="tab-content-item-lang tab-content-lang" data-target="lang-2">
                     <p class="catalog-text-1">
                         Aktionäre der größten Unternehmen, die ein Paradebeispiel sind
                         kontinentaleuropäische Art der politischen Kultur wird als verletzend erklärt
@@ -926,7 +930,7 @@
                         bleiben,
                         die bestrebt sind, funktional in unabhängige Elemente getrennt zu werden.
                     </p>
-                    <div class="catalog-picture-accordion">
+                    <nav class="catalog-picture-accordion">
                         <ul class="picture-container-ul">
                             <li class="catalog-picture catalog-picture-active" data-target="DomenicoGhirlandaio2">
                                 <picture class="lang-picture">
@@ -971,7 +975,7 @@
                                 <button class="btn-picture">
                                     <p class="show-more_text ">Von 1400 bis 1499</p>
                                 </button>
-                                <div class="colons_of-text">
+                                <nav class="show-more__nav">
                                     <ul class="showMoreText">
                                         <li><button class="famous-people-link famous-people-link-reset"
                                                 data-path="unfamiliar2">Benedetto di Bindo </button> </li>
@@ -1027,7 +1031,7 @@
                                         <li><button class="famous-people-link famous-people-link-reset"
                                                 data-path="unfamiliar2"> Pinturicchio </button> </li>
                                     </ul>
-                                </div>
+                                </nav>
                             </li>
                             <li class="show-more">
                                 <button class="btn-picture">
@@ -1143,13 +1147,13 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </li>
 
 
                 <!-- испанский -->
 
-                <li class="tab-content__item-lang tab-content-lang" data-target="lang-3">
+                <li class="tab-content-item-lang tab-content-lang" data-target="lang-3">
                     <p class="catalog-text-1">
                         Accionistas de las mayores empresas que son un buen ejemplo
                         tipo de cultura política continental-europea será declarada violatoria
@@ -1158,7 +1162,7 @@
                         suerte de los liberales,
                         que están ansiosos por separarse funcionalmente en elementos independientes.
                     </p>
-                    <div class="catalog-picture-accordion">
+                    <nav class="catalog-picture-accordion">
                         <ul class="picture-container-ul">
                             <li class="catalog-picture catalog-picture-active" data-target="DomenicoGhirlandaio3">
                                 <picture class="lang-picture">
@@ -1199,7 +1203,7 @@
                                 <button class="btn-picture">
                                     <p class="show-more_text ">Doesde 1400 hasta 1499 </p>
                                 </button>
-                                <div class="colons_of-text">
+                                <nav class="show-more__nav">
                                     <ul class="showMoreText">
                                         <li><button class="famous-people-link famous-people-link-reset"
                                                 data-path="unfamiliar3"> Benedetto di Bindo </button> </li>
@@ -1255,7 +1259,7 @@
                                         <li><button class="famous-people-link famous-people-link-reset"
                                                 data-path="unfamiliar3"> Pinturicchio</button> </li>
                                     </ul>
-                                </div>
+                                </nav>
                             </li>
                             <li class="show-more">
                                 <button class="btn-picture">
@@ -1371,12 +1375,12 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </li>
 
 
                 <!-- Русский -->
-                <li class="tab-content__item-lang tab-content-lang tab-content-active-lang  " data-target="lang-4">
+                <li class="tab-content-item-lang tab-content-lang tab-content-active-lang  " data-target="lang-4">
                     <p class="catalog-text-1">
                         Акционеры крупнейших компаний, которые представляют собой яркий пример
                         континентально-европейского типа политической культуры, будут объявлены нарушающими
@@ -1384,7 +1388,7 @@
                         вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов,
                         которые жаждут быть функционально разнесены на независимые элементы.
                     </p>
-                    <div class="catalog-picture-accordion">
+                    <nav class="catalog-picture-accordion">
                         <ul class="picture-container-ul">
                             <li class="catalog-picture catalog-picture-active" data-target="DomenicoGhirlandaio4">
                                 <picture class="lang-picture">
@@ -1423,7 +1427,7 @@
                                     <p class="show-more_text ">C 1400 по 1499 гг.</p>
                                 </button>
 
-                                <div class="colons_of-text">
+                                <nav class="show-more__nav">
                                     <ul class="showMoreText">
                                         <li class="showMoreText-li"><button
                                                 class="famous-people-link famous-people-link-reset"
@@ -1480,7 +1484,7 @@
                                         <li><button class="famous-people-link famous-people-link-reset"
                                                 data-path="unfamiliar4"> Пинтуриккьо </button> </li>
                                     </ul>
-                                </div>
+                                </nav>
                             </li>
                             <li class="show-more">
                                 <button class="btn-picture">
@@ -1596,12 +1600,12 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </li>
 
 
                 <!-- Нидерландский -->
-                <li class="tab-content__item-lang tab-content-lang" data-target="lang-5">
+                <li class="tab-content-item-lang tab-content-lang" data-target="lang-5">
                     <p class="catalog-text-1">
                         Aandeelhouders van de grootste bedrijven die een goed voorbeeld zijn
                         continentaal-Europese soort politieke cultuur in strijd worden verklaard
@@ -1611,7 +1615,7 @@
                         van liberalen,
                         die graag functioneel worden gescheiden in onafhankelijke elementen.
                     </p>
-                    <div class="catalog-picture-accordion">
+                    <nav class="catalog-picture-accordion">
                         <ul class="picture-container-ul">
                             <li class="catalog-picture catalog-picture-active" data-target="DomenicoGhirlandaio5">
                                 <picture class="lang-picture">
@@ -1652,7 +1656,7 @@
                                 <button class="btn-picture">
                                     <p class="show-more_text ">Van 1400 tot 1499</p>
                                 </button>
-                                <div class="colons_of-text">
+                                <nav class="show-more__nav">
                                     <ul class="showMoreText">
                                         <li><button class="famous-people-link famous-people-link-reset"
                                                 data-path="unfamiliar5"> Benedetto di Bindo </button></li>
@@ -1708,7 +1712,7 @@
                                         <li><button class="famous-people-link famous-people-link-reset"
                                                 data-path="unfamiliar5"> Pinturicchio </button></li>
                                     </ul>
-                                </div>
+                                </nav>
                             </li>
                             <li class="show-more">
                                 <button class="btn-picture">
@@ -1817,12 +1821,12 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </nav>
                 </li>
             </ul>
         </section>
         <!-- События -->
-        <section class="events" id="events">
+        <section class="events container" id="events">
             <h2 class="heading events-heading">События</h2>
             <ul class="events-ul">
                 <li class="events-card">
@@ -1889,7 +1893,7 @@
                     </button>
                 </div>
 
-                <ul class="events-more-bloks">
+                <ul class="events-ul">
                     <li class="events-card">
                         <div class="events-img">
                             <img src="img/event4.jpg" alt="">
@@ -1930,256 +1934,264 @@
                             </p>
                         </div>
                     </li>
-                    <li class="events-card text-eventCard  transparent">
+                    <li class="events-card transparent">
+                        <div class="events-img">
 
+                        </div>
+                        <div class="text-eventCard transparent">
+                            <div class="events-text">
+                            </div>
+                        </div>
                     </li>
                 </ul>
 
             </ul>
         </section>
         <!-- Издания -->
-        <section class="editions without-borders" id="editions">
-            <div class="choices-editions">
-                <h2 class="heading editions-heading">Издания</h2>
-                <div class="cathegories">
-                    <h3 class="margin editions-h3">Категории</h3>
-                    <ul class="editions-label-ul">
-                        <li class="editions-label-li">
-                            <label for="one" class="editions-label">
-                                <input type="checkbox" class="checkbox-editions" name="one" id="one">
-                                Бестселлеры
-                                <span class="cathegories-check"></span>
-                            </label>
-                        </li>
-                        <li class="editions-label-li">
-                            <label for="two" class="editions-label">
-                                <input type="checkbox" class="checkbox-editions" name="two" id="two">
-                                Искусство
-                                <span class="cathegories-check"></span>
-                            </label>
-                        </li>
-                        <li class="editions-label-li">
-                            <label for="three" class="editions-label">
-                                <input type="checkbox" class="checkbox-editions" name="three" id="three">
-                                Архитектура
-                                <span class="cathegories-check"></span>
-                            </label>
-                        </li>
-                        <li class="editions-label-li">
-                            <label for="four" class="editions-label">
-                                <input type="checkbox" class="checkbox-editions" name="four" id="four">
-                                Дизайн
-                                <span class="cathegories-check"></span>
-                            </label>
-                        </li>
-                        <li class="editions-label-li">
-                            <label for="five" class="editions-label">
-                                <input type="checkbox" class="checkbox-editions" name="five" id="five">
-                                Мода
-                                <span class="cathegories-check"></span>
-                            </label>
-                        </li>
-                        <li class="editions-label-li">
-                            <label for="six" class="editions-label">
-                                <input type="checkbox" class="checkbox-editions" name="six" id="six">
-                                Детям
-                                <span class="cathegories-check"></span>
-                            </label>
-                        </li>
-                        <li class="editions-label-li">
-                            <label for="seven" class="editions-label">
-                                <input type="checkbox" class="checkbox-editions" name="seven" id="seven">
-                                Художественная литература
-                                <span class="cathegories-check"></span>
-                            </label>
-                        </li>
-                        <li class="editions-label-li">
-                            <label for="eight" class="editions-label">
-                                <input type="checkbox" class="checkbox-editions" name="eight" id="eight">
-                                Публицистика
-                                <span class="cathegories-check"></span>
-                            </label>
-                        </li>
-                        <li class="editions-label-li">
-                            <label for="nine" class="editions-label">
-                                <input type="checkbox" class="checkbox-editions" name="nine" id="nine">
-                                Путеводители
-                                <span class="cathegories-check"></span>
-                            </label>
-                        </li>
-                        <li class="editions-label-li">
-                            <label for="ten" class="editions-label">
-                                <input type="checkbox" class="checkbox-editions" name="ten" id="ten">
-                                Философия
-                                <span class="cathegories-check"></span>
-                            </label>
-                        </li>
-                        <li class="editions-label-li">
-                            <label for="eleven" class="editions-label">
-                                <input type="checkbox" class="checkbox-editions" name="eleven" id="eleven">
-                                Учебная литература
-                                <span class="cathegories-check"></span>
-                            </label>
-                        </li>
-                        <li class="editions-label-li">
-                            <label for="twelve" class="editions-label">
-                                <input type="checkbox" class="checkbox-editions" name="twelve" id="twelve">
-                                Журналы и газеты
-                                <span class="cathegories-check"></span>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="editions-input">
-                    <h3 class="editions-h3 editions-h3-form">Цена</h3>
-                    <form class="editions-form">
-                        <p class="editions-p">От</p><input type="number" min="50" value="50" class="input-number">
-                        <p class="editions-p">до</p><input type="number" min="50" max="25000" value="25,000"
-                            class="input-number">
-                        <p class="editions-p">руб.</p>
-                    </form>
-                </div>
-            </div>
-            <div class="swiper-editions">
-                <div class=" editions-swiper-container swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="editions-swiper-wrapper swiper-wrapper">
-                        <!-- Slides -->
-                        <div class=" editions-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-editions">
-                                    <img class="editions-bookImg" src="img/book`s/book-1.jpg" alt="">
-                                </div>
-                                <div class="editions-priceText">
-                                    <span class="text">
-                                        <h3 class="editionsH3"> Искусство цвета</h3>
-                                        <p class="editions-text"> Иттен, Иоханнес </p>
-                                    </span>
-                                    <p class="editions-price">620 руб</p>
-                                </div>
-                                <div class="editions-button">
-                                    <button class="editions-button-order">Заказать</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" editions-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-editions">
-                                    <img class="editions-bookImg" src="img/book`s/book-2.jpg" alt="">
-                                </div>
-                                <div class="editions-priceText">
-                                    <span class="text">
-                                        <h3 class="editionsH3"> Типографика</h3>
-                                        <p class="editions-text"> Рудер, Эмиль </p>
-                                    </span>
-                                    <p class="editions-price">2 450 руб</p>
-                                </div>
-                                <div class="editions-button">
-                                    <button class="editions-button-order">Заказать</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" editions-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-editions">
-                                    <img src="img/book`s/book-3.jpg" alt="">
-                                </div>
-                                <div class="editions-priceText">
-                                    <span class="text">
-                                        <h3 class="editionsH3"> Книга про буквы</h3>
-                                        <p class="editions-text">Гордон, Юрий </p>
-                                    </span>
-                                    <p class="editions-price">2 200 руб</p>
-                                </div>
-                                <div class="editions-button">
-                                    <button class="editions-button-order">Заказать</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="editions-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-editions">
-                                    <img src="img/book`s/book-4.jpg" alt="">
-                                </div>
-                                <div class="editions-priceText">
-                                    <span class="text">
-                                        <h3 class="editionsH3"> Николай Ильин </h3>
-                                        <p class="editions-text"> Кричевский, Владимир </p>
-                                    </span>
-                                    <p class="editions-price">1 100 руб</p>
-                                </div>
-                                <div class="editions-button">
-                                    <button class="editions-button-order">Заказать</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" editions-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-editions">
-                                    <img src="img/book`s/book-5.jpg" alt="">
-                                </div>
-                                <div class="editions-priceText">
-                                    <span class="text">
-                                        <h3 class="editionsH3">Модульные сетки в граф...</h3>
-                                        <p class="editions-text">Мюллер-Брокманн, Йозеф </p>
-                                    </span>
-                                    <p class="editions-price">1 450 руб</p>
-                                </div>
-                                <div class="editions-button">
-                                    <button class="editions-button-order">Заказать</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" editions-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-editions">
-                                    <img src="img/book`s/book-6.jpg" alt="">
-                                </div>
-                                <div class="editions-priceText">
-                                    <span class="text">
-                                        <h3 class="editionsH3"> Эволюция графических ст...</h3>
-                                        <p class="editions-text"> Хеллер, Чваст </p>
-                                    </span>
-                                    <p class="editions-price">3 200 руб</p>
-                                </div>
-                                <div class="editions-button">
-                                    <button class="editions-button-order">Заказать</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" editions-swiper-slide swiper-slide">
-                            <div class="editions-imange-text">
-                                <div class="imange-slider-editions">
-                                    <img src="img/book`s/book-7.jpg" alt="">
-                                </div>
-                                <div class="editions-priceText">
-                                    <span class="text">
-                                        <h3 class="editionsH3"> Искусство и визуальное в... </h3>
-                                        <p class="editions-text"> Арнхейм, Рудольф </p>
-                                    </span>
-                                    <p class="editions-price">2 200 руб</p>
-                                </div>
-                                <div class="editions-button">
-                                    <button class="editions-button-order">Заказать</button>
-                                </div>
-                            </div>
-                        </div>
+        <section class="editions" id="editions">
+            <div class="editions-container container">
+                <div class="choices-editions">
+                    <h2 class="heading editions-heading">Издания</h2>
+                    <nav class="cathegories">
+                        <h3 class="margin editions-h3">Категории</h3>
+                        <ul class="editions-label-ul">
+                            <li class="editions-label-li">
+                                <label for="one" class="editions-label">
+                                    <input type="checkbox" class="checkbox-editions" name="one" id="one">
+                                    Бестселлеры
+                                    <span class="cathegories-check"></span>
+                                </label>
+                            </li>
+                            <li class="editions-label-li">
+                                <label for="two" class="editions-label">
+                                    <input type="checkbox" class="checkbox-editions" name="two" id="two">
+                                    Искусство
+                                    <span class="cathegories-check"></span>
+                                </label>
+                            </li>
+                            <li class="editions-label-li">
+                                <label for="three" class="editions-label">
+                                    <input type="checkbox" class="checkbox-editions" name="three" id="three">
+                                    Архитектура
+                                    <span class="cathegories-check"></span>
+                                </label>
+                            </li>
+                            <li class="editions-label-li">
+                                <label for="four" class="editions-label">
+                                    <input type="checkbox" class="checkbox-editions" name="four" id="four">
+                                    Дизайн
+                                    <span class="cathegories-check"></span>
+                                </label>
+                            </li>
+                            <li class="editions-label-li">
+                                <label for="five" class="editions-label">
+                                    <input type="checkbox" class="checkbox-editions" name="five" id="five">
+                                    Мода
+                                    <span class="cathegories-check"></span>
+                                </label>
+                            </li>
+                            <li class="editions-label-li">
+                                <label for="six" class="editions-label">
+                                    <input type="checkbox" class="checkbox-editions" name="six" id="six">
+                                    Детям
+                                    <span class="cathegories-check"></span>
+                                </label>
+                            </li>
+                            <li class="editions-label-li">
+                                <label for="seven" class="editions-label">
+                                    <input type="checkbox" class="checkbox-editions" name="seven" id="seven">
+                                    Художественная литература
+                                    <span class="cathegories-check"></span>
+                                </label>
+                            </li>
+                            <li class="editions-label-li">
+                                <label for="eight" class="editions-label">
+                                    <input type="checkbox" class="checkbox-editions" name="eight" id="eight">
+                                    Публицистика
+                                    <span class="cathegories-check"></span>
+                                </label>
+                            </li>
+                            <li class="editions-label-li">
+                                <label for="nine" class="editions-label">
+                                    <input type="checkbox" class="checkbox-editions" name="nine" id="nine">
+                                    Путеводители
+                                    <span class="cathegories-check"></span>
+                                </label>
+                            </li>
+                            <li class="editions-label-li">
+                                <label for="ten" class="editions-label">
+                                    <input type="checkbox" class="checkbox-editions" name="ten" id="ten">
+                                    Философия
+                                    <span class="cathegories-check"></span>
+                                </label>
+                            </li>
+                            <li class="editions-label-li">
+                                <label for="eleven" class="editions-label">
+                                    <input type="checkbox" class="checkbox-editions" name="eleven" id="eleven">
+                                    Учебная литература
+                                    <span class="cathegories-check"></span>
+                                </label>
+                            </li>
+                            <li class="editions-label-li">
+                                <label for="twelve" class="editions-label">
+                                    <input type="checkbox" class="checkbox-editions" name="twelve" id="twelve">
+                                    Журналы и газеты
+                                    <span class="cathegories-check"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="editions-input">
+                        <h3 class="editions-h3 editions-h3-form">Цена</h3>
+                        <form class="editions-form">
+                            <p class="editions-p">От</p><input type="number" min="50" value="50" class="input-number">
+                            <p class="editions-p">до</p><input type="number" min="50" max="25000" value="25,000"
+                                class="input-number">
+                            <p class="editions-p">руб.</p>
+                        </form>
                     </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination editions-swiper-pagination"></div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev editions-button-prev"></div>
-                    <div class="swiper-button-next editions-button-next"></div>
-
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
                 </div>
+                <div class="swiper-editions">
+                    <div class=" editions-swiper-container swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="editions-swiper-wrapper swiper-wrapper">
+                            <!-- Slides -->
+                            <div class=" editions-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-editions">
+                                        <img class="editions-bookImg" src="img/book`s/book-1.jpg" alt="">
+                                    </div>
+                                    <div class="editions-priceText">
+                                        <span class="text">
+                                            <h3 class="editionsH3"> Искусство цвета</h3>
+                                            <p class="editions-text"> Иттен, Иоханнес </p>
+                                        </span>
+                                        <p class="editions-price">620 руб</p>
+                                    </div>
+                                    <div class="editions-button">
+                                        <button class="editions-button-order">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" editions-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-editions">
+                                        <img class="editions-bookImg" src="img/book`s/book-2.jpg" alt="">
+                                    </div>
+                                    <div class="editions-priceText">
+                                        <span class="text">
+                                            <h3 class="editionsH3"> Типографика</h3>
+                                            <p class="editions-text"> Рудер, Эмиль </p>
+                                        </span>
+                                        <p class="editions-price">2 450 руб</p>
+                                    </div>
+                                    <div class="editions-button">
+                                        <button class="editions-button-order">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" editions-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-editions">
+                                        <img src="img/book`s/book-3.jpg" alt="">
+                                    </div>
+                                    <div class="editions-priceText">
+                                        <span class="text">
+                                            <h3 class="editionsH3"> Книга про буквы</h3>
+                                            <p class="editions-text">Гордон, Юрий </p>
+                                        </span>
+                                        <p class="editions-price">2 200 руб</p>
+                                    </div>
+                                    <div class="editions-button">
+                                        <button class="editions-button-order">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="editions-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-editions">
+                                        <img src="img/book`s/book-4.jpg" alt="">
+                                    </div>
+                                    <div class="editions-priceText">
+                                        <span class="text">
+                                            <h3 class="editionsH3"> Николай Ильин </h3>
+                                            <p class="editions-text"> Кричевский, Владимир </p>
+                                        </span>
+                                        <p class="editions-price">1 100 руб</p>
+                                    </div>
+                                    <div class="editions-button">
+                                        <button class="editions-button-order">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" editions-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-editions">
+                                        <img src="img/book`s/book-5.jpg" alt="">
+                                    </div>
+                                    <div class="editions-priceText">
+                                        <span class="text">
+                                            <h3 class="editionsH3">Модульные сетки в граф...</h3>
+                                            <p class="editions-text">Мюллер-Брокманн, Йозеф </p>
+                                        </span>
+                                        <p class="editions-price">1 450 руб</p>
+                                    </div>
+                                    <div class="editions-button">
+                                        <button class="editions-button-order">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" editions-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-editions">
+                                        <img src="img/book`s/book-6.jpg" alt="">
+                                    </div>
+                                    <div class="editions-priceText">
+                                        <span class="text">
+                                            <h3 class="editionsH3"> Эволюция графических ст...</h3>
+                                            <p class="editions-text"> Хеллер, Чваст </p>
+                                        </span>
+                                        <p class="editions-price">3 200 руб</p>
+                                    </div>
+                                    <div class="editions-button">
+                                        <button class="editions-button-order">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" editions-swiper-slide swiper-slide">
+                                <div class="editions-imange-text">
+                                    <div class="imange-slider-editions">
+                                        <img src="img/book`s/book-7.jpg" alt="">
+                                    </div>
+                                    <div class="editions-priceText">
+                                        <span class="text">
+                                            <h3 class="editionsH3"> Искусство и визуальное в... </h3>
+                                            <p class="editions-text"> Арнхейм, Рудольф </p>
+                                        </span>
+                                        <p class="editions-price">2 200 руб</p>
+                                    </div>
+                                    <div class="editions-button">
+                                        <button class="editions-button-order">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination editions-swiper-pagination"></div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev editions-button-prev"></div>
+                        <div class="swiper-button-next editions-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <script src="js/editions-swiper.js"></script>
             </div>
-            <script src="js/editions-swiper.js"></script>
         </section>
 
         <!-- Проекты -->
-        <section class="projects" id="projects">
+        <section class="projects container" id="projects">
             <h2 class="heading projects-heading">Проекты</h2>
             <div class="projects-text-text">
                 <p class="projects-text projects-text1">
@@ -2366,22 +2378,25 @@
             </script>
 
         </section>
-        <section class="header container footer-footer-social">
-            <picture class="header-logo">
-                <img class="logo" src="img/logo.png" alt="логотип Бланчард ">
-            </picture>
-            <ul class="footer-footer-social-icons">
-                <li class="footer-footer-icons">
-                    <a href="https://vk.com" class="icon footer-vk-icon"></a>
-                </li>
-                <li class="footer-footer-icons">
-                    <a href="https://instagram.com" class="icon footer-instagram-icon"></a>
-                </li>
-                <li class="footer-footer-icons">
-                    <a href="https://fb.com" class="icon footer-fb-icon"></a>
-                </li>
-            </ul>
-
+        <section class="">
+            <div class="menu">
+                <nav class="footer-footer-social container">
+                    <picture class="logo">
+                        <img class="logo" src="img/logo.png" alt="логотип Бланчард ">
+                    </picture>
+                    <ul class="footer-footer-social-icons">
+                        <li class="footer-footer-icons">
+                            <a href="https://vk.com" class="icon footer-vk-icon"></a>
+                        </li>
+                        <li class="footer-footer-icons">
+                            <a href="https://instagram.com" class="icon footer-instagram-icon"></a>
+                        </li>
+                        <li class="footer-footer-icons">
+                            <a href="https://fb.com" class="icon footer-fb-icon"></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </section>
     </footer>
 </body>

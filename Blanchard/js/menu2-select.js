@@ -1,6 +1,6 @@
 let select= function (){
   let selectHeader = document.querySelectorAll
-   ('.select__header');
+   ('.menu-2__nav');
 
    selectHeader.forEach (item => {
      item.addEventListener('click', function() {
