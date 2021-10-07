@@ -32,7 +32,7 @@
     <script src="js/accordion-event.js"></script>
     <script src="js/avtors-photo-select.js"></script>
 
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU" type="text/javascript">
     </script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
@@ -40,238 +40,220 @@
 
 <body>
     <header class="header">
-        <div class="menu">
-            <nav class="menu__nav  container">
+        <div class="navigation-menu">
+            <nav class="navigation-menu-container  container">
                 <picture class="logo">
-                    <img class="logo" src="img/logo.png" alt="логотип Бланчард ">
+                    <img class="logo" src="img/icons/logo.svg" alt="логотип Бланчард ">
                 </picture>
-                <ul class="menu__ul">
-                    <li class="menu__li">
-                        <a href="#aboutUs" class="menu__link">
+                <ul class="navigation-menu-list">
+                    <li class="navigation-menu-list__item">
+                        <a href="#aboutUs" class="navigation-menu-list__item__link">
                             О нас
                         </a>
                     </li>
-                    <li class="menu__li">
-                        <a href="#gallery" class="menu__link">
+                    <li class="navigation-menu-list__item">
+                        <a href="#gallery" class="navigation-menu-list__item__link">
                             Галерея
                         </a>
                     </li>
-                    <li class="menu__li">
-                        <a href="#katalog" class="menu__link">
+                    <li class="navigation-menu-list__item">
+                        <a href="#katalog" class="navigation-menu-list__item__link">
                             Каталог
                         </a>
                     </li>
-                    <li class="menu__li">
-                        <a href="#events" class="menu__link">
+                    <li class="navigation-menu-list__item">
+                        <a href="#events" class="navigation-menu-list__item__link">
                             События
                         </a>
                     </li>
-                    <li class="menu__li">
-                        <a href="#editions" class="menu__link">
+                    <li class="navigation-menu-list__item">
+                        <a href="#editions" class="navigation-menu-list__item__link">
                             Издания
                         </a>
                     </li>
-                    <li class="menu__li">
-                        <a href="#projects" class="menu__link">
+                    <li class="navigation-menu-list__item">
+                        <a href="#projects" class="navigation-menu-list__item__link">
                             Проекты
                         </a>
                     </li>
-                    <li class="menu__li">
-                        <a href="#contactUs" class="menu__link">
+                    <li class="navigation-menu-list__item">
+                        <a href="#contactUs" class="navigation-menu-list__item__link">
                             Контакты
                         </a>
                     </li>
                 </ul>
-                <button class="login">Войти</button>
+                <button class="login-btn">Войти</button>
             </nav>
         </div>
 
-        <nav class="menu-1__nav">
+        <nav class="dropdown-menu">
             <!-- меню 2 -->
-            <ul class="menu-1__ul container">
-                <li class="menu-1__li select">
-                    <nav class="menu-2__nav">
-                        <button class="menu-2__button">Реализм
-                        </button>
-                        <ul class="menu-2__ul customScroll" data-simplebar>
-                            <li class="rectangle1_1  rectangle-img">
+
+            <ul class="dropdown-menu__list">
+                <li class="dropdown-menu__item">
+                    <button class="dropdown-menu__item__btn">Реализм</button>
+                    <div class="dropdown-menu-container">
+                        <ul class="dropdown-menu-container-list customScroll" data-simplebar>
+                            <li class=" rectangle1-1  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Тинторетто</a>
                             </li>
-                            <li class="rectangle1_2  rectangle-img">
+                            <li class=" rectangle1-2  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Фридрих</a>
                             </li>
-                            <li class="rectangle1_3  rectangle-img">
+                            <li class=" rectangle1-3  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Леонардо</a>
                             </li>
-                            <li class="rectangle1_4  rectangle-img">
+                            <li class=" rectangle1-4 rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Верроккью</a>
                             </li>
-                            <li class="rectangle-img">
-                            </li>
-                            <li class="rectangle-img">
-                            </li>
+                            <li class="  rectangle-img dropdown-menu-container-list__item"></li>
+                            <li class="  rectangle-img dropdown-menu-container-list__item"></li>
                         </ul>
-                    </nav>
+                    </div>
                 </li>
-
-
-                <li class="menu-1__li select">
-                    <nav class="menu-2__nav">
-                        <button class="menu-2__button">Импрессионизм
-                        </button>
-                        <ul class="menu-2__ul customScroll" data-simplebar>
-                            <li class=" rectangle2_1  rectangle-img">
+                <li class="dropdown-menu__item">
+                    <button class="dropdown-menu__item__btn">Импрессионизм</button>
+                    <div class="dropdown-menu-container">
+                        <ul class="dropdown-menu-container-list customScroll" data-simplebar>
+                            <li class=" rectangle2-1  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Моне</a>
                             </li>
-                            <li class=" rectangle2_2  rectangle-img">
+                            <li class=" rectangle2-2  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Сислей</a>
                             </li>
-                            <li class=" rectangle2_3  rectangle-img">
+                            <li class=" rectangle2-3  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Мане</a>
                             </li>
-                            <li class="rectangle2_4  rectangle-img">
+                            <li class="rectangle2-4  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Ренуар</a>
                             </li>
-                            <li class="rectangle-img">
-                            </li>
-                            <li class="rectangle-img">
+                            <li class="rectangle-img dropdown-menu-container-list__item">
                             </li>
                         </ul>
-                    </nav>
+                    </div>
                 </li>
-
-                <li class="menu-1__li select">
-                    <nav class="menu-2__nav">
-                        <button class="menu-2__button">Постимпрессионизм</button>
-                        <ul class="menu-2__ul customScroll" data-simplebar>
-                            <li class=" rectangle3_1  rectangle-img">
+                <li class="dropdown-menu__item">
+                    <button class="dropdown-menu__item__btn">Постимпрессионизм</button>
+                    <div class="dropdown-menu-container">
+                        <ul class="dropdown-menu-container-list customScroll" data-simplebar>
+                            <li class=" rectangle3-1  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Ван Гог</a>
                             </li>
-                            <li class=" rectangle3_2  rectangle-img">
+                            <li class=" rectangle3-2  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Сезанн</a>
                             </li>
-                            <li class=" rectangle3_3  rectangle-img">
+                            <li class=" rectangle3-3  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Гоген</a>
                             </li>
-                            <li class=" rectangle3_4  rectangle-img">
+                            <li class=" rectangle3-4  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Сёра</a>
                             </li>
-                            <li class="rectangle-img">
-                            </li>
-                            <li class="rectangle-img">
+                            <li class="rectangle-img dropdown-menu-container-list__item">
                             </li>
                         </ul>
-                    </nav>
+                    </div>
                 </li>
-                <li class="menu-1__li select">
-                    <nav class="menu-2__nav">
-                        <button class="menu-2__button">Авангард
-                        </button>
-                        <ul class="menu-2__ul customScroll" data-simplebar>
-                            <li class=" rectangle4_1  rectangle-img">
+                <li class="dropdown-menu__item">
+                    <button class="dropdown-menu__item__btn">Авангард</button>
+                    <div class="dropdown-menu-container">
+                        <ul class="dropdown-menu-container-list customScroll" data-simplebar>
+                            <li class=" rectangle4-1  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Кандинский</a>
                             </li>
-                            <li class=" rectangle4_2  rectangle-img">
+                            <li class=" rectangle4-2  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Маринетти</a>
                             </li>
-                            <li class=" rectangle4_3  rectangle-img">
+                            <li class=" rectangle4-3  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Малевич</a>
                             </li>
-                            <li class=" rectangle4_4  rectangle-img">
+                            <li class=" rectangle4-4  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Пикассо</a>
                             </li>
-                            <li class="rectangle-img">
-                            </li>
-                            <li class="rectangle-img">
+                            <li class="rectangle-img dropdown-menu-container-list__item">
                             </li>
                         </ul>
-                    </nav>
+                    </div>
                 </li>
-
-
-                <li class="menu-1__li select">
-                    <nav class="menu-2__nav">
-                        <button class="menu-2__button">Футуризм
-                        </button>
-                        <ul class="menu-2__ul customScroll" data-simplebar>
-                            <li class=" rectangle5_1  rectangle-img">
+                <li class="dropdown-menu__item">
+                    <button class="dropdown-menu__item__btn">Футуризм</button>
+                    <div class="dropdown-menu-container">
+                        <ul class="dropdown-menu-container-list customScroll" data-simplebar>
+                            <li class=" rectangle5-1  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Карра</a>
                             </li>
-                            <li class=" rectangle5_2  rectangle-img">
+                            <li class=" rectangle5-2  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Прателла</a>
                             </li>
-                            <li class=" rectangle5_3  rectangle-img">
+                            <li class=" rectangle5-3  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Северини</a>
                             </li>
-                            <li class=" rectangle5_4  rectangle-img">
+                            <li class=" rectangle5-4  rectangle-img dropdown-menu-container-list__item">
                                 <a href="" class="select-item">Балла</a>
                             </li>
-                            <li class="rectangle-img">
-                            </li>
-                            <li class="rectangle-img">
+                            <li class="rectangle-img dropdown-menu-container-list__item">
                             </li>
                         </ul>
-                    </nav>
+                    </div>
                 </li>
-                <form action="https://jsonplaceholder.typicode.com/posts" autocomplete method="POST"
-                    class="menu-1__form">
-                    <button aria-label="Поиск" class="menu-1__btn"></button>
-                    <input placeholder=" Поиск по сайту" name="user" class="search">
-                </form>
             </ul>
+
+            <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="search-form">
+                <button aria-label="Поиск" class="button-icon"></button>
+                <input placeholder=" Поиск по сайту" name="user" class="search">
+            </form>
             <script src="js/menu2-select.js"></script>
         </nav>
     </header>
 
-    <main class="">
-        <section class="slider-section">
+    <main class="main">
+        <section class="main-banner">
             <nav class="first-slider">
-                <ul class="first-section">
-                    <li class="slide swiper-slide-1">
+                <ul class="first-slider__list">
+                    <li class="first-slider__list__item swiper-slide-1">
                     </li>
-                    <li class="slide swiper-slide-2">
+                    <li class="first-slider__list__item swiper-slide-2">
                     </li>
-                    <li class="slide swiper-slide-3">
+                    <li class="first-slider__list__item swiper-slide-3">
                     </li>
                 </ul>
-                <div class="first-section-text">
-                    <h1 class="first-section_text1">Прикоснитесь к прекрасному</h1>
-                    <p class="first-section_text2 ">Мы вынуждены отталкиваться от того, что реализация намеченных
+                <div class="banner-text">
+                    <h2 class="banner-text__heading">Прикоснитесь к прекрасному</h2>
+                    <p class="banner-text__text">Мы вынуждены отталкиваться от того, что реализация намеченных
                         плановых
                         заданий создаёт предпосылки для новых предложений.
                     </p>
-                    <button class="main-button-m">
-                        <a href="#contactUs" class="main-button">Подписаться на рассылку
-                        </a>
+                    <button class="subscription-btn">
+                        <a href="#contactUs" class="subscription-btn__link">Подписаться на рассылку </a>
                     </button>
                 </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+
             </nav>
         </section>
         <!--О нас-->
-        <section class="second-section container" id="aboutUs">
-            <h2 class="heading about-us-heading">О нас</h2>
-            <p class="about-us_text">
-                Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет
-                каждого участника как способного принимать собственные решения касаемо распределения внутренних
-                резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта
-                влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает,
-                что высокое качество позиционных исследований создаёт необходимость включения в производственный
-                план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и
-                ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают
-                популярность среди определенных слоев населения, а значит, должны быть разоблачены.
-            </p>
+        <section class="description-section container" id="aboutUs">
+            <h2 class="heading description-section-heading">О нас</h2>
+            <div class="description-section-text">
+                <p class="block-text">
+                    Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет
+                    каждого участника как способного принимать собственные решения касаемо распределения внутренних
+                    резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта
+                    влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает,
+                    что высокое качество позиционных исследований создаёт необходимость включения в производственный
+                    план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и
+                    ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают
+                    популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+                </p>
+            </div>
         </section>
 
         <!--Галерея-->
         <section class="gallery" id="gallery">
-            <div class="gallery-board container">
-                <div class="galery-filters">
-                    <h2 class="heading gallery-heading">
+            <div class="gallery-container container">
+                <div class="choices-block">
+                    <h2 class="heading">
                         Галерея
                     </h2>
-                    <h3 class="gallery__h3">
+                    <h3 class="choices-block__heading">
                         Фильтр:
                     </h3>
                     <select name="select" id="selectCustom" class="gallery-select">
@@ -289,7 +271,7 @@
                 </div>
                 <!-- живопись -->
                 <!-- Slider main container -->
-                <div class="swiper-gallery">
+                <div class="gallery-swiper">
                     <div class="gallery-swiper-container swiper">
                         <!-- Additional required wrapper -->
                         <div class="gallery-swiper-wrapper swiper-wrapper">
@@ -634,58 +616,60 @@
         </section>
         <!-- Каталог -->
         <section class="catalog container" id="katalog">
-            <nav class="catalog-lang">
-                <h2 class="heading catalog-lang-heading">
+            <nav class="catalog-list">
+                <h2 class="heading catalog-list-title">
                     Каталог
                 </h2>
-                <ul class="catalog-lang__ul">
-                    <li class="catalog-lang_li">
-                        <button class="catalog-lang__btn btn-reset-lang lang-1" data-path="lang-1">
+                <ul class="lang-list">
+                    <li class="lang-list__item">
+                        <button class="lang-list__item__btn btn-reset-lang lang-1" data-path="lang-1">
                         </button>
 
                     </li>
-                    <li class="catalog-lang_li">
-                        <button class="catalog-lang__btn  btn-reset-lang lang-2" data-path="lang-2">
+                    <li class="lang-list__item">
+                        <button class="lang-list__item__btn  btn-reset-lang lang-2" data-path="lang-2">
                         </button>
 
                     </li>
-                    <li class="catalog-lang_li">
-                        <button class="catalog-lang__btn  btn-reset-lang lang-3 tabs__btn-active-lang"
+                    <li class="lang-list__item">
+                        <button class="lang-list__item__btn  btn-reset-lang lang-3 lang-list__item__btn-active"
                             data-path="lang-3">
                         </button>
 
                     </li>
-                    <li class="catalog-lang_li">
-                        <button class="catalog-lang__btn  btn-reset-lang lang-4" data-path="lang-4">
+                    <li class="lang-list__item">
+                        <button class="lang-list__item__btn  btn-reset-lang lang-4" data-path="lang-4">
                         </button>
 
                     </li>
-                    <li class="catalog-lang_li">
-                        <button class="catalog-lang__btn  btn-reset-lang lang-5" data-path="lang-5">
+                    <li class="lang-list__item">
+                        <button class="lang-list__item__btn  btn-reset-lang lang-5" data-path="lang-5">
                         </button>
                     </li>
                 </ul>
             </nav>
-            <ul class="text-picture  tab-content-item-lang">
+            <ul class="select-list">
                 <!-- lang-1 французкий-->
-                <li class="tab-content-item-lang tab-content-lang" data-target="lang-1">
-                    <p class="catalog-text-1">
-                        Actionnaires des plus grandes entreprises qui en sont un exemple
-                        de type continental-européen de culture politique sera déclarée violant
-                        normes humaines générales d'éthique et de moralité. Dans le cadre de l'ensemble, aspirant
-                        déplacer la production traditionnelle, les nanotechnologies et restent à ce jour le lot des
-                        libéraux,
-                        qui sont désireux d'être fonctionnellement séparés en éléments indépendants.
-                    </p>
-                    <nav class="catalog-picture-accordion">
-                        <ul class="picture-container-ul">
+                <li class="select-list__item" data-target="lang-1">
+                    <div class="text-select-list">
+                        <p class="block-text">
+                            Actionnaires des plus grandes entreprises qui en sont un exemple
+                            de type continental-européen de culture politique sera déclarée violant
+                            normes humaines générales d'éthique et de moralité. Dans le cadre de l'ensemble, aspirant
+                            déplacer la production traditionnelle, les nanotechnologies et restent à ce jour le lot des
+                            libéraux,
+                            qui sont désireux d'être fonctionnellement séparés en éléments indépendants.
+                        </p>
+                    </div>
+                    <nav class="catalog-accordion">
+                        <ul class="catalog-accordion__list">
                             <li class="catalog-picture catalog-picture-active" data-target="DomenicoGhirlandaio1">
                                 <picture class="lang-picture">
                                     <img class="lang-picture-1" src="img/picture-lang.jpg" alt="Domenico Ghirlandaio">
                                 </picture>
-                                <h2 class="catalog-heading">Domenico Ghirlandaio</h2>
-                                <p class="gray-text">2 juin 1448 - 11 janvier 1494.</p>
-                                <p class="catalog-text-2"> L'un des principaux artistes florentins du Quattrocento,
+                                <h2 class="catalog-title">Domenico Ghirlandaio</h2>
+                                <p class="catalog-title-text">2 juin 1448 - 11 janvier 1494.</p>
+                                <p> L'un des principaux artistes florentins du Quattrocento,
                                     fondateur de l'artistique
                                     dynastie, qui a été continuée par son frère David et son fils Ridolfo. Responsable
                                     de
@@ -708,8 +692,8 @@
                                         alt="unfamiliar">
                                 </picture>
                                 <div class="unfamiliar-text ">
-                                    <h2 class="catalog-heading">Что мы о нём знаем?</h2>
-                                    <p class="catalog-text-2 catalog-text-2-unfamiliar"> Пока ничего... Зато мы точно
+                                    <h2 class="catalog-title">Что мы о нём знаем?</h2>
+                                    <p class="catalog-text-2-unfamiliar"> Пока ничего... Зато мы точно
                                         знаем, что в галерее есть на что посмотреть!</p>
                                     <button class="lang-galery-btn">В галерею</button>
                                 </div>
@@ -717,99 +701,99 @@
                         </ul>
 
                         <ul id="accordion-lang1" class="accordion-lang">
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">De 1400 de 1499 an.</p>
+                                    De 1400 de 1499 an.
                                 </button>
-                                <nav class="show-more__nav">
-                                    <ul class="showMoreText">
+                                <nav class="surname-list">
+                                    <ul class="surname-list__item">
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset "
+                                                class="surname-list__item__btn surname-list__item__btn-reset "
                                                 data-path="unfamiliar1"> Benedetto di Bindo </button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset "
+                                                class="surname-list__item__btn surname-list__item__btn-reset "
                                                 data-path="unfamiliar1"> Bergognone, Ambrogio</button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset "
+                                                class="surname-list__item__btn surname-list__item__btn-reset "
                                                 data-path="unfamiliar1"> Bissolo, Francesco</button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset "
+                                                class="surname-list__item__btn surname-list__item__btn-reset "
                                                 data-path="unfamiliar1"> Boltraffio, Giovanni </button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset "
+                                                class="surname-list__item__btn surname-list__item__btn-reset "
                                                 data-path="unfamiliar1"> Bonsignori, Francesco </button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset "
+                                                class="surname-list__item__btn surname-list__item__btn-reset "
                                                 data-path="unfamiliar1"> Botticini, Rafaello </button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset "
+                                                class="surname-list__item__btn surname-list__item__btn-reset "
                                                 data-path="unfamiliar1"> Bramantino </button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset "
+                                                class="surname-list__item__btn surname-list__item__btn-reset "
                                                 data-path="unfamiliar1"> Brea, Ludovico</button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset "
+                                                class="surname-list__item__btn surname-list__item__btn-reset "
                                                 data-path="unfamiliar1"> Biagio d'Antonio Tucci</button> </li>
                                     </ul>
-                                    <ul class="showMoreText">
+                                    <ul class="surname-list__item">
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset "
+                                                class="surname-list__item__btn surname-list__item__btn-reset "
                                                 data-path="unfamiliar1"> Vecchietta</button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset "
+                                                class="surname-list__item__btn surname-list__item__btn-reset "
                                                 data-path="unfamiliar1"> Andrea Verrocchio</button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset famous-people-link-active"
+                                                class="surname-list__item__btn surname-list__item__btn-reset surname-list__item__btn-active"
                                                 data-path="DomenicoGhirlandaio1"> Domenico Ghirlandaio</button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset"
+                                                class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar1"> Benozzo Gozzoli</button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset"
+                                                class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar1"> Granacci, Francesco</button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset"
+                                                class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar1"> Gregorio di Cecco</button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset"
+                                                class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar1"> Giovanni d'Udine</button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset"
+                                                class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar1"> Giovanni di Paulo</button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset"
+                                                class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar1"> Giorgione</button> </li>
                                     </ul>
-                                    <ul class="showMoreText">
+                                    <ul class="surname-list__item">
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset"
+                                                class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar1"> Parentino, Bernardo </button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset"
+                                                class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar1"> Pesellino </button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset"
+                                                class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar1"> Pietro Pérugin </button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset"
+                                                class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar1"> Peruzzi, Baldassare </button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset"
+                                                class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar1"> Pisanello </button> </li>
                                         <li class="famous-people-btn"><button
-                                                class="famous-people-link famous-people-link-reset"
+                                                class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar1"> Pinturicchio </button> </li>
                                     </ul>
                                 </nav>
                             </li>
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">De 1500 de 1599 an.</p>
+                                    De 1500 de 1599 an.
                                 </button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-fra">
+                                    <div class="emptyCard__list emptyCard__list-fra">
                                         <h2>C'est vide ici pour l'instant.
                                         </h2>
                                         <p class="accordion-text">Et dans la galerie, vous pouv ez toujours trouver
@@ -821,14 +805,14 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">De 1600 de 1699 an.</p>
+                                    De 1600 de 1699 an.
                                 </button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-fra">
+                                    <div class="emptyCard__list emptyCard__list-fra">
                                         <h2>C'est vide ici pour l'instant.
                                         </h2>
                                         <p class="accordion-text">Et dans la galerie, vous pouv ez toujours trouver
@@ -840,14 +824,14 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">De 1700 de 1799 an.</p>
+                                    De 1700 de 1799 an.
                                 </button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-fra">
+                                    <div class="emptyCard__list emptyCard__list-fra">
                                         <h2>C'est vide ici pour l'instant.
                                         </h2>
                                         <p class="accordion-text">Et dans la galerie, vous pouv ez toujours trouver
@@ -859,15 +843,15 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">De 1800 de 1899 an.</p>
+                                    De 1800 de 1899 an.
                                 </button>
 
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-fra">
+                                    <div class="emptyCard__list emptyCard__list-fra">
                                         <h2>C'est vide ici pour l'instant.
                                         </h2>
                                         <p class="accordion-text">Et dans la galerie, vous pouv ez toujours trouver
@@ -879,14 +863,14 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">De 1900 de 1999 an.</p>
+                                    De 1900 de 1999 an.
                                 </button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-fra">
+                                    <div class="emptyCard__list emptyCard__list-fra">
                                         <h2>C'est vide ici pour l'instant.
                                         </h2>
                                         <p class="accordion-text">Et dans la galerie, vous pouv ez toujours trouver
@@ -898,14 +882,14 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text">De 2000 an.</p>
+                                    De 2000 an.
                                 </button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-fra">
+                                    <div class="emptyCard__list emptyCard__list-fra">
                                         <h2>C'est vide ici pour l'instant.
                                         </h2>
                                         <p class="accordion-text">Et dans la galerie, vous pouv ez toujours trouver
@@ -921,24 +905,26 @@
                 </li>
 
                 <!-- немецкий -->
-                <li class="tab-content-item-lang tab-content-lang" data-target="lang-2">
-                    <p class="catalog-text-1">
-                        Aktionäre der größten Unternehmen, die ein Paradebeispiel sind
-                        kontinentaleuropäische Art der politischen Kultur wird als verletzend erklärt
-                        allgemeine menschliche Normen der Ethik und Moral. Als Teil des größeren Bildes, aufstrebend
-                        traditionelle Produktion, Nanotechnologie verdrängen und bis heute das Los der Liberalen
-                        bleiben,
-                        die bestrebt sind, funktional in unabhängige Elemente getrennt zu werden.
-                    </p>
-                    <nav class="catalog-picture-accordion">
-                        <ul class="picture-container-ul">
+                <li class="select-list__item" data-target="lang-2">
+                    <div class="text-select-list">
+                        <p class="block-text">
+                            Aktionäre der größten Unternehmen, die ein Paradebeispiel sind
+                            kontinentaleuropäische Art der politischen Kultur wird als verletzend erklärt
+                            allgemeine menschliche Normen der Ethik und Moral. Als Teil des größeren Bildes, aufstrebend
+                            traditionelle Produktion, Nanotechnologie verdrängen und bis heute das Los der Liberalen
+                            bleiben,
+                            die bestrebt sind, funktional in unabhängige Elemente getrennt zu werden.
+                        </p>
+                    </div>
+                    <nav class="catalog-accordion">
+                        <ul class="catalog-accordion__list">
                             <li class="catalog-picture catalog-picture-active" data-target="DomenicoGhirlandaio2">
                                 <picture class="lang-picture">
                                     <img class="lang-picture-1" src="img/picture-lang.jpg" alt="Domenico Ghirlandaio">
                                 </picture>
-                                <h2 class="catalog-heading">Domenico Ghirlandaio</h2>
-                                <p class="gray-text">2 juin 1448 - 11 janvier 1494.</p>
-                                <p class="catalog-text-2"> L'un des principaux artistes florentins du Quattrocento,
+                                <h2 class="catalog-title">Domenico Ghirlandaio</h2>
+                                <p class="catalog-title-text">2 juin 1448 - 11 janvier 1494.</p>
+                                <p> L'un des principaux artistes florentins du Quattrocento,
                                     fondateur de l'artistique
                                     dynastie, qui a été continuée par son frère David et son fils Ridolfo. Responsable
                                     de
@@ -961,8 +947,8 @@
                                         alt="unfamiliar">
                                 </picture>
                                 <div class="unfamiliar-text ">
-                                    <h2 class="catalog-heading">Что мы о нём знаем?</h2>
-                                    <p class="catalog-text-2 catalog-text-2-unfamiliar"> Пока ничего... Зато мы точно
+                                    <h2 class="catalog-title">Что мы о нём знаем?</h2>
+                                    <p class="catalog-text-2-unfamiliar"> Пока ничего... Зато мы точно
                                         знаем, что в галерее есть на что посмотреть!</p>
                                     <button class="lang-galery-btn">В галерею</button>
                                 </div>
@@ -971,76 +957,72 @@
                         </ul>
 
                         <ul id="accordion-lang2" class="accordion-lang">
-                            <li class="show-more">
-                                <button class="btn-picture">
-                                    <p class="show-more_text ">Von 1400 bis 1499</p>
-                                </button>
-                                <nav class="show-more__nav">
-                                    <ul class="showMoreText">
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                            <li class="accordion-lang__list">
+                                <button class="btn-picture">Von 1400 bis 1499 </button>
+                                <nav class="surname-list">
+                                    <ul class="surname-list__item">
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2">Benedetto di Bindo </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Bergognon, Ambrogio </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Bissolo, Francesco </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Boltraffio, Giovanni </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Bonsignori, Francesco </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Botticini, Rafaello </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Bramantino </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Brea, Ludovico </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Biagio d'Antonio Tucci </button> </li>
                                     </ul>
-                                    <ul class="showMoreText">
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                    <ul class="surname-list__item">
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Vecchietta </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Andrea Verrocchio </button> </li>
                                         <li><button
-                                                class="famous-people-link famous-people-link-reset famous-people-link-active"
+                                                class="surname-list__item__btn surname-list__item__btn-reset surname-list__item__btn-active"
                                                 data-path="DomenicoGhirlandaio2"> Domenico Ghirlandaio </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Benozzo Gozzoli </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Granacci, Francesco </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Gregorio di Cecco </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Giovanni da Udine </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Giovanni di Paolo </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Giorgione </button> </li>
                                     </ul>
-                                    <ul class="showMoreText">
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                    <ul class="surname-list__item">
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Parentino, Bernardo </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Pesellino </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Pietro Perugino </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Peruzzi, Baldassare </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Pisanello </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar2"> Pinturicchio </button> </li>
                                     </ul>
                                 </nav>
                             </li>
-                            <li class="show-more">
-                                <button class="btn-picture">
-                                    <p class="show-more_text ">Von 1500 bis 1599 </p>
-                                </button>
+                            <li class="accordion-lang__list">
+                                <button class="btn-picture"> Von 1500 bis 1599 </button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-de ">
+                                    <div class="emptyCard__list emptyCard__list-de ">
                                         <h2>Hier ist leer
                                         </h2>
                                         <p class="accordion-text">Und in der Galerie findest du immer etwas
@@ -1052,14 +1034,13 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">Von 1600 bis 1699 </p>
-                                </button>
+                                    Von 1600 bis 1699</button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-de">
+                                    <div class="emptyCard__list emptyCard__list-de">
                                         <h2>Hier ist leer
                                         </h2>
                                         <p class="accordion-text">Und in der Galerie findest du immer etwas
@@ -1071,14 +1052,13 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">Von 1700 bis 1799 </p>
-                                </button>
+                                    Von 1700 bis 1799</button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-de">
+                                    <div class="emptyCard__list emptyCard__list-de">
                                         <h2>Hier ist leer
                                         </h2>
                                         <p class="accordion-text">Und in der Galerie findest du immer etwas
@@ -1090,14 +1070,13 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">Von 1800 bis 1899 </p>
-                                </button>
+                                    Von 1800 bis 1899</button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-de">
+                                    <div class="emptyCard__list emptyCard__list-de">
                                         <h2>Hier ist leer
                                         </h2>
                                         <p class="accordion-text">Und in der Galerie findest du immer etwas
@@ -1109,14 +1088,13 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">Von 1900 bis 1999 </p>
-                                </button>
+                                    Von 1900 bis 1999</button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-de">
+                                    <div class="emptyCard__list emptyCard__list-de">
                                         <h2>Hier ist leer
                                         </h2>
                                         <p class="accordion-text">Und in der Galerie findest du immer etwas
@@ -1128,14 +1106,13 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">Von 2000 г.</p>
-                                </button>
+                                    Von 2000 г.</button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-de">
+                                    <div class="emptyCard__list emptyCard__list-de">
                                         <h2>Hier ist leer
                                         </h2>
                                         <p class="accordion-text">Und in der Galerie findest du immer etwas
@@ -1153,24 +1130,28 @@
 
                 <!-- испанский -->
 
-                <li class="tab-content-item-lang tab-content-lang" data-target="lang-3">
-                    <p class="catalog-text-1">
-                        Accionistas de las mayores empresas que son un buen ejemplo
-                        tipo de cultura política continental-europea será declarada violatoria
-                        normas humanas generales de ética y moralidad. Como parte del panorama general, los aspirantes
-                        desplazar la producción tradicional, la nanotecnología y hasta el día de hoy siguen siendo la
-                        suerte de los liberales,
-                        que están ansiosos por separarse funcionalmente en elementos independientes.
-                    </p>
-                    <nav class="catalog-picture-accordion">
-                        <ul class="picture-container-ul">
+                <li class="select-list__item" data-target="lang-3">
+                    <div class="text-select-list">
+                        <p class="block-text">
+                            Accionistas de las mayores empresas que son un buen ejemplo
+                            tipo de cultura política continental-europea será declarada violatoria
+                            normas humanas generales de ética y moralidad. Como parte del panorama general, los
+                            aspirantes
+                            desplazar la producción tradicional, la nanotecnología y hasta el día de hoy siguen siendo
+                            la
+                            suerte de los liberales,
+                            que están ansiosos por separarse funcionalmente en elementos independientes.
+                        </p>
+                    </div>
+                    <nav class="catalog-accordion">
+                        <ul class="catalog-accordion__list">
                             <li class="catalog-picture catalog-picture-active" data-target="DomenicoGhirlandaio3">
                                 <picture class="lang-picture">
                                     <img class="lang-picture-1" src="img/picture-lang.jpg" alt="Domenico Ghirlandaio">
                                 </picture>
-                                <h2 class="catalog-heading">Domenico Ghirlandaio</h2>
-                                <p class="gray-text">2 de junio de 1448-11 de enero de 1494.</p>
-                                <p class="catalog-text-2">Uno de los principales artistas florentinos del Quattrocento,
+                                <h2 class="catalog-title">Domenico Ghirlandaio</h2>
+                                <p class="catalog-title-text">2 de junio de 1448-11 de enero de 1494.</p>
+                                <p>Uno de los principales artistas florentinos del Quattrocento,
                                     fundador de la artística
                                     dinastía, que fue continuada por su hermano David y su hijo Ridolfo. Jefe de lo
                                     artístico
@@ -1191,84 +1172,84 @@
                                         alt="unfamiliar">
                                 </picture>
                                 <div class="unfamiliar-text ">
-                                    <h2 class="catalog-heading">Что мы о нём знаем?</h2>
-                                    <p class="catalog-text-2 catalog-text-2-unfamiliar"> Пока ничего... Зато мы точно
+                                    <h2 class="catalog-title">Что мы о нём знаем?</h2>
+                                    <p class="catalog-text-2-unfamiliar"> Пока ничего... Зато мы точно
                                         знаем, что в галерее есть на что посмотреть!</p>
                                     <button class="lang-galery-btn">В галерею</button>
                                 </div>
                             </li>
                         </ul>
                         <ul id="accordion-lang3" class="accordion-lang">
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">Doesde 1400 hasta 1499 </p>
+                                    Doesde 1400 hasta 1499
                                 </button>
-                                <nav class="show-more__nav">
-                                    <ul class="showMoreText">
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                <nav class="surname-list">
+                                    <ul class="surname-list__item">
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Benedetto di Bindo </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Bergognone, Ambrogio </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Bissolo, Francesco </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Boltraffio, Giovanni </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Bonsignori, Francesco </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Botticini, Rafaello </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Bramantino </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Brea, Ludovico </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Biagio d'Antonio Tucci </button> </li>
                                     </ul>
-                                    <ul class="showMoreText">
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                    <ul class="surname-list__item">
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Vecchietta</button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Andrea Verrocchio</button> </li>
                                         <li><button
-                                                class="famous-people-link famous-people-link-reset famous-people-link-active"
+                                                class="surname-list__item__btn surname-list__item__btn-reset surname-list__item__btn-active"
                                                 data-path="DomenicoGhirlandaio3"> Domenico Ghirlandaio</button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Benozzo Gozzoli</button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Granacci, Francesco</button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Gregorio di Cecco</button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Giovanni da Udine</button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Giovanni di Paolo</button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Giorgione</button> </li>
                                     </ul>
-                                    <ul class="showMoreText">
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                    <ul class="surname-list__item">
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Parentino, Bernardo</button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Pesellino</button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Pietro Perugino</button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Peruzzi, Baldassare</button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Pisanello</button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar3"> Pinturicchio</button> </li>
                                     </ul>
                                 </nav>
                             </li>
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">Desde 1500 hasta 1599</p>
+                                    Desde 1500 hasta 1599
                                 </button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-esp">
+                                    <div class="emptyCard__list emptyCard__list-esp">
                                         <h2>Esta vacio aqui por ahora
                                         </h2>
                                         <p class="accordion-text">Y en la galería siempre puedes encontrar algo
@@ -1280,14 +1261,14 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text "> Desde 1600 hasta 1699</p>
+                                    Desde 1600 hasta 1699
                                 </button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-esp">
+                                    <div class="emptyCard__list emptyCard__list-esp">
                                         <h2>Esta vacio aqui por ahora
                                         </h2>
                                         <p class="accordion-text">Y en la galería siempre puedes encontrar algo
@@ -1299,14 +1280,14 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text "> Doesde 1700 hasta 1799</p>
+                                    Doesde 1700 hasta 1799
                                 </button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-esp">
+                                    <div class="emptyCard__list emptyCard__list-esp">
                                         <h2>Esta vacio aqui por ahora
                                         </h2>
                                         <p class="accordion-text">Y en la galería siempre puedes encontrar algo
@@ -1318,14 +1299,14 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text "> Doesde 1800 hasta 1899</p>
+                                    Doesde 1800 hasta 1899
                                 </button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-esp">
+                                    <div class="emptyCard__list emptyCard__list-esp">
                                         <h2>Esta vacio aqui por ahora
                                         </h2>
                                         <p class="accordion-text">Y en la galería siempre puedes encontrar algo
@@ -1337,14 +1318,14 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">Doesde 1900 hasta 1999 </p>
+                                    Doesde 1900 hasta 1999
                                 </button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-esp">
+                                    <div class="emptyCard__list emptyCard__list-esp">
                                         <h2>Esta vacio aqui por ahora
                                         </h2>
                                         <p class="accordion-text">Y en la galería siempre puedes encontrar algo
@@ -1356,14 +1337,13 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">Doesde 2000 </p>
-                                </button>
+                                    Doesde 2000 </button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-esp">
+                                    <div class="emptyCard__list emptyCard__list-esp">
                                         <h2>Esta vacio aqui por ahora
                                         </h2>
                                         <p class="accordion-text">Y en la galería siempre puedes encontrar algo
@@ -1380,23 +1360,25 @@
 
 
                 <!-- Русский -->
-                <li class="tab-content-item-lang tab-content-lang tab-content-active-lang  " data-target="lang-4">
-                    <p class="catalog-text-1">
-                        Акционеры крупнейших компаний, которые представляют собой яркий пример
-                        континентально-европейского типа политической культуры, будут объявлены нарушающими
-                        общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся
-                        вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов,
-                        которые жаждут быть функционально разнесены на независимые элементы.
-                    </p>
-                    <nav class="catalog-picture-accordion">
-                        <ul class="picture-container-ul">
+                <li class="select-list__item tab-content-active-lang  " data-target="lang-4">
+                    <div class="text-select-list">
+                        <p class="block-text">
+                            Акционеры крупнейших компаний, которые представляют собой яркий пример
+                            континентально-европейского типа политической культуры, будут объявлены нарушающими
+                            общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся
+                            вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов,
+                            которые жаждут быть функционально разнесены на независимые элементы.
+                        </p>
+                    </div>
+                    <nav class="catalog-accordion">
+                        <ul class="catalog-accordion__list">
                             <li class="catalog-picture catalog-picture-active" data-target="DomenicoGhirlandaio4">
                                 <picture class="lang-picture">
                                     <img class="lang-picture-1" src="img/picture-lang.jpg" alt="Domenico Ghirlandaio">
                                 </picture>
-                                <h2 class="catalog-heading">Доменико Гирландайо</h2>
-                                <p class="gray-text"> 2 июня 1448 — 11 января 1494.</p>
-                                <p class="catalog-text-2"> Один из ведущих флорентийских художников Кватроченто,
+                                <h2 class="catalog-title">Доменико Гирландайо</h2>
+                                <p class="catalog-title-text"> 2 июня 1448 — 11 января 1494.</p>
+                                <p> Один из ведущих флорентийских художников Кватроченто,
                                     основатель
                                     художественной
                                     династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной
@@ -1414,86 +1396,84 @@
                                         alt="unfamiliar">
                                 </picture>
                                 <div class="unfamiliar-text ">
-                                    <h2 class="catalog-heading">Что мы о нём знаем?</h2>
-                                    <p class="catalog-text-2 catalog-text-2-unfamiliar"> Пока ничего... Зато мы точно
+                                    <h2 class="catalog-title">Что мы о нём знаем?</h2>
+                                    <p class="catalog-text-2-unfamiliar"> Пока ничего... Зато мы точно
                                         знаем, что в галерее есть на что посмотреть!</p>
                                     <button class="lang-galery-btn">В галерею</button>
                                 </div>
                             </li>
                         </ul>
                         <ul id="accordion-lang4" class="accordion-lang">
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">C 1400 по 1499 гг.</p>
-                                </button>
+                                    C 1400 по 1499 гг</button>
 
-                                <nav class="show-more__nav">
-                                    <ul class="showMoreText">
-                                        <li class="showMoreText-li"><button
-                                                class="famous-people-link famous-people-link-reset"
+                                <nav class="surname-list">
+                                    <ul class="surname-list__item">
+                                        <li class="surname-list__item-li"><button
+                                                class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Бенедетто ди Биндо </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Бергоньоне, Амброджо </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Биссоло, Франческо </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Больтраффио, Джованни </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Бонсиньори, Франческо </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Боттичини, Рафаэлло </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Брамантино </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Бреа, Людовико </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Бьяджо д’Антонио Туччи </button> </li>
                                     </ul>
-                                    <ul class="showMoreText">
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                    <ul class="surname-list__item">
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Веккьетта </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Андреа Верроккьо </button> </li>
                                         <li> <button
-                                                class="famous-people-link famous-people-link-reset famous-people-link-active"
+                                                class="surname-list__item__btn surname-list__item__btn-reset surname-list__item__btn-active"
                                                 data-path="DomenicoGhirlandaio4"> Доменико Гирландайо </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Беноццо Гоццоли </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Граначчи, Франческо </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Грегорио ди Чекко </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Джованни да Удине </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Джованни ди Паоло </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Джорджоне </button> </li>
                                     </ul>
-                                    <ul class="showMoreText">
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                    <ul class="surname-list__item">
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Парентино, Бернардо </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Пезеллино </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Пьетро Перуджино </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Перуцци, Бальдассаре </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Пизанелло </button> </li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar4"> Пинтуриккьо </button> </li>
                                     </ul>
                                 </nav>
                             </li>
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">C 1500 по 1599 гг.</p>
-                                </button>
+                                    C 1500 по 1599 гг</button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text">
+                                    <div class="emptyCard__list">
                                         <h2>Здесь пока пусто
                                         </h2>
                                         <p class="accordion-text">А в галерее вы всегда можете найти что-то интересное
@@ -1505,14 +1485,13 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">C 1600 по 1699 гг.</p>
-                                </button>
+                                    C 1600 по 1699 гг</button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text">
+                                    <div class="emptyCard__list">
                                         <h2>Здесь пока пусто
                                         </h2>
                                         <p class="accordion-text">А в галерее вы всегда можете найти что-то интересное
@@ -1524,14 +1503,13 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">C 1700 по 1799 гг.</p>
-                                </button>
+                                    C 1700 по 1799 гг</button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text">
+                                    <div class="emptyCard__list">
                                         <h2>Здесь пока пусто
                                         </h2>
                                         <p class="accordion-text">А в галерее вы всегда можете найти что-то интересное
@@ -1543,14 +1521,30 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">C 1800 по 1899 гг.</p>
-                                </button>
+                                    C 1800 по 1899 гг</button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text">
+                                    <div class="emptyCard__list">
+                                        <h2>Здесь пока пусто
+                                        </h2>
+                                        <p class="accordion-text">А в галерее вы всегда можете найти что-то интересное
+                                            для себя
+                                            <a href="#gallery" class="accordion-href">В галерею</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="accordion-lang__list">
+                                <button class="btn-picture">
+                                    C 1900 по 1999 гг</button>
+                                <div class="emptyCard">
+                                    <div class="emptyPicture">
+                                    </div>
+                                    <div class="emptyCard__list">
                                         <h2>Здесь пока пусто
                                         </h2>
                                         <p class="accordion-text">А в галерее вы всегда можете найти что-то интересное
@@ -1562,38 +1556,17 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">C 1900 по 1999 гг.</p>
-                                </button>
+                                    C 2000 г.</button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text">
+                                    <div class="emptyCard__list emptyCard__list-nda">
                                         <h2>Здесь пока пусто
                                         </h2>
                                         <p class="accordion-text">А в галерее вы всегда можете найти что-то интересное
-                                            для
-                                            себя
-                                            <a href="#gallery" class="accordion-href">В галерею</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="show-more">
-                                <button class="btn-picture">
-                                    <p class="show-more_text ">C 2000 г.</p>
-                                </button>
-                                <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
-                                    </div>
-                                    <div class="two-colons_of-text two-colons_of-text-nda">
-                                        <h2>Здесь пока пусто
-                                        </h2>
-                                        <p class="accordion-text">А в галерее вы всегда можете найти что-то интересное
-                                            для
-                                            себя
+                                            для себя
                                             <a href="#gallery" class="accordion-href">В галерею</a>
                                         </p>
                                     </div>
@@ -1605,25 +1578,28 @@
 
 
                 <!-- Нидерландский -->
-                <li class="tab-content-item-lang tab-content-lang" data-target="lang-5">
-                    <p class="catalog-text-1">
-                        Aandeelhouders van de grootste bedrijven die een goed voorbeeld zijn
-                        continentaal-Europese soort politieke cultuur in strijd worden verklaard
-                        algemene menselijke normen van ethiek en moraliteit. Als onderdeel van het grotere geheel,
-                        streven
-                        verdringen traditionele productie, nanotechnologie en blijven tot op de dag van vandaag het lot
-                        van liberalen,
-                        die graag functioneel worden gescheiden in onafhankelijke elementen.
-                    </p>
-                    <nav class="catalog-picture-accordion">
-                        <ul class="picture-container-ul">
+                <li class="select-list__item" data-target="lang-5">
+                    <div class="text-select-list">
+                        <p class="block-text">
+                            Aandeelhouders van de grootste bedrijven die een goed voorbeeld zijn
+                            continentaal-Europese soort politieke cultuur in strijd worden verklaard
+                            algemene menselijke normen van ethiek en moraliteit. Als onderdeel van het grotere geheel,
+                            streven
+                            verdringen traditionele productie, nanotechnologie en blijven tot op de dag van vandaag het
+                            lot
+                            van liberalen,
+                            die graag functioneel worden gescheiden in onafhankelijke elementen.
+                        </p>
+                    </div>
+                    <nav class="catalog-accordion">
+                        <ul class="catalog-accordion__list">
                             <li class="catalog-picture catalog-picture-active" data-target="DomenicoGhirlandaio5">
                                 <picture class="lang-picture">
                                     <img class="lang-picture-1" src="img/picture-lang.jpg" alt="Domenico Ghirlandaio">
                                 </picture>
-                                <h2 class="catalog-heading">Domenico Ghirlandaio</h2>
-                                <p class="gray-text">2 juni 1448 - 11 januari 1494.</p>
-                                <p class="catalog-text-2"> Een van de toonaangevende Florentijnse kunstenaars van
+                                <h2 class="catalog-title">Domenico Ghirlandaio</h2>
+                                <p class="catalog-title-text">2 juni 1448 - 11 januari 1494.</p>
+                                <p> Een van de toonaangevende Florentijnse kunstenaars van
                                     Quattrocento, oprichter van de
                                     artistieke
                                     dynastie, die werd voortgezet door zijn broer David en zoon Ridolfo. Hoofd van de
@@ -1644,84 +1620,82 @@
                                         alt="unfamiliar">
                                 </picture>
                                 <div class="unfamiliar-text ">
-                                    <h2 class="catalog-heading">Что мы о нём знаем?</h2>
-                                    <p class="catalog-text-2 catalog-text-2-unfamiliar"> Пока ничего... Зато мы точно
+                                    <h2 class="catalog-title">Что мы о нём знаем?</h2>
+                                    <p class="catalog-text-2-unfamiliar"> Пока ничего... Зато мы точно
                                         знаем, что в галерее есть на что посмотреть!</p>
                                     <button class="lang-galery-btn">В галерею</button>
                                 </div>
                             </li>
                         </ul>
                         <ul id="accordion-lang5" class="accordion-lang">
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">Van 1400 tot 1499</p>
-                                </button>
-                                <nav class="show-more__nav">
-                                    <ul class="showMoreText">
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                    Van 1400 tot 1499 </button>
+                                <nav class="surname-list">
+                                    <ul class="surname-list__item">
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Benedetto di Bindo </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Bergognone, Ambrogio </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Bissolo, Francesco </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Boltraffio, Giovanni </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Bonsignori, Francesco </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Botticini, Rafaello </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Bramantino </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Brea, Ludovico </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Biagio d'Antonio Tucci </button></li>
                                     </ul>
-                                    <ul class="showMoreText">
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                    <ul class="surname-list__item">
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Vecchietta </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Andrea Verrocchio </button></li>
                                         <li><button
-                                                class="famous-people-link famous-people-link-reset famous-people-link-active"
+                                                class="surname-list__item__btn surname-list__item__btn-reset surname-list__item__btn-active"
                                                 data-path="DomenicoGhirlandaio5"> Domenico Ghirlandaio </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Benozzo Gozzoli </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Granacci, Francesco </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Gregorio di Cecco </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Giovanni da Udine </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Giovanni di Paolo </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Giorgione </button></li>
                                     </ul>
-                                    <ul class="showMoreText">
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                    <ul class="surname-list__item">
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Parentino, Bernardo </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Pesellino </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Pietro Perugino </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Peruzzi, Baldassare </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Pisanello </button></li>
-                                        <li><button class="famous-people-link famous-people-link-reset"
+                                        <li><button class="surname-list__item__btn surname-list__item__btn-reset"
                                                 data-path="unfamiliar5"> Pinturicchio </button></li>
                                     </ul>
                                 </nav>
                             </li>
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">Van 1500 tot 1599 </p>
-                                </button>
+                                    Van 1500 tot 1599</button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-nda">
+                                    <div class="emptyCard__list emptyCard__list-nda">
                                         <h2>Het is hier voorlopig leeg
                                         </h2>
                                         <p class="accordion-text">En in de galerij kun je altijd iets interessants voor
@@ -1732,14 +1706,13 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">Van 1600 tot 1699 </p>
-                                </button>
+                                    Van 1600 tot 1699</button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-nda">
+                                    <div class="emptyCard__list emptyCard__list-nda">
                                         <h2>Het is hier voorlopig leeg
                                         </h2>
                                         <p class="accordion-text">En in de galerij kun je altijd iets interessants voor
@@ -1750,14 +1723,13 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">Van 1700 tot 1799</p>
-                                </button>
+                                    Van 1700 tot 1799 </button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-nda">
+                                    <div class="emptyCard__list emptyCard__list-nda">
                                         <h2>Het is hier voorlopig leeg
                                         </h2>
                                         <p class="accordion-text">En in de galerij kun je altijd iets interessants voor
@@ -1768,14 +1740,13 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">Van 1800 tot 1899</p>
-                                </button>
+                                    Van 1800 tot 1899 </button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-nda">
+                                    <div class="emptyCard__list emptyCard__list-nda">
                                         <h2>Het is hier voorlopig leeg
                                         </h2>
                                         <p class="accordion-text">En in de galerij kun je altijd iets interessants voor
@@ -1786,14 +1757,13 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">Van 1900 tot 1999</p>
-                                </button>
+                                    Van 1900 tot 1999 </button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-nda">
+                                    <div class="emptyCard__list emptyCard__list-nda">
                                         <h2>Het is hier voorlopig leeg
                                         </h2>
                                         <p class="accordion-text">En in de galerij kun je altijd iets interessants voor
@@ -1804,14 +1774,13 @@
                                 </div>
                             </li>
 
-                            <li class="show-more">
+                            <li class="accordion-lang__list">
                                 <button class="btn-picture">
-                                    <p class="show-more_text ">Van 2000 г.</p>
-                                </button>
+                                    Van 2000 г.</button>
                                 <div class="emptyCard">
-                                    <div class="emptyPicture emptyPicture-border">
+                                    <div class="emptyPicture">
                                     </div>
-                                    <div class="two-colons_of-text two-colons_of-text-nda">
+                                    <div class="emptyCard__list emptyCard__list-nda">
                                         <h2>Het is hier voorlopig leeg
                                         </h2>
                                         <p class="accordion-text">En in de galerij kun je altijd iets interessants voor
@@ -1827,19 +1796,19 @@
         </section>
         <!-- События -->
         <section class="events container" id="events">
-            <h2 class="heading events-heading">События</h2>
-            <ul class="events-ul">
-                <li class="events-card">
-                    <div class="events-img">
+            <h2 class="heading events__heading">События</h2>
+            <ul class="events__list">
+                <li class="events__item">
+                    <div class="events__img">
                         <img src="img/event1.jpg" alt="">
                     </div>
-                    <div class="text-eventCard">
-                        <div class="events-text">
-                            <p class="event-gray-text1 event-gray-text event-gray-text-bold">Музей им. Щусева</p>
-                            <p class="event-gray-text2 event-gray-text event-gray-text-bold">
+                    <div class="eventCard">
+                        <div class="eventCard__text">
+                            <p class="gs-text gs-text gs-text-bold">Музей им. Щусева</p>
+                            <p class="gs-text gs-text gs-text-bold">
                                 с 20 марта по 30 апреля</p>
-                            <h3 class="heading event-card-heading">Книжная гравюра в живом восприятии</h3>
-                            <p class="event-text1">Один из ведущих флорентийских художников Кватроченто, основатель
+                            <h3 class="heading eventCard__title">Книжная гравюра в живом восприятии</h3>
+                            <p class="block-text">Один из ведущих флорентийских художников Кватроченто, основатель
                                 художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
 
 
@@ -1849,18 +1818,18 @@
                     </div>
 
                 </li>
-                <li class="events-card">
-                    <div class="events-img">
+                <li class="events__item">
+                    <div class="events__img">
                         <img src="img/event2.jpg" alt="">
                     </div>
-                    <div class="text-eventCard">
-                        <div class="events-text">
-                            <p class="event-gray-text1 event-gray-text">ММОМА</p>
-                            <p class="event-gray-text2 event-gray-text">
+                    <div class="eventCard">
+                        <div class="eventCard__text">
+                            <p class="gs-text gs-text">ММОМА</p>
+                            <p class="gs-text gs-text">
                                 24 марта 19:00</p>
-                            <h3 class="heading event-card-heading">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+                            <h3 class="heading eventCard__title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
                             </h3>
-                            <p class="event-text1">Высокий уровень вовлечения представителей целевой аудитории является
+                            <p class="block-text">Высокий уровень вовлечения представителей целевой аудитории является
                                 четким доказательством простого факта.</p>
                         </div>
                         <p class="events-more"><a href="#" class="events-a">Подробнее</a>
@@ -1868,17 +1837,17 @@
                     </div>
 
                 </li>
-                <li class="events-card">
-                    <div class="events-img">
+                <li class="events__item">
+                    <div class="events__img">
                         <img src="img/event3.jpg" alt="">
                     </div>
-                    <div class="text-eventCard">
-                        <div class="events-text">
-                            <p class="event-gray-text1 event-gray-text">Еврейский музей</p>
-                            <p class="event-gray-text2 event-gray-text">
+                    <div class="eventCard">
+                        <div class="eventCard__text">
+                            <p class="gs-text gs-text">Еврейский музей</p>
+                            <p class="gs-text gs-text">
                                 с 31 марта по 21 апреля</p>
-                            <h3 class="heading event-card-heading">Выставка «Формация 2020»</h3>
-                            <p class="event-text1">Идейные соображения высшего порядка, а также современная методология
+                            <h3 class="heading eventCard__title">Выставка «Формация 2020»</h3>
+                            <p class="block-text">Идейные соображения высшего порядка, а также современная методология
                                 разработки играет важную роль в формировании глубокомысленных рассуждений.</p>
                         </div>
                         <p class="events-more"><a href="#" class="events-a">Подробнее</a>
@@ -1886,29 +1855,29 @@
                     </div>
                 </li>
             </ul>
-            <ul id="accordion-events" class="accordion-events">
+            <nav id="accordion-events" class="accordion-events">
                 <div id="hider" class="btn-event">
                     <button id="button" class="btn-event-all">
                         Все cобытия
                     </button>
                 </div>
 
-                <ul class="events-ul">
-                    <li class="events-card">
-                        <div class="events-img">
+                <ul class="events__list">
+                    <li class="events__item">
+                        <div class="events__img">
                             <img src="img/event4.jpg" alt="">
                         </div>
-                        <div class="text-eventCard">
-                            <div class="events-text">
-                                <p class="event-gray-text1 event-gray-text">Третьяковка на Крымском валу</p>
-                                <p class="event-gray-text2 event-gray-text">
+                        <div class="eventCard">
+                            <div class="eventCard__text">
+                                <p class="gs-text gs-text">Третьяковка на Крымском валу</p>
+                                <p class="gs-text gs-text">
                                     с 30 марта по 30 апреля</p>
-                                <h3 class="heading event-card-heading">Идейные соображения высшего порядка, а также
+                                <h3 class="heading eventCard__title">Идейные соображения высшего порядка, а также
                                     современная
                                     методология разработки играет важную роль в формировании глубокомысленных
                                     рассуждений.
                                 </h3>
-                                <p class="event-text1">Внезапно, реплицированные с зарубежных источников, современные
+                                <p class="block-text">Внезапно, реплицированные с зарубежных источников, современные
                                     исследования.</p>
                             </div>
                             <p class="events-more"><a href="#" class="events-a">Подробнее</a>
@@ -1916,123 +1885,123 @@
                         </div>
 
                     </li>
-                    <li class="events-card">
+                    <li class="events__item">
                         <div>
                             <img src="img/event5.jpg" alt="">
                         </div>
-                        <div class="text-eventCard">
-                            <div class="events-text">
-                                <p class="event-gray-text1 event-gray-text">ММАМ</p>
-                                <p class="event-gray-text2 event-gray-text">
+                        <div class="eventCard">
+                            <div class="eventCard__text">
+                                <p class="gs-text gs-text">ММАМ</p>
+                                <p class="gs-text gs-text">
                                     с 8 апреля по 20 мая</p>
-                                <h3 class="heading event-card-heading">Джон Винзор. Фотографии из серии «Метафора
+                                <h3 class="heading eventCard__title">Джон Винзор. Фотографии из серии «Метафора
                                     серебра»</h3>
-                                <p class="event-text1">Один из ведущих флорентийских художников Кватроченто, основатель
+                                <p class="block-text">Один из ведущих флорентийских художников Кватроченто, основатель
                                     художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
                             </div>
                             <p class="events-more"><a href="#" class="events-a">Подробнее</a>
                             </p>
                         </div>
                     </li>
-                    <li class="events-card transparent">
-                        <div class="events-img">
+                    <li class="events__item transparent">
+                        <div class="events__img">
 
                         </div>
-                        <div class="text-eventCard transparent">
-                            <div class="events-text">
+                        <div class="eventCard transparent">
+                            <div class="eventCard__text">
                             </div>
                         </div>
                     </li>
                 </ul>
 
-            </ul>
+            </nav>
         </section>
         <!-- Издания -->
         <section class="editions" id="editions">
             <div class="editions-container container">
-                <div class="choices-editions">
-                    <h2 class="heading editions-heading">Издания</h2>
+                <div class="choices-section">
+                    <h2 class="heading editions__title">Издания</h2>
                     <nav class="cathegories">
                         <h3 class="margin editions-h3">Категории</h3>
-                        <ul class="editions-label-ul">
-                            <li class="editions-label-li">
+                        <ul class="cathegories__list">
+                            <li class="cathegories__item">
                                 <label for="one" class="editions-label">
                                     <input type="checkbox" class="checkbox-editions" name="one" id="one">
                                     Бестселлеры
                                     <span class="cathegories-check"></span>
                                 </label>
                             </li>
-                            <li class="editions-label-li">
+                            <li class="cathegories__item">
                                 <label for="two" class="editions-label">
                                     <input type="checkbox" class="checkbox-editions" name="two" id="two">
                                     Искусство
                                     <span class="cathegories-check"></span>
                                 </label>
                             </li>
-                            <li class="editions-label-li">
+                            <li class="cathegories__item">
                                 <label for="three" class="editions-label">
                                     <input type="checkbox" class="checkbox-editions" name="three" id="three">
                                     Архитектура
                                     <span class="cathegories-check"></span>
                                 </label>
                             </li>
-                            <li class="editions-label-li">
+                            <li class="cathegories__item">
                                 <label for="four" class="editions-label">
                                     <input type="checkbox" class="checkbox-editions" name="four" id="four">
                                     Дизайн
                                     <span class="cathegories-check"></span>
                                 </label>
                             </li>
-                            <li class="editions-label-li">
+                            <li class="cathegories__item">
                                 <label for="five" class="editions-label">
                                     <input type="checkbox" class="checkbox-editions" name="five" id="five">
                                     Мода
                                     <span class="cathegories-check"></span>
                                 </label>
                             </li>
-                            <li class="editions-label-li">
+                            <li class="cathegories__item">
                                 <label for="six" class="editions-label">
                                     <input type="checkbox" class="checkbox-editions" name="six" id="six">
                                     Детям
                                     <span class="cathegories-check"></span>
                                 </label>
                             </li>
-                            <li class="editions-label-li">
+                            <li class="cathegories__item">
                                 <label for="seven" class="editions-label">
                                     <input type="checkbox" class="checkbox-editions" name="seven" id="seven">
                                     Художественная литература
                                     <span class="cathegories-check"></span>
                                 </label>
                             </li>
-                            <li class="editions-label-li">
+                            <li class="cathegories__item">
                                 <label for="eight" class="editions-label">
                                     <input type="checkbox" class="checkbox-editions" name="eight" id="eight">
                                     Публицистика
                                     <span class="cathegories-check"></span>
                                 </label>
                             </li>
-                            <li class="editions-label-li">
+                            <li class="cathegories__item">
                                 <label for="nine" class="editions-label">
                                     <input type="checkbox" class="checkbox-editions" name="nine" id="nine">
                                     Путеводители
                                     <span class="cathegories-check"></span>
                                 </label>
                             </li>
-                            <li class="editions-label-li">
+                            <li class="cathegories__item">
                                 <label for="ten" class="editions-label">
                                     <input type="checkbox" class="checkbox-editions" name="ten" id="ten">
                                     Философия
                                     <span class="cathegories-check"></span>
                                 </label>
                             </li>
-                            <li class="editions-label-li">
+                            <li class="cathegories__item">
                                 <label for="eleven" class="editions-label">
                                     <input type="checkbox" class="checkbox-editions" name="eleven" id="eleven">
                                     Учебная литература
                                     <span class="cathegories-check"></span>
                                 </label>
                             </li>
-                            <li class="editions-label-li">
+                            <li class="cathegories__item">
                                 <label for="twelve" class="editions-label">
                                     <input type="checkbox" class="checkbox-editions" name="twelve" id="twelve">
                                     Журналы и газеты
@@ -2045,7 +2014,7 @@
                         <h3 class="editions-h3 editions-h3-form">Цена</h3>
                         <form class="editions-form">
                             <p class="editions-p">От</p><input type="number" min="50" value="50" class="input-number">
-                            <p class="editions-p">до</p><input type="number" min="50" max="25000" value="25,000"
+                            <p class="editions-p">до</p><input type="number" min="50" max="25000" value="25000"
                                 class="input-number">
                             <p class="editions-p">руб.</p>
                         </form>
@@ -2059,13 +2028,13 @@
                             <div class=" editions-swiper-slide swiper-slide">
                                 <div class="editions-imange-text">
                                     <div class="imange-slider-editions">
-                                        <img class="editions-bookImg" src="img/book`s/book-1.jpg" alt="">
+                                        <img class="editions-bookImg" src="img/books/book-1.jpg" alt="">
                                     </div>
                                     <div class="editions-priceText">
-                                        <span class="text">
-                                            <h3 class="editionsH3"> Искусство цвета</h3>
+                                        <div class="text">
+                                            <h3 class="editions-title"> Искусство цвета</h3>
                                             <p class="editions-text"> Иттен, Иоханнес </p>
-                                        </span>
+                                        </div>
                                         <p class="editions-price">620 руб</p>
                                     </div>
                                     <div class="editions-button">
@@ -2076,13 +2045,13 @@
                             <div class=" editions-swiper-slide swiper-slide">
                                 <div class="editions-imange-text">
                                     <div class="imange-slider-editions">
-                                        <img class="editions-bookImg" src="img/book`s/book-2.jpg" alt="">
+                                        <img class="editions-bookImg" src="img/books/book-2.jpg" alt="">
                                     </div>
                                     <div class="editions-priceText">
-                                        <span class="text">
-                                            <h3 class="editionsH3"> Типографика</h3>
+                                        <div class="text">
+                                            <h3 class="editions-title"> Типографика</h3>
                                             <p class="editions-text"> Рудер, Эмиль </p>
-                                        </span>
+                                        </div>
                                         <p class="editions-price">2 450 руб</p>
                                     </div>
                                     <div class="editions-button">
@@ -2093,13 +2062,13 @@
                             <div class=" editions-swiper-slide swiper-slide">
                                 <div class="editions-imange-text">
                                     <div class="imange-slider-editions">
-                                        <img src="img/book`s/book-3.jpg" alt="">
+                                        <img src="img/books/book-3.jpg" alt="">
                                     </div>
                                     <div class="editions-priceText">
-                                        <span class="text">
-                                            <h3 class="editionsH3"> Книга про буквы</h3>
+                                        <div class="text">
+                                            <h3 class="editions-title"> Книга про буквы</h3>
                                             <p class="editions-text">Гордон, Юрий </p>
-                                        </span>
+                                        </div>
                                         <p class="editions-price">2 200 руб</p>
                                     </div>
                                     <div class="editions-button">
@@ -2110,13 +2079,13 @@
                             <div class="editions-swiper-slide swiper-slide">
                                 <div class="editions-imange-text">
                                     <div class="imange-slider-editions">
-                                        <img src="img/book`s/book-4.jpg" alt="">
+                                        <img src="img/books/book-4.jpg" alt="">
                                     </div>
                                     <div class="editions-priceText">
-                                        <span class="text">
-                                            <h3 class="editionsH3"> Николай Ильин </h3>
+                                        <div class="text">
+                                            <h3 class="editions-title"> Николай Ильин </h3>
                                             <p class="editions-text"> Кричевский, Владимир </p>
-                                        </span>
+                                        </div>
                                         <p class="editions-price">1 100 руб</p>
                                     </div>
                                     <div class="editions-button">
@@ -2127,13 +2096,13 @@
                             <div class=" editions-swiper-slide swiper-slide">
                                 <div class="editions-imange-text">
                                     <div class="imange-slider-editions">
-                                        <img src="img/book`s/book-5.jpg" alt="">
+                                        <img src="img/books/book-5.jpg" alt="">
                                     </div>
                                     <div class="editions-priceText">
-                                        <span class="text">
-                                            <h3 class="editionsH3">Модульные сетки в граф...</h3>
+                                        <div class="text">
+                                            <h3 class="editions-title">Модульные сетки в граф...</h3>
                                             <p class="editions-text">Мюллер-Брокманн, Йозеф </p>
-                                        </span>
+                                        </div>
                                         <p class="editions-price">1 450 руб</p>
                                     </div>
                                     <div class="editions-button">
@@ -2144,13 +2113,13 @@
                             <div class=" editions-swiper-slide swiper-slide">
                                 <div class="editions-imange-text">
                                     <div class="imange-slider-editions">
-                                        <img src="img/book`s/book-6.jpg" alt="">
+                                        <img src="img/books/book-6.jpg" alt="">
                                     </div>
                                     <div class="editions-priceText">
-                                        <span class="text">
-                                            <h3 class="editionsH3"> Эволюция графических ст...</h3>
+                                        <div class="text">
+                                            <h3 class="editions-title"> Эволюция графических ст...</h3>
                                             <p class="editions-text"> Хеллер, Чваст </p>
-                                        </span>
+                                        </div>
                                         <p class="editions-price">3 200 руб</p>
                                     </div>
                                     <div class="editions-button">
@@ -2161,13 +2130,13 @@
                             <div class=" editions-swiper-slide swiper-slide">
                                 <div class="editions-imange-text">
                                     <div class="imange-slider-editions">
-                                        <img src="img/book`s/book-7.jpg" alt="">
+                                        <img src="img/books/book-7.jpg" alt="">
                                     </div>
                                     <div class="editions-priceText">
-                                        <span class="text">
-                                            <h3 class="editionsH3"> Искусство и визуальное в... </h3>
+                                        <div class="text">
+                                            <h3 class="editions-title"> Искусство и визуальное в... </h3>
                                             <p class="editions-text"> Арнхейм, Рудольф </p>
-                                        </span>
+                                        </div>
                                         <p class="editions-price">2 200 руб</p>
                                     </div>
                                     <div class="editions-button">
@@ -2194,14 +2163,14 @@
         <section class="projects container" id="projects">
             <h2 class="heading projects-heading">Проекты</h2>
             <div class="projects-text-text">
-                <p class="projects-text projects-text1">
+                <p class="block-text">
                     Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности
                     однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые
                     государства
                     смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их
                     статус
                     бесполезности. Прежде всего, постоянное</p>
-                <p class="projects-text projects-text2"> информационно-пропагандистское <span class="i-tultip">
+                <p class="block-text projects-text2"> информационно-пропагандистское <span class="i-tultip">
                         <span class="i-tultip-marker" tabindex="0">i</span>
                         <span class="i-tultip-text">Пример современных тенденций - современная методология разработки
                         </span>
@@ -2313,17 +2282,17 @@
                 <div class="contact-name-form">
                     <h2 class="contact-h3-input">Заказать обратный звонок</h2>
                     <form action="/" method="POST" class="footer-form contact-form js-form">
-                        <label for="name" class="contact-name_label"></label>
+                        <label for="name"></label>
                         <div class="tultip-container">
-                            <input class="request  form__input form-control" required placeholder="Имя*" name="name"
-                                type="text" id="name" data-validate-field="name">
+                            <input class="request form-control" required placeholder="Имя*" name="name" type="text"
+                                id="name" data-validate-field="name">
                         </div>
-                        <label for="tel" class="contact-name_label "></label>
+                        <label for="tel"></label>
                         <div class="tultip-container">
-                            <input class="request  form__input form-control" required placeholder="Телефон*" name="tel"
-                                type="tel" id="tel" data-validate-field="tel">
+                            <input class="request form-control" required placeholder="Телефон*" name="tel" type="tel"
+                                id="tel" data-validate-field="tel">
                         </div>
-                        <button class="button-btn_orange button-contact">Заказать
+                        <button class="button-contact">Заказать
                         </button>
                     </form>
                     <script src="js/just-validate.min.js"></script>
@@ -2343,9 +2312,9 @@
                 </div>
             </div>
             <!-- map -->
-            <div class="contact-map " id="map">
+            <div class="contact-map" id="map">
             </div>
-            <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+            <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU">
             </script>
             <script type="text/javascript">
                 // Функция ymaps.ready() будет вызвана, когда
@@ -2379,10 +2348,10 @@
 
         </section>
         <section class="">
-            <div class="menu">
+            <div class="navigation-menu">
                 <nav class="footer-footer-social container">
                     <picture class="logo">
-                        <img class="logo" src="img/logo.png" alt="логотип Бланчард ">
+                        <img class="logo" src="img/icons/logo.svg" alt="логотип Бланчард ">
                     </picture>
                     <ul class="footer-footer-social-icons">
                         <li class="footer-footer-icons">

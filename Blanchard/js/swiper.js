@@ -1,7 +1,7 @@
 
 const swiper = new Swiper('.first-slider', {
-  slideClass: 'slide',
-  wrapperClass: 'first-section',
+  slideClass: 'first-slider__list__item',
+  wrapperClass: 'first-slider__list',
   loop: true,
   
 

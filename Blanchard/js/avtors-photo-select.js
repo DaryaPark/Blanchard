@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded',function(){
-    const tabs = document.querySelectorAll('.famous-people-link');
+    const tabs = document.querySelectorAll('.surname-list__item__btn');
     let activeButton= tabs[0];
     tabs.forEach(function(tabsBtn){
       tabsBtn.addEventListener('click' ,function(event){
-        activeButton && activeButton.classList.remove("famous-people-link-active")
+        activeButton && activeButton.classList.remove("surname-list__item__btn-active")
         activeButton = event.currentTarget
-        activeButton.classList.add("famous-people-link-active")
+        activeButton.classList.add("surname-list__item__btn-active")
   
         const path = event.currentTarget.dataset.path
   
@@ -26,11 +26,3 @@ document.addEventListener('DOMContentLoaded',function(){
   
   
 
-//   tabs__btn = famous-people-link
-//   tabs__btn-active = famous-people-link-active
-//   btn-reset =famous-people-link-reset
-//   tabs__item= famous-people-btn
-
-//   tab-content =  catalog-picture 
-//   tab-content-active  = catalog-picture-active
- 
