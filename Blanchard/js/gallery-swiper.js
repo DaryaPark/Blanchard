@@ -3,6 +3,7 @@ new Swiper('.gallery-swiper-container', {
     nextEl: '.gallery-button-next',
     prevEl: '.gallery-button-prev',
     clickable: true,
+
   },
 
   pagination: {
@@ -11,6 +12,7 @@ new Swiper('.gallery-swiper-container', {
 
   },
 
+  
 grid: {
   rows:2,
 },
@@ -19,5 +21,5 @@ autoHeight:false,
 slidesPerView:3,
 slidesPerGroup:3,
 spaceBetween:43,
-
+lockClass:false,
 });

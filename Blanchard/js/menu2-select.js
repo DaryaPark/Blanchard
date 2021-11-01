@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
-  document.querySelectorAll(".dropdown-menu__item__btn").forEach(item => {
+  document.querySelectorAll(".dropdown-menu__btn").forEach(item => {
   item.addEventListener("click", function() {
     let btn = this;
     let dropdown = this.parentElement.querySelector(".dropdown-menu-container");
     
-    document.querySelectorAll(".dropdown-menu__item__btn").forEach(el => {
+    document.querySelectorAll(".dropdown-menu__btn").forEach(el => {
       if (el != btn) {
         el.classList.remove("active--btn");
       }
@@ -26,7 +26,7 @@ document.addEventListener("click", function(e) {
     document.querySelectorAll(".dropdown-menu-container").forEach(el => {
         el.classList.remove("active-dropdown-menu__item");
     })
-     document.querySelectorAll(".dropdown-menu__item__btn").forEach(el => {
+     document.querySelectorAll(".dropdown-menu__btn").forEach(el => {
         el.classList.remove("active--btn");
     });
   }

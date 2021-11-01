@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded',function(){
-    const tabs = document.querySelectorAll('.surname-list__item__btn');
+    const tabs = document.querySelectorAll('.surname-list__btn');
     let activeButton= tabs[0];
     tabs.forEach(function(tabsBtn){
       tabsBtn.addEventListener('click' ,function(event){
-        activeButton && activeButton.classList.remove("surname-list__item__btn-active")
+        activeButton && activeButton.classList.remove("surname-list__btn-active")
         activeButton = event.currentTarget
-        activeButton.classList.add("surname-list__item__btn-active")
+        activeButton.classList.add("surname-list__btn-active")
   
         const path = event.currentTarget.dataset.path
   
