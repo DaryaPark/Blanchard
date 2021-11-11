@@ -1,7 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
-.wrapper {
-  min-height: 100%;
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../font/OpenSans-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../font/OpenSans-ExtraBold.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../font/OpenSans-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(../font/OpenSans-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+
 
 html{
   box-sizing: border-box;
@@ -35,9 +61,6 @@ body {
 
 p {
   margin: 0;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 32px;
 }
 
 .container {
@@ -118,15 +141,15 @@ ul {
 .login-btn {
   display:inline-flex;
   margin-left: auto;  
-  color: #FFFFFF;
-  font-size: 18px;
-  font-weight: 400;
+  color: #ffffff;
   transition: color .3s ease-in-out;
 }
 
+.test{
+  font-size: 18px;
+  font-weight: 400;
+}
 .login-btn__img{
-  width: 13px;
-  align-self: center;
   margin-right: 7px;
   fill: currentColor;
 }
@@ -153,33 +176,17 @@ ul {
   z-index: 2;
 }
 
-.dropdown-menu__btn::after {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 11px;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-image: url(../img/icons/arrow.svg); 
+.dropdown-menu__icon {
+  fill: currentColor;
 }
 
-.active--btn::after {
+.active--btn .dropdown-menu__icon {
   transform:translateY(3px) rotate(178deg);
-}
-.dropdown-menu__btn:active::after, .dropdown-menu__btn:hover::after, .active--btn:active::after, .active--btn:hover::after {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 11px;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-image: url(../img/icons/arrow-violete1.svg);
 }
 
 .dropdown-menu__btn {
   align-items: center;
-  display: flex;
-  background-color: transparent;
+  display: inline-flex;
   cursor: pointer;
   color: #fff;
   transition: color .3s ease-in-out;
@@ -210,23 +217,36 @@ ul {
   margin-right: 97px;
 }
 
-.simplebar-scrollbar {
-  width: 2px;
-}
 
-.simplebar-track.simplebar-vertical {
-  background-color: #000000;
-  width: 2px;
-  top: 40px;
-  bottom: 40px;
-  right: 22px;
+
+.simplebar-scrollbar.simplebar-visible:before {
+  opacity: 1;
+  transition: none;
 }
 
 .dropdown-menu-container {
   color: #fff;
   position: absolute;
-  top: 59px;
+  top: 44px;
   display: none;
+}
+
+
+
+.simplebar-scrollbar {
+  width: 2px;
+  transform: translate3d(0px, 961px, 0px);  
+  height: auto;
+}
+
+
+
+.simplebar-vertical {
+  background-color: #000000;
+  max-width: 2px;
+
+  bottom: 40px;
+  right: 22px;
 }
 
 .dropdown-menu-container-list {
@@ -566,18 +586,6 @@ ul {
 }
 
 
-.swiper-slide-1 {
-  background-image: url(../img/slide1.jpg);
-}
-
-.swiper-slide-2 {
-  background-image: url(../img/slide2.png);
-}
-
-.swiper-slide-3 {
-  background-image: url(../img/slide3.png);
-}
-
 .banner-text {
   max-width: 589px;
   color: #FFFFFF;
@@ -595,14 +603,17 @@ element.style {
   margin-bottom: 43px;
 }
 
-.first-slider__list__item {
+.first-slider__imange img{
+max-width: 100%;
+}
+
+.first-slider__imange {
+  text-align: center;
   width: 1920px;
   height: 98%;
-  background-size: cover;
   position: relative;
   transition-property: transform;
   flex-shrink: 0;
-  background-position: bottom;
   opacity: 1;
   -webkit-transform: scale(1, 1);
   -webkit-transition-timing-function: ease-out;
@@ -619,9 +630,9 @@ element.style {
   overflow: hidden;
 }
 
-/* .first-slider__list .swiper-slide-active {
-  animation: loading 96650ms ease-in-out infinite;
-} */
+.first-slider__imange {
+  animation: loading 116650ms ease-in-out infinite;
+}
 
 @keyframes loading {
   50% {
@@ -676,10 +687,6 @@ element.style {
   margin-bottom: 90px;
 }
 
-.main-banner {
-  margin-bottom: 70px;
-}
-
 .first-slider {
   color: #FFFFFF;
   position: relative;
@@ -705,11 +712,12 @@ element.style {
 }
 
 .description-section {
-  margin-bottom: 69px;
+  padding-top: 70px;
+  padding-bottom: 69px;
 }
 
 .description-section-text {
-  padding-right: 513px;
+ max-width: 1080px;
 }
 
 /* Галерея */
@@ -725,7 +733,7 @@ element.style {
   display: flex;
   flex-direction: column;
   margin-right: 50px;
-  padding-bottom: 72px;
+  padding-bottom: 57px;
   padding-top: 36px;
 }
 
@@ -757,6 +765,7 @@ margin-bottom: 25px;
 .gallery-text {
   width: 348px;
   font-size: 16px;
+  line-height: 32px;
   font-weight: 600;
   margin-top: auto;
 }
@@ -913,10 +922,13 @@ margin-bottom: 25px;
 
 .catalog-title {
   font-weight: 600;
-  margin-bottom: 1px;
+  margin-bottom: 12px;
   font-size: 24px;
 }
 
+.catalog-title-text__text{
+  line-height: 32px;
+}
 .catalog-text-2-unfamiliar {
   margin-bottom: 10px;
 }
@@ -985,6 +997,7 @@ margin-bottom: 25px;
 .catalog-title-text {
   font-size: 12px;
   color: #999999;
+  margin-bottom: 8px;
 }
 
 .catalog-accordion {
@@ -1008,34 +1021,21 @@ margin-bottom: 25px;
   margin-bottom: 89px;
 }
 
-.accordion-lang__list::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #CACACA;
-  top: -1px;
-}
-
 .surname-list__item {
-  /* width: 27.6%; */
+  column-width: 232px;
+  column-count: 3;
   height: auto;
   font-size: 17px;
   line-height: 32px;
   padding-left: 0;
-  /* margin-right: 26px; */
+  padding-bottom: 51px;
 }
 
-.surname-list__item:not(:first-child) {
-  padding-bottom: 26px;
-}
+
 
 .surname-list {
-  display: flex;
-  justify-content: space-between;
-  padding-right: 132px;
+  padding-right: 67px;
   padding-top: 21px;
-  height: auto;
 }
 
 .accordion-lang__list {
@@ -1112,6 +1112,7 @@ padding-right: 221px;
   padding-top: 28px;
   padding-bottom: 37px;
   border-bottom: 1px solid #CACACA;
+  border-top: 1px solid #CACACA;
   padding-left: 0;
   font-size: 24px;
   font-weight: 600;
@@ -1120,6 +1121,10 @@ padding-right: 221px;
    border .3s ease-in-out;
 }
 
+.btn-picture__text{
+  transition: background .3s ease-in-out,
+  color .3s ease-in-out;
+}
 
 .btn-picture::after {
   content: "";
@@ -1241,7 +1246,7 @@ padding-right: 221px;
 
 /* focus hover active */
 
-a:focus, .login-btn:focus, .events-more:focus, .btn-picture__text:focus {
+a:focus, .login-btn:focus, .events-more:focus{
   background-color: rgba(157, 92, 208, 1);
   outline: none;
   border: 1px solid rgba(157, 92, 208, 1);
@@ -1286,14 +1291,16 @@ a:focus, .login-btn:focus, .events-more:focus, .btn-picture__text:focus {
   border: 3px solid rgba(157, 92, 208, 1);
 }
 
-.btn-picture:focus {
-  color: rgba(157, 92, 208, 1);
+.btn-picture:hover {
+  color: #9D5CD0;
+  border-top:1px solid #9D5CD0 ;
+  border-bottom: 1px solid #9D5CD0 ;
 }
 
-.btn-picture:focus::after {
-  background-color: rgba(209, 169, 280, 1);
-  border: 2px solid rgba(209, 169, 280, 1);
-}
+.btn-picture__text:focus,
+ .btn-picture:focus::after {
+  background-color: #D1A9F0;
+  }
 
 .main-li-1:hover, .login-btn:hover, .navigation-menu-list__link:hover {
   color: rgba(194, 131, 243, 1);
@@ -1363,6 +1370,9 @@ input:focus {
 
 .lang-list__btn:active {
   border: 2px solid #7943A4;
+}
+.btn-picture:hover::after {
+  background-color:#D1A9F0;
 }
 
 .btn-picture:active::after {
@@ -1500,12 +1510,12 @@ margin-bottom: 14px;
 
 .gallery-swiper-container .swiper-button-prev::after, .gallery-swiper-container .swiper-button-next::after, .editions-swiper-container .swiper-button-prev::after, .editions-swiper-container .swiper-button-next::after {
   width: 30px;
-  color: #E5E5E5;
-  background-color: rgba(102, 102, 102, 1);
+  height: 30px;
+  color: #FFFFFF;
+  background-color: #666666;
   font-size: 10px;
   padding: 10px 12px;
   border-radius: 50px;
-  text-align: center;
   transition: background .3s ease-in-out, color .3s ease-in-out, border .3s ease-in-out;
 }
 
@@ -1524,7 +1534,7 @@ margin-bottom: 14px;
 
 .gallery-swiper-container .swiper-pagination-fraction, .editions-swiper-container .swiper-pagination-fraction {
   font-size: 16px;
-  color: #999999;
+  color: #FFFFFF;
 }
 
 .cathegories__list {

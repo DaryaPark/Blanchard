@@ -83,7 +83,12 @@
               </li>
             </ul>
         <button class="login-btn">
-          <img src="img/icons/login.svg" alt="" class="login-btn__img"> Войти</button>
+          <svg class="login-btn__img" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"/>
+            </svg>
+           Войти
+          </button>
+
           </nav>
         </div>
 
@@ -92,7 +97,12 @@
         <div class="dropdown-menu-menu container">
         <ul class="dropdown-menu__list">
           <li class="dropdown-menu__item">
-            <button class="dropdown-menu__btn">Реализм</button>
+            <button class="dropdown-menu__btn">
+              Реализм
+            <svg class="dropdown-menu__icon" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1L6 6L1 1" stroke="white"/>
+            </svg>
+            </button>
           <div class="dropdown-menu-container">
           <ul class="dropdown-menu-container-list customScroll" data-simplebar>
             <li class="rectangle1-1  rectangle-img dropdown-menu-container-list__item">
@@ -115,7 +125,11 @@
           </div>
           </li>
           <li class="dropdown-menu__item">
-             <button class="dropdown-menu__btn">Импрессионизм</button>
+             <button class="dropdown-menu__btn">Импрессионизм
+             <svg class="dropdown-menu__icon" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path d="M11 1L6 6L1 1" stroke="white"/>
+             </svg>
+             </button>
           <div class="dropdown-menu-container">
           <ul class="dropdown-menu-container-list customScroll" data-simplebar>
             <li class="rectangle2-1  rectangle-img dropdown-menu-container-list__item">
@@ -136,14 +150,18 @@
           </div>
           </li>
           <li class="dropdown-menu__item">
-         <button class="dropdown-menu__btn">Постимпрессионизм</button>
+         <button class="dropdown-menu__btn">Постимпрессионизм
+         <svg class="dropdown-menu__icon" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M11 1L6 6L1 1" stroke="white"/>
+         </svg>
+         </button>
           <div class="dropdown-menu-container">
           <ul class="dropdown-menu-container-list customScroll" data-simplebar>
             <li class="rectangle3-1  rectangle-img dropdown-menu-container-list__item"> 
-             <a href="" class="select-item">Ван         Гог</a>
+             <a href="" class="select-item">Ван Гог</a>
            </li>
             <li class="rectangle3-2  rectangle-img dropdown-menu-container-list__item"> 
-             <a href=""         class="select-item">Сезанн</a>
+             <a href="" class="select-item">Сезанн</a>
            </li>
             <li class="rectangle3-3  rectangle-img dropdown-menu-container-list__item"> 
              <a href="" class="select-item">Гоген</a>
@@ -157,9 +175,13 @@
           </div>
           </li>
           <li class="dropdown-menu__item">
-         <button class="dropdown-menu__btn">Авангард</button>
+         <button class="dropdown-menu__btn">Авангард
+         <svg class="dropdown-menu__icon" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M11 1L6 6L1 1" stroke="white"/>
+         </svg>
+         </button>
           <div class="dropdown-menu-container">
-          <ul class="dropdown-menu-container-list customScroll" data-simplebar>
+          <ul class="dropdown-menu-container-list" data-simplebar>
             <li class="rectangle4-1  rectangle-img dropdown-menu-container-list__item">
              <a href="" class="select-item">Кандинский</a>
            </li>
@@ -178,7 +200,11 @@
           </div>
           </li>
           <li class="dropdown-menu__item">
-         <button class="dropdown-menu__btn">Футуризм</button>
+         <button class="dropdown-menu__btn">Футуризм
+         <svg class="dropdown-menu__icon" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M11 1L6 6L1 1" stroke="white"/>
+         </svg>
+         </button>
           <div class="dropdown-menu-container">
           <ul class="dropdown-menu-container-list customScroll" data-simplebar>
             <li class="rectangle5-1  rectangle-img dropdown-menu-container-list__item">
@@ -199,24 +225,31 @@
           </div>
           </li>
         </ul>
- 
-         <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="search-form">
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="search-form">
          <button aria-label="Поиск" class="button-icon"></button>
          <input placeholder=" Поиск по сайту" name="user" class="search">
          </form>
          </div>
-         <script src="js/menu2-select.js"></script>
        </div>
     </header>
     <main class="main">
     <section class="main-banner">
       <div class="first-slider">
       <ul class="first-slider__list">
-        <li class="first-slider__list__item swiper-slide-1">
+        <li class="first-slider__item">
+          <div class="first-slider__imange">
+          <img src="img/slide1.png" alt="">
+          </div>
         </li>
-        <li class="first-slider__list__item swiper-slide-2">
+        <li class="first-slider__item">
+          <div class="first-slider__imange">
+          <img src="img/slide2.png" alt="">
+          </div>
         </li>
-        <li class="first-slider__list__item swiper-slide-3">
+        <li class="first-slider__item">
+          <div class="first-slider__imange">
+          <img src="img/slide3.png" alt="">
+          </div>
         </li>
       </ul>
 
@@ -235,7 +268,7 @@
 </div>
       </div>
     </section>
-                <!--О нас-->
+<!--О нас-->
     <section class="description-section container" id="aboutUs">
       <h2 class="heading description-section-heading">О нас</h2>
       <div class="description-section-text">
@@ -271,8 +304,6 @@
             <option> Рисунок</option>
             <option> Скульптура</option>
           </select>
-    <script src="js/choices.min.js"></script>
-    <script src="js/select.js"></script>
         <p class="gallery-text">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний 
         <span><a href="#" class="gallery-avtorisation">авторизуйтесь</a></span>, либо воспользуйтесь лицензией. 
         </p>
@@ -575,21 +606,17 @@
           </div>
         </div>
       </div>
-
-
-                                                        <!-- следующие слайды -->
-                                                </div>
-                                                <!-- If we need pagination -->
-                                                <div class="swiper-pagination gallery-swiper-pagination"></div>
-                                                <!-- If we need navigation buttons -->
-                                                <div class=" gallery-button-prev swiper-button-prev"></div>
-                                                <div class=" gallery-button-next swiper-button-next"></div>
-
-                                                <!-- If we need scrollbar -->
-                                                <div class="swiper-scrollbar"></div>
-                                        </div>
+<!-- следующие слайды -->
+        </div>
+<!-- If we need pagination -->
+      <div class="swiper-pagination gallery-swiper-pagination"></div>
+<!-- If we need navigation buttons -->
+      <div class=" gallery-button-prev swiper-button-prev"></div>
+      <div class=" gallery-button-next swiper-button-next"></div>
+<!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
       </div>
-    <script src="js/gallery-swiper.js"></script>
+      </div>
       </div>
     </section>
 <!-- Каталог -->
@@ -646,7 +673,7 @@
               </picture>
               <h3 class="catalog-title">Domenico Ghirlandaio</h3>
               <p class="catalog-title-text">2 juin 1448 - 11 janvier 1494.</p>
-              <p> L'un des principaux artistes florentins du
+              <p class="catalog-title-text__text"> L'un des principaux artistes florentins du
                 Quattrocento,
                 fondateur de l'artistique
                 dynastie, qui a été continuée par son frère
@@ -682,7 +709,9 @@
             </ul>
             <ul id="accordion-lang1" class="accordion-lang">
               <li class="accordion-lang__list">
-                <button class="btn-picture"> De 1400 de 1499 an.
+                <button class="btn-picture">
+                <a href="/" class="btn-picture__text"> De 1400 de 1499 an.
+                </a>
                 </button>
                 <div class="surname-list">
                   <ul class="surname-list__item">
@@ -722,8 +751,7 @@
                       <button class="surname-list__btn surname-list__btn-reset " data-path="unfamiliar1"> Biagio d'Antonio Tucci
                       </button> 
                     </li>
-                  </ul>
-                  <ul class="surname-list__item">
+             
                     <li class="famous-people-btn">
                       <button class="surname-list__btn surname-list__btn-reset " data-path="unfamiliar1"> Vecchietta
                       </button>
@@ -760,8 +788,6 @@
                       <button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar1"> Giorgione
                       </button> 
                     </li>
-                  </ul>
-                  <ul class="surname-list__item">
                     <li class="famous-people-btn">
                       <button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar1"> Parentino, Bernardo
                       </button> 
@@ -794,131 +820,127 @@
                 </div>
               </li>
               <li class="accordion-lang__list">
-                                                                <button class="btn-picture"> De 1500 de 1599 an.
-                                                                </button>
-                                                                <div class="emptyCard">
-                                                                        <div class="emptyPicture">
-                                                                        </div>
-                                                                        <div
-                                                                                class="emptyCard__list emptyCard__list-fra">
-                                                                                <h3>C'est vide ici pour l'instant.
-                                                                                </h3>
-                                                                                <p class="accordion-text">Et dans la
-                                                                                        galerie, vous pouv ez toujours
-                                                                                        trouver quelque chose
-                                                                                        d'intéressant pour vous-même.
-                                                                                        <a href="#gallery"
-                                                                                                class="accordion-href">La
-                                                                                                galerie</a>
-                                                                                </p>
-                                                                        </div>
-                                                                </div>
+                <button class="btn-picture"> 
+                <a href="/" class="btn-picture__text"> De 1500 de 1599 an.
+                </a>
+                </button>
+                <div class="emptyCard">
+                <div class="emptyPicture">
+                </div>
+                <div class="emptyCard__list emptyCard__list-fra">
+                  <h3>C'est vide ici pour l'instant.
+                  </h3>
+                  <p class="accordion-text">Et dans la
+                    galerie, vous pouv ez toujours
+                    trouver quelque chose
+                    d'intéressant pour vous-même.
+                  <a href="#gallery" class="accordion-href">La galerie</a>
+                  </p>
+                        </div>
+                </div>
               </li>
 
               <li class="accordion-lang__list">
-                                                                <button class="btn-picture">De 1600 de 1699 an.</button>
-                                                                <div class="emptyCard">
-                                                                        <div class="emptyPicture">
-                                                                        </div>
-                                                                        <div
-                                                                                class="emptyCard__list emptyCard__list-fra">
-                                                                                <h3>C'est vide ici pour l'instant.
-                                                                                </h3>
-                                                                                <p class="accordion-text">Et dans la
-                                                                                        galerie, vous pouv ez toujours
-                                                                                        trouver quelque chose
-                                                                                        d'intéressant pour vous-même.
-                                                                                        <a href="#gallery"
-                                                                                                class="accordion-href">La
-                                                                                                galerie</a>
-                                                                                </p>
-                                                                        </div>
-                                                                </div>
+                <button class="btn-picture"> 
+                <a href="/" class="btn-picture__text">De 1600 de 1699 an.
+                </a>
+                </button>
+                <div class="emptyCard">
+                        <div class="emptyPicture">
+                        </div>
+                        <div class="emptyCard__list emptyCard__list-fra">
+                          <h3>C'est vide ici pour l'instant.
+                          </h3>
+                          <p class="accordion-text">Et dans la
+                            galerie, vous pouv ez toujours
+                            trouver quelque chose
+                            d'intéressant pour vous-même.
+                          <a href="#gallery" class="accordion-href">La galerie</a>
+                          </p>
+                        </div>
+                </div>
               </li>
 
               <li class="accordion-lang__list">
-                                                                <button class="btn-picture">De 1700 de 1799 an.
-                                                                </button>
-                                                                <div class="emptyCard">
-                                                                        <div class="emptyPicture">
-                                                                        </div>
-                                                                        <div
-                                                                                class="emptyCard__list emptyCard__list-fra">
-                                                                                <h3>C'est vide ici pour l'instant.
-                                                                                </h3>
-                                                                                <p class="accordion-text">Et dans la
-                                                                                        galerie, vous pouv ez toujours
-                                                                                        trouver quelque chose
-                                                                                        d'intéressant pour vous-même.
-                                                                                        <a href="#gallery"
-                                                                                                class="accordion-href">La
-                                                                                                galerie</a>
-                                                                                </p>
-                                                                        </div>
-                                                                </div>
+                <button class="btn-picture">
+                <a href="/" class="btn-picture__text">De 1700 de 1799 an.
+                </a>
+                </button>
+                <div class="emptyCard">
+                <div class="emptyPicture">
+                </div>
+                <div class="emptyCard__list emptyCard__list-fra">
+                  <h3>C'est vide ici pour l'instant.
+                  </h3>
+                  <p class="accordion-text">Et dans la
+                    galerie, vous pouv ez toujours
+                    trouver quelque chose
+                    d'intéressant pour vous-même.
+                    <a href="#gallery" class="accordion-href">La galerie</a>
+                  </p>
+                </div>
+                </div>
               </li>
               <li class="accordion-lang__list">
-                                                                <button class="btn-picture">De 1800 de 1899 an</button>
-                                                                <div class="emptyCard">
-                                                                        <div class="emptyPicture">
-                                                                        </div>
-                                                                        <div
-                                                                                class="emptyCard__list emptyCard__list-fra">
-                                                                                <h3>C'est vide ici pour l'instant.
-                                                                                </h3>
-                                                                                <p class="accordion-text">Et dans la
-                                                                                        galerie, vous pouv ez toujours
-                                                                                        trouver quelque chose
-                                                                                        d'intéressant pour vous-même.
-                                                                                        <a href="#gallery"
-                                                                                                class="accordion-href">La
-                                                                                                galerie</a>
-                                                                                </p>
-                                                                        </div>
-                                                                </div>
+                <button class="btn-picture">
+                <a href="/" class="btn-picture__text">De 1800 de 1899 an
+                </a>
+                </button>
+                <div class="emptyCard">
+                <div class="emptyPicture">
+                </div>
+                <div class="emptyCard__list emptyCard__list-fra">
+                  <h3>C'est vide ici pour l'instant.
+                  </h3>
+                  <p class="accordion-text">Et dans la
+                    galerie, vous pouv ez toujours
+                    trouver quelque chose
+                    d'intéressant pour vous-même.
+                  <a href="#gallery" class="accordion-href">La galerie</a>
+                  </p>
+                </div>
+                </div>
               </li>
               <li class="accordion-lang__list">
-                                                                <button class="btn-picture">
-                                                                        De 1900 de 1999 an.
-                                                                </button>
-                                                                <div class="emptyCard">
-                                                                        <div class="emptyPicture">
-                                                                        </div>
-                                                                        <div
-                                                                                class="emptyCard__list emptyCard__list-fra">
-                                                                                <h4>C'est vide ici pour l'instant.
-                                                                                </h4>
-                                                                                <p class="accordion-text">Et dans la
-                                                                                        galerie, vous pouv ez toujours
-                                                                                        trouver quelque chose
-                                                                                        d'intéressant pour vous-même.
-                                                                                        <a href="#gallery"
-                                                                                                class="accordion-href">La
-                                                                                                galerie</a>
-                                                                                </p>
-                                                                        </div>
-                                                                </div>
+                <button class="btn-picture"> 
+                <a href="/" class="btn-picture__text"> De 1900 de 1999 an. 
+                </a>
+                </button>
+                <div class="emptyCard">
+                <div class="emptyPicture">
+                </div>
+                <div class="emptyCard__list emptyCard__list-fra">
+                  <h4>C'est vide ici pour l'instant.
+                  </h4>
+                  <p class="accordion-text">Et dans la
+                    galerie, vous pouv ez toujours
+                    trouver quelque chose
+                    d'intéressant pour vous-même.
+                  <a href="#gallery" class="accordion-href">La galerie</a>
+                  </p>
+                </div>
+                </div>
               </li>
 
               <li class="accordion-lang__list">
-                                                                <button class="btn-picture">De 2000 an.</button>
-                                                                <div class="emptyCard">
-                                                                        <div class="emptyPicture">
-                                                                        </div>
-                                                                        <div
-                                                                                class="emptyCard__list emptyCard__list-fra">
-                                                                                <h4>C'est vide ici pour l'instant.
-                                                                                </h4>
-                                                                                <p class="accordion-text">Et dans la
-                                                                                        galerie, vous pouv ez toujours
-                                                                                        trouver quelque chose
-                                                                                        d'intéressant pour vous-même.
-                                                                                        <a href="#gallery"
-                                                                                                class="accordion-href">La
-                                                                                                galerie</a>
-                                                                                </p>
-                                                                        </div>
-                                                                </div>
+                <button class="btn-picture"> 
+                <a href="/" class="btn-picture__text">De 2000 an.
+                </a>
+                </button>
+                <div class="emptyCard">
+                <div class="emptyPicture">
+                </div>
+                <div class="emptyCard__list emptyCard__list-fra">
+                  <h4>C'est vide ici pour l'instant.
+                  </h4>
+                  <p class="accordion-text">Et dans la
+                    galerie, vous pouv ez toujours
+                    trouver quelque chose
+                    d'intéressant pour vous-même.
+                  <a href="#gallery" class="accordion-href">La galerie</a>
+                  </p>
+                </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -949,7 +971,7 @@
                 <h3 class="catalog-title">Domenico Ghirlandaio</h3>
                 <p class="catalog-title-text">2 juin 1448 - 11 janvier 1494.
                 </p>
-                <p> L'un des principaux artistes florentins du
+                <p class="catalog-title-text__text"> L'un des principaux artistes florentins du
                   Quattrocento, fondateur de l'artistique
                   dynastie, qui a été continuée par son frère
                   David et son fils Ridolfo. Responsable de
@@ -979,7 +1001,10 @@
             </ul>
             <ul id="accordion-lang2" class="accordion-lang">
               <li class="accordion-lang__list">
-                <button class="btn-picture">Von 1400 bis 1499 </button>
+                <button class="btn-picture"> 
+                <a href="/" class="btn-picture__text">Von 1400 bis 1499
+                </a> 
+                </button>
                 <div class="surname-list">
                 <ul class="surname-list__item">
                   <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar2">Benedetto di Bindo 
@@ -1000,8 +1025,6 @@
                   </button> </li>
                   <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar2"> Biagio d'Antonio Tucci
                  </button> </li>
-                </ul>
-                <ul class="surname-list__item">
                   <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar2"> Vecchietta 
                   </button></li>
                   <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar2"> Andrea Verrocchio
@@ -1020,8 +1043,6 @@
                   </button> </li>
                   <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar2"> Giorgione 
                   </button></li>
-                </ul>
-                <ul class="surname-list__item">
                   <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar2"> Parentino, Bernardo
                   </button></li>
                   <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar2"> Pesellino
@@ -1038,7 +1059,10 @@
                 </div>
               </li>
               <li class="accordion-lang__list">
-                <button class="btn-picture"> Von 1500 bis 1599 </button>
+                <button class="btn-picture">
+                <a href="/" class="btn-picture__text"> Von 1500 bis 1599 
+                </a>
+                </button>
               <div class="emptyCard">
                 <div class="emptyPicture">
                   </div>
@@ -1053,7 +1077,10 @@
               </li>
 
               <li class="accordion-lang__list">
-                <button class="btn-picture">Von 1600 bis 1699</button>
+                <button class="btn-picture"> 
+                <a href="/" class="btn-picture__text">Von 1600 bis 1699
+                </a>
+                </button>
                 <div class="emptyCard">
                 <div class="emptyPicture">
                 </div>
@@ -1070,7 +1097,10 @@
               </li>
       
               <li class="accordion-lang__list">
-                <button class="btn-picture"> Von 1700 bis 1799</button>
+                <button class="btn-picture">
+                <a href="/" class="btn-picture__text"> Von 1700 bis 1799
+                </a>
+                </button>
                 <div class="emptyCard">
                   <div class="emptyPicture">
                 </div>
@@ -1086,7 +1116,10 @@
               </li>
 
               <li class="accordion-lang__list">
-                <button class="btn-picture">Von 1800 bis 1899</button>
+                <button class="btn-picture">
+                <a href="/" class="btn-picture__text">Von 1800 bis 1899
+                </a>
+                </button>
                 <div class="emptyCard">
                   <div class="emptyPicture">
                   </div>
@@ -1103,7 +1136,10 @@
               </li>
       
               <li class="accordion-lang__list">
-                <button class="btn-picture"> Von 1900 bis 1999</button>
+                <button class="btn-picture"> 
+                <a href="/" class="btn-picture__text">Von 1900 bis 1999
+                </a>
+                </button>
                 <div class="emptyCard">
                   <div class="emptyPicture">
                   </div>
@@ -1119,7 +1155,10 @@
               </li>
 
               <li class="accordion-lang__list">
-                <button class="btn-picture"> Von 2000 г.</button>
+                <button class="btn-picture">
+                <a href="/" class="btn-picture__text">Von 2000 г.
+                </a>
+                </button>
                 <div class="emptyCard">
                 <div class="emptyPicture">
                 </div>
@@ -1159,7 +1198,7 @@
               </picture>
               <h3 class="catalog-title">Domenico Ghirlandaio</h3>
               <p class="catalog-title-text">2 de junio de 1448-11 de enero de 1494.</p>
-              <p>Uno de los principales artistas florentinos del
+              <p class="catalog-title-text__text">Uno de los principales artistas florentinos del
                 Quattrocento, fundador de la artística dinastía,
                 que fue continuada por su hermano David y su
                 hijo Ridolfo. Jefe de lo artístico taller, donde
@@ -1188,7 +1227,9 @@
           </ul>
           <ul id="accordion-lang3" class="accordion-lang">
             <li class="accordion-lang__list">
-              <button class="btn-picture"> Doesde 1400 hasta 1499
+              <button class="btn-picture">
+              <a href="/" class="btn-picture__text"> Doesde 1400 hasta 1499
+              </a>
               </button>
               <div class="surname-list">
               <ul class="surname-list__item">
@@ -1219,8 +1260,6 @@
                 <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar3"> Biagio d'Antonio Tucci 
                   </button> 
                 </li>
-              </ul>
-              <ul class="surname-list__item">
                 <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar3"> Vecchietta
                   </button>
                 </li>
@@ -1248,8 +1287,6 @@
                 <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar3"> Giorgione
                   </button>
                 </li>
-              </ul>
-              <ul class="surname-list__item">
                 <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar3"> Parentino, Bernardo
                   </button> 
                 </li>
@@ -1272,7 +1309,9 @@
               </div>
             </li>
             <li class="accordion-lang__list">
-              <button class="btn-picture"> Desde 1500 hasta 1599
+              <button class="btn-picture"> 
+              <a href="/" class="btn-picture__text">Desde 1500 hasta 1599
+              </a>
               </button>
               <div class="emptyCard">
               <div class="emptyPicture">
@@ -1288,7 +1327,10 @@
             </li>
 
             <li class="accordion-lang__list">
-              <button class="btn-picture">Desde 1600 hasta 1699</button>
+              <button class="btn-picture">
+              <a href="/" class="btn-picture__text">Desde 1600 hasta 1699
+              </a>
+              </button>
               <div class="emptyCard">
               <div class="emptyPicture">
               </div>
@@ -1303,7 +1345,10 @@
             </li>
 
             <li class="accordion-lang__list">
-              <button class="btn-picture"> Doesde 1700 hasta 1799</button>
+              <button class="btn-picture"> 
+              <a href="/" class="btn-picture__text">Doesde 1700 hasta 1799
+              </a>
+              </button>
               <div class="emptyCard">
               <div class="emptyPicture">
               </div>
@@ -1318,7 +1363,10 @@
             </li>
 
             <li class="accordion-lang__list">
-              <button class="btn-picture">Doesde 1800 hasta 189</button>
+              <button class="btn-picture"> 
+              <a href="/" class="btn-picture__text">Doesde 1800 hasta 189
+              </a>
+              </button>
               <div class="emptyCard">
                 <div class="emptyPicture">
                 </div>
@@ -1334,7 +1382,10 @@
             </li>
 
             <li class="accordion-lang__list">
-              <button class="btn-picture"> Doesde 1900 hasta 199</button>
+              <button class="btn-picture">
+              <a href="/" class="btn-picture__text">Doesde 1900 hasta 199
+              </a>
+              </button>
               <div class="emptyCard">
               <div class="emptyPicture">
               </div>
@@ -1349,7 +1400,10 @@
             </li>
 
             <li class="accordion-lang__list">
-              <button class="btn-picture">Doesde 2000 </button>
+              <button class="btn-picture">
+              <a href="/" class="btn-picture__text">Doesde 2000 
+              </a>
+              </button>
               <div class="emptyCard">
               <div class="emptyPicture">
               </div>
@@ -1391,7 +1445,7 @@
               </picture>
               <h3 class="catalog-title">Доменико Гирландайо</h3>
               <p class="catalog-title-text"> 2 июня 1448 — 11 января 1494.</p>
-              <p> Один из ведущих флорентийских художников
+              <p class="catalog-title-text__text"> Один из ведущих флорентийских художников
                 Кватроченто,
                 основатель
                 художественной
@@ -1422,7 +1476,10 @@
           </ul>
           <ul id="accordion-lang4" class="accordion-lang">
             <li class="accordion-lang__list">
-              <button class="btn-picture"> C 1400 по 1499 гг</button>
+              <button class="btn-picture">
+              <a href="/" class="btn-picture__text"> C 1400 по 1499 гг
+              </a>
+              </button>
               <div class="surname-list">
           <ul class="surname-list__item">
             <li class="surname-list__item-li">
@@ -1460,8 +1517,6 @@
               <button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar4"> Бьяджо д’Антонио Туччи
               </button>
             </li>
-          </ul>
-          <ul class="surname-list__item">
             <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar4"> Веккьетта 
               </button> </li>
             <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar4"> Андреа Верроккьо
@@ -1480,8 +1535,8 @@
               </button> </li>
             <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar4"> Джорджоне 
               </button> </li>
-          </ul>
-          <ul class="surname-list__item">
+          
+          
             <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar4">  Парентино, Бернардо
               </button> </li>
             <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar4">  Пезеллино 
@@ -1498,7 +1553,10 @@
               </div>
             </li>
             <li class="accordion-lang__list">
-              <button class="btn-picture">C 1500 по 1599 гг</button>
+              <button class="btn-picture">
+              <a href="/" class="btn-picture__text">C 1500 по 1599 гг
+              </a>
+              </button>
               <div class="emptyCard">
               <div class="emptyPicture">
               </div>
@@ -1513,7 +1571,10 @@
             </li>
 
             <li class="accordion-lang__list">
-              <button class="btn-picture"> C 1600 по 1699 гг</button>
+              <button class="btn-picture"> 
+              <a href="/" class="btn-picture__text"> C 1600 по 1699 гг
+              </a>
+              </button>
               <div class="emptyCard">
               <div class="emptyPicture">
               </div>
@@ -1528,7 +1589,10 @@
             </li>
 
             <li class="accordion-lang__list">
-              <button class="btn-picture"> C 1700 по 1799 гг</button>
+              <button class="btn-picture"> 
+              <a href="/" class="btn-picture__text"> C 1700 по 1799 гг
+              </a>
+              </button>
               <div class="emptyCard">
               <div class="emptyPicture">
               </div>
@@ -1543,7 +1607,10 @@
             </li>
 
             <li class="accordion-lang__list">
-              <button class="btn-picture"> C 1800 по 1899 гг</button>
+              <button class="btn-picture"> 
+              <a href="/" class="btn-picture__text"> C 1800 по 1899 гг
+              </a>
+              </button>
               <div class="emptyCard">
               <div class="emptyPicture">
               </div>
@@ -1558,7 +1625,10 @@
             </li>
 
             <li class="accordion-lang__list">
-              <button class="btn-picture">C 1900 по 1999 гг</button>
+              <button class="btn-picture"> 
+              <a href="/" class="btn-picture__text">C 1900 по 1999 гг
+              </a>
+              </button>
               <div class="emptyCard">
               <div class="emptyPicture">
               </div>
@@ -1573,7 +1643,10 @@
             </li>
 
             <li class="accordion-lang__list">
-              <button class="btn-picture"> C 2000 г.</button>
+              <button class="btn-picture"> 
+              <a href="/" class="btn-picture__text"> C 2000 г.
+              </a>
+              </button>
               <div class="emptyCard">
               <div class="emptyPicture">
               </div>
@@ -1617,7 +1690,7 @@
                 </picture>
                 <h3 class="catalog-title">Domenico Ghirlandaio</h3>
                 <p class="catalog-title-text">2 juni 1448 - 11 januari 1494.</p>
-                <p> Een van de toonaangevende Florentijnse kunstenaars
+                <p class="catalog-title-text__text"> Een van de toonaangevende Florentijnse kunstenaars
                   van
                   Quattrocento, oprichter van de
                   artistieke
@@ -1649,7 +1722,10 @@
             </ul>
             <ul id="accordion-lang5" class="accordion-lang">
               <li class="accordion-lang__list">
-              <button class="btn-picture"> Van 1400 tot 1499 </button>
+              <button class="btn-picture"> 
+              <a href="/" class="btn-picture__text"> Van 1400 tot 1499 
+              </a>
+              </button>
               <div class="surname-list">
               <ul class="surname-list__item">
                 <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar5"> Benedetto di Bindo
@@ -1679,8 +1755,6 @@
                 <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar5"> Biagio d'Antonio Tucci
                   </button>
                 </li>
-              </ul>
-              <ul class="surname-list__item">
                 <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar5"> Vecchietta
                   </button>
                 </li>
@@ -1708,8 +1782,6 @@
                 <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar5"> Giorgione
                   </button>
                 </li>
-              </ul>
-              <ul class="surname-list__item">
               <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar5"> Parentino, Bernardo
                 </button>
               </li>
@@ -1732,7 +1804,10 @@
               </div>
               </li>
               <li class="accordion-lang__list">
-                <button class="btn-picture"> Van 1500 tot 1599</button>
+                <button class="btn-picture"> 
+                <a href="/" class="btn-picture__text"> Van 1500 tot 1599
+                </a>
+                </button>
                 <div class="emptyCard">
                 <div class="emptyPicture">
                 </div>
@@ -1747,7 +1822,10 @@
               </li>
 
               <li class="accordion-lang__list">
-                <button class="btn-picture"> Van 1600 tot 1699</button>
+                <button class="btn-picture"> 
+                <a href="/" class="btn-picture__text"> Van 1600 tot 1699
+                </a>
+                </button>
                 <div class="emptyCard">
                 <div class="emptyPicture">
                 </div>
@@ -1762,7 +1840,10 @@
               </li>
 
               <li class="accordion-lang__list">
-                <button class="btn-picture"> Van 1700 tot 1799 </button>
+                <button class="btn-picture"> 
+                <a href="/" class="btn-picture__text"> Van 1700 tot 1799 
+                </a>
+                </button>
                 <div class="emptyCard">
                 <div class="emptyPicture">
                 </div>
@@ -1777,7 +1858,10 @@
               </li>
 
               <li class="accordion-lang__list">
-                <button class="btn-picture"> Van 1800 tot 1899 </button>
+                <button class="btn-picture"> 
+                <a href="/" class="btn-picture__text">Van 1800 tot 1899 
+                </a>
+                </button>
                 <div class="emptyCard">
                 <div class="emptyPicture">
                 </div>
@@ -1792,7 +1876,10 @@
               </li>
 
               <li class="accordion-lang__list">
-                <button class="btn-picture"> Van 1900 tot 1999 </button>
+                <button class="btn-picture"> 
+                <a href="/" class="btn-picture__text">Van 1900 tot 1999 
+                </a>
+                </button>
                 <div class="emptyCard">
                 <div class="emptyPicture">
                 </div>
@@ -1807,7 +1894,10 @@
               </li>
 
               <li class="accordion-lang__list">
-                <button class="btn-picture"> Van 2000 г.</button>
+                <button class="btn-picture"> 
+                <a href="/" class="btn-picture__text"> Van 2000 г.
+                </a>
+                </button>
                 <div class="emptyCard">
                 <div class="emptyPicture">
                 </div>
@@ -2163,7 +2253,6 @@
           <div class="swiper-scrollbar"></div>
           </div>
         </div>
-    <script src="js/editions-swiper.js"></script>
       </div>
     </section>
 
@@ -2278,7 +2367,6 @@
 
       </div>
     </section>
-    <script src="js/projects.js"></script>
     </main>
 
     <footer class="footer-container" id="contactUs">
@@ -2306,9 +2394,6 @@
               <button class="button-contact">Заказать
               </button>
             </form>
-      <script src="js/just-validate.min.js"></script>
-      <script src="js/inputmask.min.js"></script>
-      <script src="js/contact-information.js"></script>
           </div>
           <div class="contact-feedback">
             <h5 class="contact-feedback-heading contact-h3-input">Связаться в один клик</h5>
@@ -2325,8 +2410,6 @@
 <!-- map -->
         <div class="contact-map" id="map">
         </div>
-      <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU">
-      </script>
       <script type="text/javascript">
         // Функция ymaps.ready() будет вызвана, когда
         // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
@@ -2376,6 +2459,17 @@
         </nav>
       </div>
     </footer>
+    <script src="js/menu2-select.js"></script>
+    <script src="js/choices.min.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/gallery-swiper.js"></script>
+    <script src="js/editions-swiper.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/just-validate.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/contact-information.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU">
+    </script>
   </body>
 
 </html>

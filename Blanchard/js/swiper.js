@@ -1,6 +1,6 @@
 
 const swiper = new Swiper('.first-slider', {
-  slideClass: 'first-slider__list__item',
+  slideClass: 'first-slider__item',
   wrapperClass: 'first-slider__list',
   loop: true,
   
@@ -20,7 +20,7 @@ pageUpDown:true,}
   // автопрокручивание
   autoplay:{
     // Пауза между прокруткой
-    delay:3000,
+    delay:9000,
     // закончить на последнем слайде
     stopOnLastSlide:false,
     // Отключить после ручного переключения
