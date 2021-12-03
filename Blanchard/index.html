@@ -11,6 +11,10 @@
    <script src="js/dist/js/lightbox-plus-jquery.js"></script>
    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+   <!-- кнопка показать все -->
+  <script src="js/button-more.js"></script>
+
    <link rel="stylesheet" href="css/choices.min.css">
    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
@@ -27,7 +31,6 @@
    <script src="js/accordion-lang3.js"></script>
    <script src="js/accordion-lang4.js"></script>
    <script src="js/accordion-lang5.js"></script>
-   <script src="js/accordion-event.js"></script>
    <script src="js/avtors-photo-select.js"></script>
 
    <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU">
@@ -327,7 +330,7 @@
             <option class="gallery-select__item"> Скульптура</option>
           </select>
         <p class="gallery-text">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний 
-        <span><a href="#" class="gallery-avtorisation">авторизуйтесь</a></span>, либо воспользуйтесь лицензией. 
+        <button class="gallery-avtorisation"><a href="blanchard-art.ru/projects/about" >авторизуйтесь</a></button>, либо воспользуйтесь лицензией. 
         </p>
         </div>
 <!-- живопись -->
@@ -577,25 +580,35 @@
               Каталог
         </h2>
       <ul class="lang-list">
-        <li class="lang-list__item">
-          <button class="lang-list__btn btn-reset-lang lang-1" data-path="lang-1">
+        <li class="lang-list__item  btn-reset-lang" data-path="lang-1">
+          <div class="lang-list-container">
+          <button class="lang-list__btn lang-1">
           </button>
+          </div>
         </li>
-        <li class="lang-list__item">
-          <button class="lang-list__btn  btn-reset-lang lang-2" data-path="lang-2">
+        <li class="lang-list__item btn-reset-lang" data-path="lang-2">
+          <div class="lang-list-container">
+          <button class="lang-list__btn lang-2">
           </button>
+          </div>
         </li>
-        <li class="lang-list__item">
-          <button class="lang-list__btn  btn-reset-lang lang-3 lang-list__btn-active" data-path="lang-3">
+        <li class="lang-list__item  btn-reset-lang lang-list__btn-active" data-path="lang-3">
+          <div class="lang-list-container">
+          <button class="lang-list__btn lang-3">
           </button>
+          </div>
         </li>
-        <li class="lang-list__item">
-          <button class="lang-list__btn  btn-reset-lang lang-4" data-path="lang-4">
+        <li class="lang-list__item   btn-reset-lang" data-path="lang-4">
+          <div class="lang-list-container">
+          <button class="lang-list__btn lang-4">
           </button>
+          </div>
         </li>
-        <li class="lang-list__item">
-          <button class="lang-list__btn  btn-reset-lang lang-5" data-path="lang-5">
+        <li class="lang-list__item  btn-reset-lang" data-path="lang-5">
+          <div class="lang-list-container">
+          <button class="lang-list__btn lang-5">
           </button>
+          </div>
         </li>
       </ul>
       </div>
@@ -660,7 +673,7 @@
             </ul>
             <ul id="accordion-lang1" class="accordion-lang">
               <li class="accordion-lang__list">
-                <button class="btn-picture">
+                <button class="btn-picture"  tabindex="0">
                 <a href="/" class="btn-picture__text"> De 1400 de 1499 an.
                 </a>
                 </button>
@@ -1866,115 +1879,112 @@
       </ul>
     </section>
 <!-- События -->
-    <section class="events container" id="events">
+    <section class="events container">
       <h2 class="heading events__heading">События</h2>
-      <ul class="events__list">
+      <ul class="events__list-container">
+      <li class="events__item-container">
+          <ul class="events__list">
         <li class="events__item">
-          <div class="events__img">
             <img src="img/event1.jpg" alt="">
-          </div>
-          <div class="eventCard">
-          <div class="eventCard__text">
+          
+          <div class="eventсard">
+          <div class="eventсard__text">
             <p class="gs-text gs-text-bold">Музей им. Щусева</p>
             <p class="gs-text gs-text-bold">с 20 марта по 30 апреля
             </p>
-            <h3 class="heading eventCard__title">Книжная гравюра в живом восприятии</h3>
-            <p class="block-text eventCard__block-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+            <h3 class="heading eventсard__title">Книжная гравюра в живом восприятии</h3>
+            <p class="block-text eventсard__block-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
           </div>
-            <p class="events-more"><a href="#" class="events-a">Подробнее</a>
-            </p>
+            <button class="events-more-btn"> <a href="#" class="events-more">Подробнее</a></button>
           </div>
         </li>
         <li class="events__item">
           <div class="events__img"> <img src="img/event2.jpg" alt="">
           </div>
-          <div class="eventCard">
-          <div class="eventCard__text">
+          <div class="eventсard">
+          <div class="eventсard__text">
             <p class="gs-text gs-text">ММОМА</p>
             <p class="gs-text gs-text"> 24 марта 19:00</p>
-            <h3 class="heading eventCard__title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+            <h3 class="heading eventсard__title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
             </h3>
-            <p class="block-text eventCard__block-text">Высокий уровень
+            <p class="block-text eventсard__block-text">Высокий уровень
               вовлечения представителей
               целевой аудитории является четким доказательством
               простого факта.</p>
           </div>
-            <p class="events-more"><a href="#" class="events-a">Подробнее</a>
-            </p>
+            <button class="events-more-btn"> <a href="#" class="events-more">Подробнее</a></button>
           </div>
 
         </li>
         <li class="events__item">
           <div class="events__img"> <img src="img/event3.jpg" alt="">
           </div>
-          <div class="eventCard">
-          <div class="eventCard__text">
+          <div class="eventсard">
+          <div class="eventсard__text">
             <p class="gs-text gs-text">Еврейский музей</p>
             <p class="gs-text gs-text"> 31 марта по 21 апреля</p>
-            <h3 class="heading eventCard__title">Выставка «Формация 2020»
+            <h3 class="heading eventсard__title">Выставка «Формация 2020»
             </h3>
-            <p class="block-text eventCard__block-text">Идейные соображения
+            <p class="block-text eventсard__block-text">Идейные соображения
               высшего порядка, а
               также современная методология
               разработки играет важную роль в формировании
               глубокомысленных рассуждений.</p>
           </div>
-            <p class="events-more"><a href="#" class="events-a">Подробнее</a>
-            </p>
+          <button class="events-more-btn"> <a href="#" class="events-more">Подробнее</a></button>
           </div>
         </li>
       </ul>
-      <div id="accordion-events" class="accordion-events">
-      <div id="hider" class="btn-event">
-        <button id="button" class="btn-event-all">Все cобытия
-        </button>
-      </div>
-
+      </li>
+      <li class="events__item-container">
         <ul class="events__list">
-          <li class="events__item">
-            <div class="events__img"> <img src="img/event4.jpg" alt="">
-            </div>
-        <div class="eventCard">
-        <div class="eventCard__text">
+        <li class="events__item">
+          <div class="events__img"> <img src="img/event4.jpg" alt="">
+          </div>
+        <div class="eventсard">
+        <div class="eventсard__text">
           <p class="gs-text gs-text">Третьяковка на Крымском валу
           </p>
           <p class="gs-text gs-text"> с 30 марта по 30 апреля</p>
-          <h3 class="heading eventCard__title">Идейные соображения
+          <h3 class="heading eventсard__title">Идейные соображения
             высшего порядка, а также современная методология
             разработки играет важную роль в формировании
             глубокомысленных рассуждений.
           </h3>
-          <p class="block-text eventCard__block-text">Внезапно,
+          <p class="block-text eventсard__block-text">Внезапно,
             реплицированные с
             зарубежных источников, современные исследования.
           </p>
         </div>
-          <p class="events-more"><a href="#" class="events-a">Подробнее</a>
-          </p>
+         
+        <button class="events-more-btn"> <a href="#" class="events-more">Подробнее</a></button>
         </div>
-          </li>
-          <li class="events__item">
-            <div> <img src="img/event5.jpg" alt="">
-            </div>
-            <div class="eventCard">
-            <div class="eventCard__text">
-              <p class="gs-text gs-text">ММАМ</p>
-              <p class="gs-text gs-text"> с 8 апреля по 20 мая</p>
-              <h3 class="heading eventCard__title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-              <p class="block-text eventCard__block-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-            </div>
-              <p class="events-more"><a href="#" class="events-a">Подробнее</a>
-              </p>
-            </div>
-          </li>
-            <li class="events__item transparent">
-              <div class="events__img"> </div>
-              <div class="eventCard transparent">
-              <div class="eventCard__text"></div>
-              </div>
-            </li>
-        </ul>
-      </div>
+        </li>
+        <li class="events__item">
+          <div> <img src="img/event5.jpg" alt="">
+          </div>
+          <div class="eventсard">
+          <div class="eventсard__text">
+            <p class="gs-text gs-text">ММАМ</p>
+            <p class="gs-text gs-text"> с 8 апреля по 20 мая</p>
+            <h3 class="heading eventсard__title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+            <p class="block-text eventсard__block-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+          </div>
+            <button class="events-more-btn"> <a href="#" class="events-more">Подробнее</a></button>
+          </div>
+        </li>
+        <li class="events__item transparent">
+          <div class="events__img"> </div>
+          <div class="eventсard transparent">
+          <div class="eventсard__text"></div>
+          </div>
+        </li>
+      </ul>
+      </li>
+      </ul>
+      <button class="btn-event-all">Все cобытия
+      </button>
+     
     </section>
 <!-- Издания -->
     <section class="editions" id="editions">

@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded',function(){
-    const tabs = document.querySelectorAll('.lang-list__btn');
+    const tabs = document.querySelectorAll('.lang-list__item ');
     let activeButton= tabs[0];
     tabs.forEach(function(tabsBtn){
       tabsBtn.addEventListener('click' ,function(event){
         activeButton && activeButton.classList.remove("lang-list__btn-active")
         activeButton = event.currentTarget
-        activeButton.classList.add("llang-list__btn-active")
+        activeButton.classList.add("lang-list__btn-active")
   
         const path = event.currentTarget.dataset.path
   
