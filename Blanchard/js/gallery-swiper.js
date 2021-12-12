@@ -20,6 +20,6 @@ grid: {
 autoHeight:false,
 slidesPerView:3,
 slidesPerGroup:3,
-spaceBetween:43,
+spaceBetween:50,
 lockClass:false,
 });

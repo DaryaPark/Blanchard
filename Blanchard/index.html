@@ -11,10 +11,6 @@
    <script src="js/dist/js/lightbox-plus-jquery.js"></script>
    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-   <!-- кнопка показать все -->
-  <script src="js/button-more.js"></script>
-
    <link rel="stylesheet" href="css/choices.min.css">
    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
@@ -23,7 +19,6 @@
    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
    <link rel="stylesheet" href="css/lightbox.min.css">
    <script src="js/swiper.js" defer></script>
-   <script src="js/tabs.js"></script>
    <script src="js/tabs-lang.js"></script>
    <script src="js/accordion.js" defer></script>
    <script src="js/accordion-lang1.js"></script>
@@ -31,8 +26,9 @@
    <script src="js/accordion-lang3.js"></script>
    <script src="js/accordion-lang4.js"></script>
    <script src="js/accordion-lang5.js"></script>
+   <script src="js/tabs-lang.js" defer></script>
    <script src="js/avtors-photo-select.js"></script>
-
+   <script src="js/button-more.js"></script>
    <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU">
    </script>
    <link rel="stylesheet" href="css/normalize.css">
@@ -330,7 +326,7 @@
             <option class="gallery-select__item"> Скульптура</option>
           </select>
         <p class="gallery-text">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний 
-        <button class="gallery-avtorisation"><a href="blanchard-art.ru/projects/about" >авторизуйтесь</a></button>, либо воспользуйтесь лицензией. 
+        <button class="gallery-avtorisation"><a href="/" >авторизуйтесь</a></button>, либо воспользуйтесь лицензией. 
         </p>
         </div>
 <!-- живопись -->
@@ -440,7 +436,7 @@
         <div class="editions-imange-text">
           <picture class="imange-slider-gallery">
             <a href="img/painting-2.5.jpg" class="galleryImange">
-            <img tabindex="0" class="gallery-pictures" src="img/painting-2.5.jpg" alt="живопись >
+            <img tabindex="0" class="gallery-pictures" src="img/painting-2.5.jpg" alt="живопись">
             </a>
           </picture>
         </div>
@@ -580,32 +576,32 @@
               Каталог
         </h2>
       <ul class="lang-list">
-        <li class="lang-list__item  btn-reset-lang" data-path="lang-1">
-          <div class="lang-list-container">
+        <li class="lang-list__item">
+          <div class="lang-list-wrapper  lang-list__btn-rem" data-path="lang-1">
           <button class="lang-list__btn lang-1">
           </button>
           </div>
         </li>
-        <li class="lang-list__item btn-reset-lang" data-path="lang-2">
-          <div class="lang-list-container">
+        <li class="lang-list__item">
+          <div class="lang-list-wrapper  lang-list__btn-rem"  data-path="lang-2">
           <button class="lang-list__btn lang-2">
           </button>
           </div>
         </li>
-        <li class="lang-list__item  btn-reset-lang lang-list__btn-active" data-path="lang-3">
-          <div class="lang-list-container">
+        <li class="lang-list__item">
+          <div class="lang-list-wrapper lang-list__btn-rem lang-list__btn-active " data-path="lang-3">
           <button class="lang-list__btn lang-3">
           </button>
           </div>
         </li>
-        <li class="lang-list__item   btn-reset-lang" data-path="lang-4">
-          <div class="lang-list-container">
+        <li class="lang-list__item">
+          <div class="lang-list-wrapper  lang-list__btn-rem"  data-path="lang-4">
           <button class="lang-list__btn lang-4">
           </button>
           </div>
         </li>
-        <li class="lang-list__item  btn-reset-lang" data-path="lang-5">
-          <div class="lang-list-container">
+        <li class="lang-list__item">
+          <div class="lang-list-wrapper  lang-list__btn-rem" data-path="lang-5">
           <button class="lang-list__btn lang-5">
           </button>
           </div>
@@ -630,14 +626,14 @@
             </p>
           </div>
           <div class="catalog-accordion">
-            <ul class="catalog-accordion__list">
+            <ul class="catalog-accordion__container">
             <li class="catalog-picture catalog-picture-active" data-target="DomenicoGhirlandaio1">
               <picture class="lang-picture">
               <img class="lang-picture-1" src="img/picture-lang.jpg" alt="Domenico Ghirlandaio">
               </picture>
               <h3 class="catalog-title">Domenico Ghirlandaio</h3>
               <p class="catalog-title-text">2 juin 1448 - 11 janvier 1494.</p>
-              <p class="catalog-title-text__text"> L'un des principaux artistes florentins du
+              <p class="catalog-title-descripcion"> L'un des principaux artistes florentins du
                 Quattrocento,
                 fondateur de l'artistique
                 dynastie, qui a été continuée par son frère
@@ -667,7 +663,7 @@
                 </h4>
                 <p class="catalog-text-2-unfamiliar"> Пока
                 ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
-                <button class="lang-galery-btn">В галерею</button>
+                <a href="#gallery" class="accordion-href">В галерею</a>
               </div>
             </li>
             </ul>
@@ -788,10 +784,10 @@
                 <a href="/" class="btn-picture__text"> De 1500 de 1599 an.
                 </a>
                 </button>
-                <div class="emptyCard">
-                <div class="emptyPicture">
+                <div class="emptycard">
+                <div class="emptypicture">
                 </div>
-                <div class="emptyCard__list emptyCard__list-fra">
+                <div class="emptycard__list emptycard__list-fra">
                   <h3>C'est vide ici pour l'instant.
                   </h3>
                   <p class="accordion-text">Et dans la
@@ -809,10 +805,10 @@
                 <a href="/" class="btn-picture__text">De 1600 de 1699 an.
                 </a>
                 </button>
-                <div class="emptyCard">
-                        <div class="emptyPicture">
+                <div class="emptycard">
+                        <div class="emptypicture">
                         </div>
-                        <div class="emptyCard__list emptyCard__list-fra">
+                        <div class="emptycard__list emptycard__list-fra">
                           <h3>C'est vide ici pour l'instant.
                           </h3>
                           <p class="accordion-text">Et dans la
@@ -830,10 +826,10 @@
                 <a href="/" class="btn-picture__text">De 1700 de 1799 an.
                 </a>
                 </button>
-                <div class="emptyCard">
-                <div class="emptyPicture">
+                <div class="emptycard">
+                <div class="emptypicture">
                 </div>
-                <div class="emptyCard__list emptyCard__list-fra">
+                <div class="emptycard__list emptycard__list-fra">
                   <h3>C'est vide ici pour l'instant.
                   </h3>
                   <p class="accordion-text">Et dans la
@@ -850,10 +846,10 @@
                 <a href="/" class="btn-picture__text">De 1800 de 1899 an
                 </a>
                 </button>
-                <div class="emptyCard">
-                <div class="emptyPicture">
+                <div class="emptycard">
+                <div class="emptypicture">
                 </div>
-                <div class="emptyCard__list emptyCard__list-fra">
+                <div class="emptycard__list emptycard__list-fra">
                   <h3>C'est vide ici pour l'instant.
                   </h3>
                   <p class="accordion-text">Et dans la
@@ -870,10 +866,10 @@
                 <a href="/" class="btn-picture__text"> De 1900 de 1999 an. 
                 </a>
                 </button>
-                <div class="emptyCard">
-                <div class="emptyPicture">
+                <div class="emptycard">
+                <div class="emptypicture">
                 </div>
-                <div class="emptyCard__list emptyCard__list-fra">
+                <div class="emptycard__list emptycard__list-fra">
                   <h4>C'est vide ici pour l'instant.
                   </h4>
                   <p class="accordion-text">Et dans la
@@ -891,10 +887,10 @@
                 <a href="/" class="btn-picture__text">De 2000 an.
                 </a>
                 </button>
-                <div class="emptyCard">
-                <div class="emptyPicture">
+                <div class="emptycard">
+                <div class="emptypicture">
                 </div>
-                <div class="emptyCard__list emptyCard__list-fra">
+                <div class="emptycard__list emptycard__list-fra">
                   <h4>C'est vide ici pour l'instant.
                   </h4>
                   <p class="accordion-text">Et dans la
@@ -927,7 +923,7 @@
             </p>
           </div>
           <div class="catalog-accordion">
-            <ul class="catalog-accordion__list">
+            <ul class="catalog-accordion__container">
               <li class="catalog-picture catalog-picture-active" data-target="DomenicoGhirlandaio2">
                 <picture class="lang-picture">
                 <img class="lang-picture-1" src="img/picture-lang.jpg" alt="Domenico Ghirlandaio">
@@ -935,7 +931,7 @@
                 <h3 class="catalog-title">Domenico Ghirlandaio</h3>
                 <p class="catalog-title-text">2 juin 1448 - 11 janvier 1494.
                 </p>
-                <p class="catalog-title-text__text"> L'un des principaux artistes florentins du
+                <p class="catalog-title-descripcion"> L'un des principaux artistes florentins du
                   Quattrocento, fondateur de l'artistique
                   dynastie, qui a été continuée par son frère
                   David et son fils Ridolfo. Responsable de
@@ -959,7 +955,7 @@
                   <p class="catalog-text-2-unfamiliar"> Пока
                     ничего... Зато мы точно знаем, что в
                     галерее есть на что посмотреть!</p>
-                  <button class="lang-galery-btn">В галерею</button>
+                  <a href="#gallery" class="accordion-href">В галерею</a>
                 </div>
               </li>
             </ul>
@@ -1027,10 +1023,10 @@
                 <a href="/" class="btn-picture__text"> Von 1500 bis 1599 
                 </a>
                 </button>
-              <div class="emptyCard">
-                <div class="emptyPicture">
+              <div class="emptycard">
+                <div class="emptypicture">
                   </div>
-                <div class="emptyCard__list emptyCard__list-de ">
+                <div class="emptycard__list emptycard__list-de ">
                   <h3>Hier ist leer
                   </h3>
                   <p class="accordion-text">Und in der Galerie findest du immer etwas Interessantesfür dich.
@@ -1045,10 +1041,10 @@
                 <a href="/" class="btn-picture__text">Von 1600 bis 1699
                 </a>
                 </button>
-                <div class="emptyCard">
-                <div class="emptyPicture">
+                <div class="emptycard">
+                <div class="emptypicture">
                 </div>
-                <div class="emptyCard__list emptyCard__list-de">
+                <div class="emptycard__list emptycard__list-de">
                   <h4>Hier ist leer
                   </h4>
                   <p class="accordion-text">Und in der
@@ -1065,10 +1061,10 @@
                 <a href="/" class="btn-picture__text"> Von 1700 bis 1799
                 </a>
                 </button>
-                <div class="emptyCard">
-                  <div class="emptyPicture">
+                <div class="emptycard">
+                  <div class="emptypicture">
                 </div>
-                  <div class="emptyCard__list emptyCard__list-de">
+                  <div class="emptycard__list emptycard__list-de">
                   <h3>Hier ist leer</h3>
                   <p class="accordion-text">Und in der
                   Galerie findest du immer etwas
@@ -1084,10 +1080,10 @@
                 <a href="/" class="btn-picture__text">Von 1800 bis 1899
                 </a>
                 </button>
-                <div class="emptyCard">
-                  <div class="emptyPicture">
+                <div class="emptycard">
+                  <div class="emptypicture">
                   </div>
-                  <div class="emptyCard__list emptyCard__list-de">
+                  <div class="emptycard__list emptycard__list-de">
                     <h4>Hier ist leer
                     </h4>
                     <p class="accordion-text">Und in der
@@ -1104,10 +1100,10 @@
                 <a href="/" class="btn-picture__text">Von 1900 bis 1999
                 </a>
                 </button>
-                <div class="emptyCard">
-                  <div class="emptyPicture">
+                <div class="emptycard">
+                  <div class="emptypicture">
                   </div>
-                  <div class="emptyCard__list emptyCard__list-de">
+                  <div class="emptycard__list emptycard__list-de">
                     <h4>Hier ist leer</h4>
                     <p class="accordion-text">Und in der
                       Galerie findest du immer etwas
@@ -1123,10 +1119,10 @@
                 <a href="/" class="btn-picture__text">Von 2000 г.
                 </a>
                 </button>
-                <div class="emptyCard">
-                <div class="emptyPicture">
+                <div class="emptycard">
+                <div class="emptypicture">
                 </div>
-                <div class="emptyCard__list emptyCard__list-de">
+                <div class="emptycard__list emptycard__list-de">
                   <h4>Hier ist leer
                   </h4>
                   <p class="accordion-text">Und in der
@@ -1155,14 +1151,14 @@
             </p>
           </div>
         <div class="catalog-accordion">
-          <ul class="catalog-accordion__list">
+          <ul class="catalog-accordion__container">
             <li class="catalog-picture catalog-picture-active" data-target="DomenicoGhirlandaio3">
               <picture class="lang-picture">
                 <img class="lang-picture-1" src="img/picture-lang.jpg" alt="Domenico Ghirlandaio">
               </picture>
               <h3 class="catalog-title">Domenico Ghirlandaio</h3>
               <p class="catalog-title-text">2 de junio de 1448-11 de enero de 1494.</p>
-              <p class="catalog-title-text__text">Uno de los principales artistas florentinos del
+              <p class="catalog-title-descripcion">Uno de los principales artistas florentinos del
                 Quattrocento, fundador de la artística dinastía,
                 que fue continuada por su hermano David y su
                 hijo Ridolfo. Jefe de lo artístico taller, donde
@@ -1185,7 +1181,7 @@
               <p class="catalog-text-2-unfamiliar"> Пока
               ничего... Зато мы точно знаем, что в
               галерее есть на что посмотреть!</p>
-              <button class="lang-galery-btn">В галерею</button>
+              <a href="#gallery" class="accordion-href">В галерею</a>
               </div>
             </li>
           </ul>
@@ -1277,10 +1273,10 @@
               <a href="/" class="btn-picture__text">Desde 1500 hasta 1599
               </a>
               </button>
-              <div class="emptyCard">
-              <div class="emptyPicture">
+              <div class="emptycard">
+              <div class="emptypicture">
               </div>
-              <div class="emptyCard__list emptyCard__list-esp">
+              <div class="emptycard__list emptycard__list-esp">
                 <h3>Esta vacio aqui por ahora
                 </h3>
                 <p class="accordion-text">Y en la galería siempre puedes encontrar algo interesante para ti.
@@ -1295,10 +1291,10 @@
               <a href="/" class="btn-picture__text">Desde 1600 hasta 1699
               </a>
               </button>
-              <div class="emptyCard">
-              <div class="emptyPicture">
+              <div class="emptycard">
+              <div class="emptypicture">
               </div>
-              <div class="emptyCard__list emptyCard__list-esp">
+              <div class="emptycard__list emptycard__list-esp">
                 <h4>Esta vacio aqui por ahora
                 </h4>
                 <p class="accordion-text">Y en la galería siempre puedes encontrar algo interesantepara ti.
@@ -1313,10 +1309,10 @@
               <a href="/" class="btn-picture__text">Doesde 1700 hasta 1799
               </a>
               </button>
-              <div class="emptyCard">
-              <div class="emptyPicture">
+              <div class="emptycard">
+              <div class="emptypicture">
               </div>
-              <div class="emptyCard__list emptyCard__list-esp">
+              <div class="emptycard__list emptycard__list-esp">
                 <h4>Esta vacio aqui por ahora
                 </h4>
                 <p class="accordion-text">Y en la galería siempre puedes encontrar algo interesante para ti.
@@ -1331,10 +1327,10 @@
               <a href="/" class="btn-picture__text">Doesde 1800 hasta 189
               </a>
               </button>
-              <div class="emptyCard">
-                <div class="emptyPicture">
+              <div class="emptycard">
+                <div class="emptypicture">
                 </div>
-                <div class="emptyCard__list emptyCard__list-esp">
+                <div class="emptycard__list emptycard__list-esp">
                   <h3>Esta vacio aqui por ahora</h3>
                   <p class="accordion-text">Y en la
                     galería siempre puedes encontrar
@@ -1350,10 +1346,10 @@
               <a href="/" class="btn-picture__text">Doesde 1900 hasta 199
               </a>
               </button>
-              <div class="emptyCard">
-              <div class="emptyPicture">
+              <div class="emptycard">
+              <div class="emptypicture">
               </div>
-              <div class="emptyCard__list emptyCard__list-esp">
+              <div class="emptycard__list emptycard__list-esp">
                 <h4>Esta vacio aqui por ahora
                 </h4>
                 <p class="accordion-text">Y en la galería siempre puedes encontrar algo interesante para ti.
@@ -1368,10 +1364,10 @@
               <a href="/" class="btn-picture__text">Doesde 2000 
               </a>
               </button>
-              <div class="emptyCard">
-              <div class="emptyPicture">
+              <div class="emptycard">
+              <div class="emptypicture">
               </div>
-              <div class="emptyCard__list emptyCard__list-esp">
+              <div class="emptycard__list emptycard__list-esp">
                 <h4>Esta vacio aqui por ahora
                 </h4>
                 <p class="accordion-text">Y en la galería siempre puedes encontrar algo interesante para ti.
@@ -1386,7 +1382,7 @@
 
 
 <!-- Русский -->
-        <li class="select-list__item tab-content-active-lang  " data-target="lang-4">
+        <li class="select-list__item tab-content-active-lang" data-target="lang-4">
           <div class="text-select-list">
             <p class="block-text">
               Акционеры крупнейших компаний, которые представляют собой яркий
@@ -1402,14 +1398,14 @@
             </p>
           </div>
           <div class="catalog-accordion">
-          <ul class="catalog-accordion__list">
+          <ul class="catalog-accordion__container">
             <li class="catalog-picture catalog-picture-active" data-target="DomenicoGhirlandaio4">
               <picture class="lang-picture">
               <img class="lang-picture-1" src="img/picture-lang.jpg" alt="Domenico Ghirlandaio">
               </picture>
               <h3 class="catalog-title">Доменико Гирландайо</h3>
               <p class="catalog-title-text"> 2 июня 1448 — 11 января 1494.</p>
-              <p class="catalog-title-text__text"> Один из ведущих флорентийских художников
+              <p class="catalog-title-descripcion"> Один из ведущих флорентийских художников
                 Кватроченто,
                 основатель
                 художественной
@@ -1434,7 +1430,7 @@
                 <h4 class="catalog-title">Что мы о нём знаем?
                 </h4>
                 <p class="catalog-text-2-unfamiliar"> Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
-                <button class="lang-galery-btn">В галерею</button>
+                <a href="#gallery" class="accordion-href">В галерею</a>
               </div>
             </li>
           </ul>
@@ -1521,11 +1517,11 @@
               <a href="/" class="btn-picture__text">C 1500 по 1599 гг
               </a>
               </button>
-              <div class="emptyCard">
-              <div class="emptyPicture">
+              <div class="emptycard">
+              <div class="emptypicture">
               </div>
-              <div class="emptyCard__list">
-                <h4 class="emptyCard-heading">Здесь пока пусто
+              <div class="emptycard__list">
+                <h4 class="emptycard-heading">Здесь пока пусто
                 </h4>
                 <p class="accordion-text">А в галерее вы всегда можете найти что-то интересное для себя
                 <a href="#gallery" class="accordion-href">В галерею</a>
@@ -1539,11 +1535,11 @@
               <a href="/" class="btn-picture__text"> C 1600 по 1699 гг
               </a>
               </button>
-              <div class="emptyCard">
-              <div class="emptyPicture">
+              <div class="emptycard">
+              <div class="emptypicture">
               </div>
-              <div class="emptyCard__list">
-                <h4 class="emptyCard-heading">Здесь пока пусто
+              <div class="emptycard__list">
+                <h4 class="emptycard-heading">Здесь пока пусто
                 </h4>
                 <p class="accordion-text">А в галерее вы всегда можете найти что-то интересное для себя
                 <a href="#gallery" class="accordion-href">В галерею</a>
@@ -1557,11 +1553,11 @@
               <a href="/" class="btn-picture__text"> C 1700 по 1799 гг
               </a>
               </button>
-              <div class="emptyCard">
-              <div class="emptyPicture">
+              <div class="emptycard">
+              <div class="emptypicture">
               </div>
-              <div class="emptyCard__list">
-                <h4 class="emptyCard-heading">Здесь пока пусто
+              <div class="emptycard__list">
+                <h4 class="emptycard-heading">Здесь пока пусто
                 </h4>
                 <p class="accordion-text">А в галерее вы всегда можете найти что-то интересное для себя
                 <a href="#gallery" class="accordion-href">В галерею</a>
@@ -1575,11 +1571,11 @@
               <a href="/" class="btn-picture__text"> C 1800 по 1899 гг
               </a>
               </button>
-              <div class="emptyCard">
-              <div class="emptyPicture">
+              <div class="emptycard">
+              <div class="emptypicture">
               </div>
-              <div class="emptyCard__list">
-                <h4 class="emptyCard-heading">Здесь пока пусто
+              <div class="emptycard__list">
+                <h4 class="emptycard-heading">Здесь пока пусто
                 </h4>
                 <p class="accordion-text">А в галерее вы всегда можете найти что-то интересное для себя
                 <a href="#gallery" class="accordion-href">В галерею</a>
@@ -1593,11 +1589,11 @@
               <a href="/" class="btn-picture__text">C 1900 по 1999 гг
               </a>
               </button>
-              <div class="emptyCard">
-              <div class="emptyPicture">
+              <div class="emptycard">
+              <div class="emptypicture">
               </div>
-              <div class="emptyCard__list">
-                <h4 class="emptyCard-heading">Здесь пока пусто
+              <div class="emptycard__list">
+                <h4 class="emptycard-heading">Здесь пока пусто
                 </h4>
                 <p class="accordion-text">А в галерее вы всегда можете найти что-то интересное для себя
                 <a href="#gallery" class="accordion-href">В галерею</a>
@@ -1611,11 +1607,11 @@
               <a href="/" class="btn-picture__text"> C 2000 г.
               </a>
               </button>
-              <div class="emptyCard">
-              <div class="emptyPicture">
+              <div class="emptycard">
+              <div class="emptypicture">
               </div>
-              <div class="emptyCard__list emptyCard__list-nda">
-                <h4 class="emptyCard-heading">Здесь пока пусто
+              <div class="emptycard__list emptycard__list-nda">
+                <h4 class="emptycard-heading">Здесь пока пусто
                 </h4>
                 <p class="accordion-text">А в галерее вы всегда можете найти что-то интересное для себя
                 <a href="#gallery" class="accordion-href">В галерею</a>
@@ -1647,14 +1643,14 @@
             </p>
           </div>
           <div class="catalog-accordion">
-            <ul class="catalog-accordion__list">
+            <ul class="catalog-accordion__container">
               <li class="catalog-picture catalog-picture-active" data-target="DomenicoGhirlandaio5">
                 <picture class="lang-picture">
                 <img class="lang-picture-1" src="img/picture-lang.jpg" alt="Domenico Ghirlandaio">
                 </picture>
                 <h3 class="catalog-title">Domenico Ghirlandaio</h3>
                 <p class="catalog-title-text">2 juni 1448 - 11 januari 1494.</p>
-                <p class="catalog-title-text__text"> Een van de toonaangevende Florentijnse kunstenaars
+                <p class="catalog-title-descripcion"> Een van de toonaangevende Florentijnse kunstenaars
                   van
                   Quattrocento, oprichter van de
                   artistieke
@@ -1680,7 +1676,7 @@
                   <h4 class="catalog-title">Что мы о нём знаем?
                   </h4>
                   <p class="catalog-text-2-unfamiliar"> Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
-                <button class="lang-galery-btn">В галерею</button> 
+                <a href="#gallery" class="accordion-href">В галерею</a> 
                 </div>
               </li>
             </ul>
@@ -1772,10 +1768,10 @@
                 <a href="/" class="btn-picture__text"> Van 1500 tot 1599
                 </a>
                 </button>
-                <div class="emptyCard">
-                <div class="emptyPicture">
+                <div class="emptycard">
+                <div class="emptypicture">
                 </div>
-                <div class="emptyCard__list emptyCard__list-nda">
+                <div class="emptycard__list emptycard__list-nda">
                   <h4>Het is hier voorlopig leeg
                   </h4>
                   <p class="accordion-text">En in de galerij kun je altijd iets interessants voor jezelf vinden
@@ -1790,10 +1786,10 @@
                 <a href="/" class="btn-picture__text"> Van 1600 tot 1699
                 </a>
                 </button>
-                <div class="emptyCard">
-                <div class="emptyPicture">
+                <div class="emptycard">
+                <div class="emptypicture">
                 </div>
-                <div class="emptyCard__list emptyCard__list-nda">
+                <div class="emptycard__list emptycard__list-nda">
                   <h4>Het is hier voorlopig leeg
                   </h4>
                   <p class="accordion-text">En in de galerij kun je altijd iets interessants voor jezelf vinden
@@ -1808,10 +1804,10 @@
                 <a href="/" class="btn-picture__text"> Van 1700 tot 1799 
                 </a>
                 </button>
-                <div class="emptyCard">
-                <div class="emptyPicture">
+                <div class="emptycard">
+                <div class="emptypicture">
                 </div>
-                <div class="emptyCard__list emptyCard__list-nda">
+                <div class="emptycard__list emptycard__list-nda">
                   <h4>Het is hier voorlopig leeg
                   </h4>
                   <p class="accordion-text">En in de galerij kun je altijd iets interessants voor jezelf vinden
@@ -1826,10 +1822,10 @@
                 <a href="/" class="btn-picture__text">Van 1800 tot 1899 
                 </a>
                 </button>
-                <div class="emptyCard">
-                <div class="emptyPicture">
+                <div class="emptycard">
+                <div class="emptypicture">
                 </div>
-                <div class="emptyCard__list emptyCard__list-nda">
+                <div class="emptycard__list emptycard__list-nda">
                   <h4>Het is hier voorlopig leeg
                   </h4>
                   <p class="accordion-text">En in de galerij kun je altijd iets interessants voor jezelf vinden
@@ -1844,10 +1840,10 @@
                 <a href="/" class="btn-picture__text">Van 1900 tot 1999 
                 </a>
                 </button>
-                <div class="emptyCard">
-                <div class="emptyPicture">
+                <div class="emptycard">
+                <div class="emptypicture">
                 </div>
-                <div class="emptyCard__list emptyCard__list-nda">
+                <div class="emptycard__list emptycard__list-nda">
                   <h4>Het is hier voorlopig leeg
                   </h4>
                   <p class="accordion-text">En in de galerij kun je altijd iets interessants voor jezelf vinden
@@ -1862,10 +1858,10 @@
                 <a href="/" class="btn-picture__text"> Van 2000 г.
                 </a>
                 </button>
-                <div class="emptyCard">
-                <div class="emptyPicture">
+                <div class="emptycard">
+                <div class="emptypicture">
                 </div>
-                <div class="emptyCard__list emptyCard__list-nda">
+                <div class="emptycard__list emptycard__list-nda">
                   <h4>Het is hier voorlopig leeg
                   </h4>
                   <p class="accordion-text">En in de galerij kun je altijd iets interessants voor jezelf vinden
@@ -1881,30 +1877,26 @@
 <!-- События -->
     <section class="events container">
       <h2 class="heading events__heading">События</h2>
-      <ul class="events__list-container">
-      <li class="events__item-container">
-          <ul class="events__list">
+      <ul class="events__list">
         <li class="events__item">
-            <img src="img/event1.jpg" alt="">
-          
+          <img src="img/event1.png" alt="" class="ivent-img">
           <div class="eventсard">
-          <div class="eventсard__text">
             <p class="gs-text gs-text-bold">Музей им. Щусева</p>
-            <p class="gs-text gs-text-bold">с 20 марта по 30 апреля
-            </p>
+            <p class="gs-text gs-text-bold">с 20 марта по 30 апреля</p>
+            <div class="eventсard__text">
             <h3 class="heading eventсard__title">Книжная гравюра в живом восприятии</h3>
             <p class="block-text eventсard__block-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+           
           </div>
-            <button class="events-more-btn"> <a href="#" class="events-more">Подробнее</a></button>
+          <button class="events-more-btn">Подробнее</button>
           </div>
         </li>
         <li class="events__item">
-          <div class="events__img"> <img src="img/event2.jpg" alt="">
-          </div>
+          <img src="img/event2.png" alt="">
           <div class="eventсard">
-          <div class="eventсard__text">
-            <p class="gs-text gs-text">ММОМА</p>
-            <p class="gs-text gs-text"> 24 марта 19:00</p>
+            <p class="gs-text">ММОМА</p>
+            <p class="gs-text"> 24 марта 19:00</p>
+            <div class="eventсard__text">
             <h3 class="heading eventсard__title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
             </h3>
             <p class="block-text eventсard__block-text">Высокий уровень
@@ -1912,17 +1904,16 @@
               целевой аудитории является четким доказательством
               простого факта.</p>
           </div>
-            <button class="events-more-btn"> <a href="#" class="events-more">Подробнее</a></button>
+            <button class="events-more-btn">Подробнее</button>
           </div>
 
         </li>
         <li class="events__item">
-          <div class="events__img"> <img src="img/event3.jpg" alt="">
-          </div>
+          <img src="img/event3.png" alt="" class="ivent-img">
           <div class="eventсard">
-          <div class="eventсard__text">
-            <p class="gs-text gs-text">Еврейский музей</p>
-            <p class="gs-text gs-text"> 31 марта по 21 апреля</p>
+            <p class="gs-text">Еврейский музей</p>
+            <p class="gs-text"> 31 марта по 21 апреля</p>
+            <div class="eventсard__text">
             <h3 class="heading eventсard__title">Выставка «Формация 2020»
             </h3>
             <p class="block-text eventсard__block-text">Идейные соображения
@@ -1931,21 +1922,16 @@
               разработки играет важную роль в формировании
               глубокомысленных рассуждений.</p>
           </div>
-          <button class="events-more-btn"> <a href="#" class="events-more">Подробнее</a></button>
+          <button class="events-more-btn">Подробнее</button>
           </div>
         </li>
-      </ul>
-      </li>
-      <li class="events__item-container">
-        <ul class="events__list">
         <li class="events__item">
-          <div class="events__img"> <img src="img/event4.jpg" alt="">
-          </div>
+          <img src="img/event4.png" alt="">
         <div class="eventсard">
-        <div class="eventсard__text">
-          <p class="gs-text gs-text">Третьяковка на Крымском валу
+          <p class="gs-text">Третьяковка на Крымском валу
           </p>
-          <p class="gs-text gs-text"> с 30 марта по 30 апреля</p>
+          <p class="gs-text"> с 30 марта по 30 апреля</p>
+          <div class="eventсard__text">
           <h3 class="heading eventсard__title">Идейные соображения
             высшего порядка, а также современная методология
             разработки играет важную роль в формировании
@@ -1957,34 +1943,26 @@
           </p>
         </div>
          
-        <button class="events-more-btn"> <a href="#" class="events-more">Подробнее</a></button>
+        <button class="events-more-btn">Подробнее</button>
         </div>
         </li>
         <li class="events__item">
-          <div> <img src="img/event5.jpg" alt="">
-          </div>
-          <div class="eventсard">
-          <div class="eventсard__text">
-            <p class="gs-text gs-text">ММАМ</p>
-            <p class="gs-text gs-text"> с 8 апреля по 20 мая</p>
-            <h3 class="heading eventсard__title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
-            <p class="block-text eventсard__block-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
-          </div>
-            <button class="events-more-btn"> <a href="#" class="events-more">Подробнее</a></button>
-          </div>
+            <img src="img/event5.png" alt="" class="ivent-img">
+            <div class="eventсard">
+              <p class="gs-text ">ММАМ</p>
+              <p class="gs-text"> с 8 апреля по 20 мая</p>
+              <h3 class="heading eventсard__title">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+              <div class="eventсard__text">
+              <p class="block-text eventсard__block-text">Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо.</p>
+            </div>
+              <button class="events-more-btn">Подробнее</button>
+            </div>
         </li>
-        <li class="events__item transparent">
-          <div class="events__img"> </div>
-          <div class="eventсard transparent">
-          <div class="eventсard__text"></div>
-          </div>
+        <li class="events__item invisible">
         </li>
-      </ul>
-      </li>
-      </ul>
-      <button class="btn-event-all">Все cобытия
-      </button>
-     
+        </ul>
+        <button class="btn-event-all">Все cобытия
+        </button>
     </section>
 <!-- Издания -->
     <section class="editions" id="editions">
@@ -2078,11 +2056,11 @@
         </div>
         </div>
         <div class="swiper-editions">
-          <div class=" editions-swiper-container swiper">
+          <div class="editions-swiper-container swiper">
 <!-- Additional required wrapper -->
           <div class="editions-swiper-wrapper swiper-wrapper">
 <!-- Slides -->
-          <div class=" editions-swiper-slide swiper-slide">
+          <div class="editions-swiper-slide swiper-slide">
             <div class="editions-imange-text">
               <div class="imange-slider-editions">
                 <img class="editions-bookImg" src="img/books/book-1.jpg" alt="">
@@ -2116,7 +2094,7 @@
               </div>
             </div>
           </div>
-          <div class=" editions-swiper-slide swiper-slide">
+          <div class="editions-swiper-slide swiper-slide">
             <div class="editions-imange-text">
               <div class="imange-slider-editions">
                 <img src="img/books/book-3.jpg" alt="">
@@ -2151,7 +2129,7 @@
               </div>
             </div>
           </div>
-          <div class=" editions-swiper-slide swiper-slide">
+          <div class="editions-swiper-slide swiper-slide">
             <div class="editions-imange-text">
               <div class="imange-slider-editions">
                 <img src="img/books/book-5.jpg" alt="">
@@ -2169,7 +2147,7 @@
               </div>
             </div>
           </div>
-          <div class=" editions-swiper-slide swiper-slide">
+          <div class="editions-swiper-slide swiper-slide">
             <div class="editions-imange-text">
               <div class="imange-slider-editions">
                 <img src="img/books/book-6.jpg" alt="">
@@ -2219,7 +2197,7 @@
 
 <!-- Проекты -->
     <section class="projects container" id="projects">
-      <h6 class="heading projects-heading">Проекты</h6>
+      <h2 class="heading projects-heading">Проекты</h2>
       <div class="projects-text-text">
         <p class="block-text">
           Предварительные выводы: постоянное информационно-пропагандистское обеспечение
@@ -2336,13 +2314,13 @@
       <section class="contact-information-section">
         <div class="contact-link">
           <div class="contact-adress-link">
-            <h3 class="contact-h3">Шоурум №4</h3>
+            <h2 class="contact-h3">Шоурум №4</h2>
             <p class="contact-adress">Леонтьевский переулок, дом 5/1</p>
           </div>
 
 <!-- Заказать обратный звонок -->
           <div class="contact-name-form">
-            <h4 class="contact-h3-input">Заказать обратный звонок</h4>
+            <h3 class="contact-h3-input">Заказать обратный звонок</h3>
             <form action="/" method="POST" class="footer-form contact-form js-form">
               <label for="name"></label>
               <div class="tultip-container">
