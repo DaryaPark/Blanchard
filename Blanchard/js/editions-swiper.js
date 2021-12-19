@@ -1,12 +1,12 @@
-new Swiper('.editions-swiper-container',{
+new Swiper('.events-swiper-container',{
     navigation: {
-        nextEl: '.gallery-button-next',
-        prevEl: '.gallery-button-prev',
+        nextEl: '.events-button-next',
+        prevEl: '.events-button-prev',
         clickable: true,
       },
 
       pagination:{
-        el:'.gallery-swiper-pagination',
+        el:'.editions-swiper-pagination',
         type:'fraction',
         
     },

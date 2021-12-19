@@ -12,5 +12,5 @@ new Swiper('.projects-swiper-container',{
     },
     slidesPerView:3,
     slidesPerGroup:3,
-    spaceBetween:49,
+    spaceBetween:50,
 });

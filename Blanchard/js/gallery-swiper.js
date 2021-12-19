@@ -13,9 +13,6 @@ new Swiper('.gallery-swiper-container', {
   },
 
   
-grid: {
-  rows:2,
-},
 
 autoHeight:false,
 slidesPerView:3,

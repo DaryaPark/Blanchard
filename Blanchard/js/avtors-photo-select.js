@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded',function(){
         const path = event.currentTarget.dataset.path
   
         document.querySelectorAll('.catalog-picture').forEach(function(tabContent){
-          tabContent.classList.toggle('catalog-picture-active');
+          tabContent.classList.remove('catalog-picture-active');
         })
       document.querySelector(`[data-target="${path}"]`).classList.add("catalog-picture-active");
     })
