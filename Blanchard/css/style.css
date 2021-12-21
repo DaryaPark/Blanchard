@@ -953,6 +953,31 @@ margin-bottom: 27px;
   margin: 0;
 }
 
+.block-text:nth-child(n+3) {
+  line-height: 30px;
+}
+
+.text-link{
+  color: #9D5CD0;
+  border-bottom: 1px solid transparent;
+  transition: border .3s ease-in-out, color .3s ease-in-out;
+}
+
+
+.text-link:hover{
+  border-color:#9D5CD0 ;
+}
+
+.text-link:focus:not(:active){
+  background-color:#9D5CD0;
+  color: #FFFFFF;
+  border-color:#FFFFFF;
+}
+
+.text-link:active{
+  color: #7943A4;
+  border-color:#7943A4;
+}
 
 .text-select-list {
   max-width: 1087px;
@@ -1135,11 +1160,15 @@ padding-right: 221px;
   display: flex;
   flex-direction: column;
   min-height:397px;
-  padding:10px 50px 43px 48px;
+  padding:11px 50px 43px 48px;
 }
 
 .events__heading {
   margin-bottom: 16px;
+}
+
+.swiper-events{
+  position:relative;
 }
 
 .gs-text {
@@ -1167,6 +1196,10 @@ padding-right: 221px;
   line-height: 32.68px;
   font-weight: 600;
   margin-bottom:10px;
+}
+
+.eventсard__title1{
+margin-bottom: 3px;
 }
 
 .invisible{
@@ -1362,7 +1395,7 @@ transition-property: z-index, opacity;
 }
 
 .gallery-button-prev.swiper-button-disabled,
-.gallery-button-next.swiper-button-disabled {
+.gallery-button-next.swiper-button-disabled{
   background-color: #666666;  
   border-color: #666666;
   color: #FFFFFF;
@@ -1371,30 +1404,23 @@ transition-property: z-index, opacity;
 }
 
 .gallery-button-prev:focus,
-.gallery-button-next:focus,
-.events-button-prev:focus,
-.events-button-next:focus{
+.gallery-button-next:focus{
   background-color: #666666;
   border: 2px solid #000000;
 }
 
 
 .gallery-button-prev:hover,
-.gallery-button-next:hover,
-.events-button-prev:hover,
-.events-button-next:hover {
+.gallery-button-next:hover{
   background-color: #9D5CD0;
   border: 2px solid #9D5CD0
 }
 
 .gallery-button-prev:active,
-.gallery-button-next:active,
-.events-button-prev:active,
-.events-button-next:active {
+.gallery-button-next:active{
   background-color: #7943A4;;
   border: 2px solid #000000;
 }
-
 
 .swiper-button-prev::after,
 .swiper-button-next::after{
@@ -1538,7 +1564,6 @@ transition-property: z-index, opacity;
   display: flex;
   flex-direction: column;
   margin-top: auto;
-  padding-left: 3px;
   padding-bottom: 9px;
 }
 
@@ -1558,53 +1583,114 @@ transition-property: z-index, opacity;
   margin-bottom: 13px;
 }
 
-.gallery-label {
-  position: relative;
-  cursor: pointer;
-  padding-left: 20px;
-  transition: border .3s ease-in-out, color .3s ease-in-out;
-}
 
 
-#one, #two, #three {
-  display: none;
-}
 
-#one+.cathegories-check, #two+.cathegories-check,#three+.cathegories-check{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.checkbox-gallery {
   position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента .gallery-label, связанного с .checkbox-gallery */
+.checkbox-gallery+.gallery-label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: color .3s ease-in-out, border .3s ease-in-out, background .3s ease-in-out;
+}
+
+/* создание в .gallery-label псевдоэлемента before со следующими стилями */
+.checkbox-gallery+.gallery-label::before {
+  content: '';
+  display: inline-block;
   width: 12px;
   height: 12px;
-  top: 6px;
-  left: -4px;
-  border: 1px solid #999999;
-  text-align: center;
-  transition: border .3s ease-in-out;
-}
-
-#one+.cathegories-check:before, #two+.cathegories-check:before, #three+.cathegories-check:before {
-  content:"";
-  background-image:url(../img/books/check-mark.svg) ;
-  position: absolute;
+  flex-shrink: 0;
+  flex-grow: 0;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  margin-right:12px;
   background-repeat: no-repeat;
-  background-position:center;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
+  background-position: center center;
+  background-size: 50% 50%;
 }
 
-#one:checked+.cathegories-check:before, #two:checked+.cathegories-check:before, #three:checked+.cathegories-check:before {
-  opacity: 1;
+/* стили при наведении курсора на checkbox */
+.checkbox-gallery:not(:disabled):not(:checked):hover+.gallery-label:hover,.gallery-label:hover::before {
+  border-color:#C283F3;
+  color:#C283F3;
 }
 
-.cathegories__item {
-  transition: color .3s ease-in-out;
+.checkbox-gallery:not(:active):active+.gallery-label,.gallery-label::before {
+  border-color:#FFFFFF;
+  color:#FFFFFF;
 }
+
+
+/* стили для активного чекбокса (при нажатии на него) */
+.checkbox-gallery:not(:disabled):active+.gallery-label,.gallery-label::before {
+  border-color:#C283F3;
+  color:#C283F3;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.checkbox-gallery:focus+.gallery-label,.gallery-label::before {
+  color:#C283F3;
+  border-color:#C283F3;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.checkbox-gallery:checked+.gallery-label::before {
+  border-color:#C283F3;
+  background-image: url("/img/books/check-mark.svg");
+}
+
+.checkbox-gallery:checked+.gallery-label{
+  color:#C283F3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .cathegories__item:not(:last-child){
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 }
 
 .events-swiper-btns{
@@ -1619,6 +1705,44 @@ transition-property: z-index, opacity;
   border: 1px solid #CACACA;
 }
 
+.events-swiper-container{
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding: 0;
+}
+
+.projects-swiper-button-prev.swiper-button-disabled,
+.projects-swiper-button-next.swiper-button-disabled {
+  background-color: #ECECEC;  
+  border-color: #ECECEC;
+  color: #BBBBBB;
+  opacity: .5;
+
+}
+
+.events-button-prev:hover,
+.events-button-next:hover,
+.projects-swiper-button-prev:hover,
+.projects-swiper-button-next:hover {
+  background-color: #D1A9F0;
+  border-color:#D1A9F0
+}
+
+.events-button-prev:active,
+.events-button-next:active,
+.projects-swiper-button-prev:active,
+.projects-swiper-button-next:active:not{
+  background-color: #D1A9F0;
+  border-color: #9D5CD0;
+}
+
+.events-button-prev:focus,
+.events-button-next:focus,
+.projects-swiper-button-prev:focus,
+.projects-swiper-button-next:focus{
+  border-color: #9D5CD0;
+}
 
 .events-button-prev,
 .events-button-next{
@@ -1629,7 +1753,12 @@ transition-property: z-index, opacity;
   background-color: #ECECEC;
   border-radius: 50px;
   border: 2px solid #ECECEC;
+  right: -27px;
   transition: background .3s ease-in-out, color .3s ease-in-out, border .3s ease-in-out;
+}
+
+.events-button-prev{
+  left: -26px;
 }
 
 .events-button-prev::after,
@@ -1680,7 +1809,7 @@ transition-property: z-index, opacity;
   border: 1px solid rgba(202, 202, 202, 1);
   filter: grayscale(1);
   cursor: pointer;
-  transition: border .3s ease-in-out;
+  transition: border .3s ease-in-out, filter .3s ease-in-out;
 }
 
 .project-slide-img{
@@ -1700,11 +1829,42 @@ transition-property: z-index, opacity;
 
 .projects-swiper-container {
   height: auto;
-  padding:0 80px 0 75px;
- overflow: hidden;
+margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  padding: 0;
+  z-index: 1;
 }
 
+.projects-swiper{
+  position: relative;
+  padding:0 76px 0 75px;
+}
 
+.projects-swiper-button-prev::after,
+.projects-swiper-button-next::after{
+color: #000000;
+}
+.projects-swiper-button-prev,
+.projects-swiper-button-next{
+  width: 30px;
+  height: 30px;
+  padding:10px 9px 10px 8px;
+  background-color: #ECECEC;
+  position: absolute;
+  top: 55%;
+  border: 2px solid #ECECEC;
+  border-radius: 100px;
+  transition: border .3s ease-in-out, background .3s ease-in-out, color .3s ease-in-out;
+}
+
+.projects-swiper-button-next{
+  right: 0;
+}
+
+.projects-swiper-button-prev{
+  left: -1px;
+}
 .projects {
   margin-bottom: 81px;
 }
