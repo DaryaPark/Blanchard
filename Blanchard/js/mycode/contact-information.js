@@ -4,7 +4,7 @@ var im = new Inputmask("+7 (999)-999-99-99");
 
 im.mask(selector);
 
-new JustValidate('.footer-form ', {
+new JustValidate('.footer-form', {
   rules: {
     username: {
       required: true,
@@ -15,14 +15,10 @@ new JustValidate('.footer-form ', {
     tel: {
       required: true,
       function: (name, value) => {
-        const phone = selector.Inputmask.unmaskedvalue()
+        const phone = selector.Inputmask.Unmaskedvalue()
         console.log(phone)
         return Number(phone) && phone.length === 10
       }
-    },
-    mail: {
-      required: true,
-      email: true
     },
   },
 
@@ -35,10 +31,6 @@ new JustValidate('.footer-form ', {
 
     tel: {
       required: 'Укажите ваш телефон'
-    },
-
-    mail: {
-      required: 'Укажите ваш e-mail'
     },
   }
 })
