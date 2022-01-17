@@ -1659,36 +1659,12 @@ transition-property: z-index, opacity;
 /* стили для чекбокса, находящегося в состоянии checked */
 .checkbox-gallery:checked+.gallery-label::before {
   border-color:#C283F3;
-  background-image: url("/img/books/check-mark.svg");
+  background-image: url("../img/books/check-mark.svg");
 }
 
 .checkbox-gallery:checked+.gallery-label{
   color:#C283F3;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .cathegories__item:not(:last-child){
@@ -1784,7 +1760,7 @@ transition-property: z-index, opacity;
 
 .projects-text-text {
   max-width: 1080px;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .projects-text:last-child {
@@ -1794,7 +1770,7 @@ transition-property: z-index, opacity;
 .projects-swiper-text {
   font-weight: 600;
   font-size: 24px;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
   margin-top: 0;
 }
 
@@ -1866,33 +1842,41 @@ color: #000000;
   position: relative;
 }
 
-.tooltip{
-  display: block;
+.tooltip-element{
+  color: #000000;
+  border: 1px solid #9D5CD0;
+  border-radius: 100px;
+  padding: 0px 5px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: -2px;
+  margin-right: 2px;
 }
 
-.tooltip-text{
-  opacity:0;
-  visibility: hidden;
+.tooltip-1{
+  margin-left: -1px;
+   margin-right: 1px;
+ }
+
+.tooltip {
+  position: fixed;
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 4px;
+  text-align: center;
+  max-width: 400px;
+  background-color: #9D5CD0;
+  color: #FFFFFF;
 }
 
-.tooltip-element:hover + .tooltip-text{
-  opacity: 1;
-  visibility: visible;
-}
-
-/* .i-tooltip{
+ .i-tooltip{
   cursor: pointer;
   position:relative;
   width: 16px;
   height: 16px;
 }
 
-.i-tooltip-marker{
-  padding: 0;
-  margin: 0;
-}
-
-.i-tooltip::after{
+.tooltip::after{
   content: attr(data-text);
   position: absolute;
   width: 242px;
@@ -1911,7 +1895,7 @@ color: #000000;
   transition: opacity .3s ease-in-out;
 }
 
-.i-tooltip::before{
+.tooltip::before{
   content:"";
   width: 0;
   height: 0;
@@ -1922,15 +1906,14 @@ color: #000000;
   content: "";
   left:50%;
   transform:translateX(-50%) translateY(-96%);
-  top: 7%;
-  opacity: 0;
+  top:110%;
 }
 
-.i-tooltip:hover::after,
-.i-tooltip:hover::before{
+.tooltip:hover::after,
+.tooltip:hover::before{
   opacity: 1;
   visibility: visible;
-} */
+}
 
 .map {
   width: 460px;
@@ -1946,12 +1929,12 @@ color: #000000;
 }
 
 .contact-link-container{
-  height: 155px;
   border: 1px solid rgba(202, 202, 202, 1);
 }
 
 .contact-link {
   display: flex;
+  margin-bottom: 21px;
 padding:30px 16px 13px 14px;
 }
 
@@ -1962,7 +1945,6 @@ padding:30px 16px 13px 14px;
 
 .contact-adress{
   margin: 0;
-  margin-bottom: 37px;
 }
 .form-control {
   width: 270px;
@@ -2003,18 +1985,14 @@ flex-direction: column-reverse;
 .js-validate-error-label{
   padding-left: 24px;
 }
-.contact-h3-input {
-  margin-bottom: 19px;
-  font-size: 24px;
-  font-weight: 400;
-  margin-top: 0;
-}
 
 .contact-feedback-heading{
   font-weight: 600;
+  font-size: 24px;
+ margin-top: 0;
   margin-bottom: 6px;
 }
-.contact-h3 {
+.contact-heading {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 11px;
