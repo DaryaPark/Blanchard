@@ -6,17 +6,17 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Blanchard</title>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <script src="js/library/jquery.min.js"></script>
    <script src="js/mycode/scroll.js"></script>
    <script src="js/library/dist/js/lightbox-plus-jquery.js"></script>
-   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <script src="js/library/jquery-1.12.4.js"></script>
+   <script src="js/library/jquery-ui.js"></script>
    <link rel="stylesheet" href="css/choices.min.css">
-   <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
-   <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+   <link rel="stylesheet" href="css/simplebar.css">
+   <script src="js/library/simplebar.js"></script>
    <!-- свайпер -->
-   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   <link rel="stylesheet" href="css/swiper-bundle-min.css">
+   <script src="js/library/swiper-budle.js"></script>
    <link rel="stylesheet" href="css/lightbox.min.css">
    <script src="js/mycode/swiper.js" defer></script>
    <script src="js/mycode/accordion.js" defer></script>
@@ -318,20 +318,20 @@
             <option class="gallery-select__item"> Рисунок</option>
             <option class="gallery-select__item"> Скульптура</option>
           </select>
-            <ul class="cathegories__list">
-              <li class="cathegories__item">
+            <ul class="cathegories-list">
+              <li class="cathegories-item">
                   <input type="checkbox" class="checkbox-gallery" name="three" id="one"> 
                   <label for="one" class="gallery-label"> XIX век
                 </label>
               </li>
 
-              <li class="cathegories__item">
+              <li class="cathegories-item">
                   <input type="checkbox" class="checkbox-gallery" name="two" id="two" checked> 
                   <label for="two" class="gallery-label"> XX век
                 </label>
               </li>
 
-              <li class="cathegories__item">
+              <li class="cathegories-item">
                   <input type="checkbox" class="checkbox-gallery" name="three" id="three">
                   <label for="three" class="gallery-label"> Современность
                 </label>
@@ -1090,41 +1090,6 @@
 <!-- map -->
         <div class="contact-map" id="map">
         </div>
-      <script type="text/javascript">
-        // Функция ymaps.ready() будет вызвана, когда
-        // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-        ymaps.ready(init);
-        function init() {
-          // Создание карты.
-          var myMap = new ymaps.Map("map", {
-            // Координаты центра карты.
-            // Порядок по умолчанию: «широта, долгота».
-            // Чтобы не определять координаты центра карты вручную,
-            // воспользуйтесь инструментом Определение координат.
-            center: [55.75846806898367, 37.60108849999989],
-            // Уровень масштабирования. Допустимые значения:
-            // от 0 (весь мир) до 19.
-            zoom: 16,
-          });
-          myMap.controls.remove('geolocationControl'); // удаляем геолокацию
-          myMap.controls.remove('searchControl'); // удаляем поиск
-          myMap.controls.remove('trafficControl'); // удаляем контроль трафика
-          myMap.controls.remove('typeSelector'); // удаляем тип
-          myMap.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
-          myMap.controls.remove('zoomControl'); // удаляем контрол зуммирования
-          myMap.controls.remove('rulerControl'); // удаляем контрол правил
-          myMap.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
-
-        var myPlacemark = new ymaps.Placemark([55.75846806898367, 37.60108849999989], {}, {
-          iconLayout: 'default#image',
-          iconImageHref: 'img/icons/point-map.svg',
-          iconImageSize: [28, 40],
-          iconImagOffset: [-3, -42]
-        });
-         // Размещение геообъекта на карте.
-        myMap.geoObjects.add(myPlacemark);
-        }
-      </script>
       </section>
       <div class="navigation-menu">
         <nav class="footer-footer-social container">
@@ -1158,6 +1123,7 @@
         </nav>
       </div>
     </footer>
+    <script src="js/mycode/mymap.js"></script>
     <script src="js/mycode/menu2-select.js"></script>
     <script src="js/mycode/choices.min.js"></script>
     <script src="js/mycode/select.js"></script>
@@ -1167,7 +1133,6 @@
     <script src="js/library/just-validate.min.js"></script>
     <script src="js/mycode/inputmask.min.js"></script>
     <script src="js/mycode/contact-information.js"></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="js/mycode/tooltip-1.js"></script>
   </body>
 

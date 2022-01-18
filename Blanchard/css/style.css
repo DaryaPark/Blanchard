@@ -1562,7 +1562,7 @@ transition-property: z-index, opacity;
   margin-bottom: 28px;
 }
 
-.cathegories__list {
+.cathegories-list{
   display: flex;
   flex-direction: column;
   margin-top: auto;
@@ -1667,7 +1667,7 @@ transition-property: z-index, opacity;
 }
 
 
-.cathegories__item:not(:last-child){
+.cathegories-item:not(:last-child){
   margin-bottom: 13px;
 }
 
