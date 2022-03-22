@@ -77,7 +77,7 @@
     display: none
 }
 
-.choices[data-type*=select-one]:after {
+.choices[data-type*=select-one]::before {
     content: '';
     height: 0;
     width: 0;

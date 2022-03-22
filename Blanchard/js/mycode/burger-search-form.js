@@ -1,5 +1,5 @@
 $(document).ready(function() {
     $('.header-icon').click(function(event){
-        $('.header-icon, .burger-search-form').toggleClass('active');
+        $('.header-icon, .searchview-bar, .burger-search-form').toggleClass('active');
     });
 });

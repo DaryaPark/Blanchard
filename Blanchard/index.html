@@ -33,53 +33,63 @@
       <h1 class="header-description">Blanchard — художественная галерея</h1>
       <div class="navigation-menu">
         <div class="navigation-menu-container  container">
-          <div class="header__burger">
-            <span></span>
+          <div class="navigation-menu-wrapper">
+             <!-- Иконка бургер -->
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <picture class="logo">
+              <img class="logo__img" src="img/icons/logo-burger.svg" alt="логотип Бланчард ">
+            </picture>
           </div>
-          <picture class="logo">
-            <img class="logo__img" src="img/icons/logo-burger.svg" alt="логотип Бланчард ">
-          </picture>
           <!-- поиск -->
-          <button aria-label="Поиск" class="header-icon"></button>
+          <div class="searchview-bar">
           <!-- раскрытие поиска -->
           <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="burger-search-form search-form">
             <button aria-label="Поиск" class="burger-button-icon button-icon"></button>
             <input name="user" class="burger-search search">
           </form>
+          <button aria-label="Поиск" class="header-icon"></button>
+          </div>
 
           <nav class="header-navigation-menu">
           <ul class="navigation-menu-list">
             <li class="navigation-menu-list__item">
-              <a href="#aboutUs" class="navigation-menu-list__link">
-              О нас
+              <a href="#aboutUs" data-goto=".description-section"  class="navigation-menu-list__link">
+                О нас
               </a>
             </li>
             <li class="navigation-menu-list__item">
-               <a href="#gallery" class="navigation-menu-list__link">
-              Галерея
-               </a>
+              <a href="#gallery" data-goto=".gallery" class="navigation-menu-list__link">
+                Галерея
+              </a>
             </li>
             <li class="navigation-menu-list__item">
-               <a href="#katalog" class="navigation-menu-list__link">
-              Каталог
-               </a>
+              <a href="#katalog" data-goto=".catalog" class="navigation-menu-list__link">
+                Каталог
+              </a>
             </li>
             <li class="navigation-menu-list__item">
-               <a href="#events" class="navigation-menu-list__link">
-               События
-               </a>
+              <a href="#events" data-goto=".events" class="navigation-menu-list__link">
+                События
+              </a>
             </li>
             <li class="navigation-menu-list__item">
-               <a href="#projects" class="navigation-menu-list__link">
-              Проекты
-               </a>
+              <a href="#projects" data-goto=".projects" class="navigation-menu-list__link">
+                Издания
+              </a>
             </li>
-             <li class="navigation-menu-list__item">
-               <a href="#contactUs" class="navigation-menu-list__link">
-              Контакты
-               </a>
+            <!-- <li class="navigation-menu-list__item">
+              <a href="#projects" class="navigation-menu-list__link">
+                Проекты
+              </a>
+            </li> -->
+            <li class="navigation-menu-list__item">
+              <a href="#contactUs" data-goto=".contact-information-section" class="navigation-menu-list__link">
+                Контакты
+              </a>
             </li>
-            </ul>
+          </ul>
             <button class="burger-login-btn login-btn ">
               <svg class="login-btn__img" width="11" height="9" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"/>
@@ -94,8 +104,8 @@
            Войти
           </button>
 
+
         </div>
-      </div>
 
       <div class="dropdown-menu">
           <!-- меню 2 -->
@@ -140,7 +150,6 @@
           <div class="dropdown-menu-container">
             <div class="dropdown-menu-container-box">
           <ul class="dropdown-menu-container-list customScroll" data-simplebar>
-            <div></div>
             <li class="rectangle2-1  rectangle-img ">
              <a href="" class="select-item">Моне</a>
            </li>
@@ -261,6 +270,7 @@
          </form>
          </div>
       </div>
+      </div>
     </header>
     <main class="main">
     <section class="main-banner">
@@ -368,58 +378,63 @@
       <div class="gallery-swiper-slide swiper-slide">
         <div class="editions-image-text">
           <picture class="image-slider-gallery">
-            <a href="img/painting-1.1.jpg" class="galleryImage">
-            <img  tabindex="0" class="gallery-pictures" src="img/painting-1.1.jpg" alt="живопись">
-            </a>
+            <source srcset="img/painting.2x290.jpg" media="(max-width:480px)">
+            <source srcset="img/painting.1x315.jpg" media="(max-width:900px)">
+            <source srcset="img/painting-1.jpg" media="(max-width:1540px)">
+            <img tabindex="0" class="gallery-pictures"  src="img/painting-1.1.jpg"  alt="живопись">
           </picture>
         </div>
       </div>
       <div class="gallery-swiper-slide swiper-slide">
         <div class="editions-image-text">
           <picture class="image-slider-gallery">
-            <a href="img/painting-1.2.jpg" class="galleryImage">
+            <source srcset="img/painting.1x290.jpg" media="(max-width:480px)">
+             <source srcset="img/painting.2x315.jpg" media="(max-width:900px)">
+             <source srcset="img/painting-2.jpg" media="(max-width:1540px)">
             <img tabindex="0" class="gallery-pictures"  src="img/painting-1.2.jpg"  alt="живопись">
-            </a>
           </picture>
         </div>
       </div>
       <div class="gallery-swiper-slide swiper-slide">
         <div class="editions-image-text">
           <picture class="image-slider-gallery">
-            <a href="img/painting-1.3.jpg" class="galleryImage">
+            <source srcset="img/painting.4x290.jpg" media="(max-width:480px)">
+             <source srcset="img/painting.3x315.jpg" media="(max-width:900px)">
+             <source srcset="img/painting-3.jpg" media="(max-width:1540px)">
             <img tabindex="0" class="gallery-pictures" src="img/painting-1.3.jpg" alt="живопись">
-            </a>
           </picture>
         </div>
       </div>
       <div class="gallery-swiper-slide swiper-slide">
         <div class="editions-image-text">
           <picture class="image-slider-gallery">
-            <a href="img/painting-1.4.jpg" class="galleryImage">
+            <source srcset="img/painting.5x290.jpg" media="(max-width:480px)">
+             <source srcset="img/painting.4x315.jpg" media="(max-width:900px)">
+             <source srcset="img/painting-4.jpg" media="(max-width:1540px)">
             <img tabindex="0" class="gallery-pictures" src="img/painting-1.4.jpg"  alt="живопись">
-            </a>
           </picture>
         </div>
       </div>
       <div class="gallery-swiper-slide swiper-slide">
         <div class="editions-image-text">
           <picture class="image-slider-gallery">
-            <a href="img/painting-1.5.jpg" class="galleryImage">
+            <source srcset="img/painting.3x290.jpg" media="(max-width:480px)">
+             <source srcset="img/painting.5x315.jpg" media="(max-width:900px)">
+             <source srcset="img/painting-5.jpg" media="(max-width:1540px)">
             <img tabindex="0" class="gallery-pictures" src="img/painting-1.5.jpg" alt="живопись">
-            </a>
           </picture>
         </div>
       </div>
       <div class=" gallery-swiper-slide swiper-slide">
         <div class="editions-image-text">
           <picture class="image-slider-gallery">
-            <a href="img/painting-1.6.jpg" class="galleryImage">
+             <source srcset="img/painting.6x315.jpg" media="(max-width:900px)">
+             <source srcset="img/painting-6.jpg" media="(max-width:1540px)">
             <img tabindex="0" class="gallery-pictures" src="img/painting-1.6.jpg" alt="живопись">
-            </a>
           </picture>
         </div>
       </div>
-      <div class=" gallery-swiper-slide swiper-slide">
+      <!-- <div class=" gallery-swiper-slide swiper-slide">
         <div class="editions-image-text">
           <picture class="image-slider-gallery">
             <a href="img/painting-2.1.jpg" class="galleryImage">
@@ -583,7 +598,7 @@
             </a>
           </picture>
         </div>
-      </div>
+      </div> -->
       </div>
       </div>
       </div>
@@ -612,6 +627,35 @@
           </div>
           <div class="catalog-accordion">
           <ul class="catalog-accordion__container">
+            <li class="catalog-picture" data-target="BenedittidiBindo4">
+              <picture class="lang-picture">
+              <img class="lang-picture-1" src="img/beneditto.png" alt="Beneditti di Bindo">
+              </picture>
+              <h3 class="catalog-title">Бенедетто ди Биндо</h3>
+              <p class="catalog-title-text"> 1380 — 19 сентября 1417.</p>
+              <p class="catalog-title-descripcion">Творчество Бенедетто ди Биндо протекало в русле предначертанном Симоне Мартини. Специалисты полагают, что он был
+              учеником Паоло ди Джованни Феи. В ранних его работах ощущается подражание Таддео ди Бартоло. Ему приписывается фреска
+              «Вознесение Марии» в церкви Сан Никколо дель Кармине в Сиене, а также несколько станковых произведений, хранящихся в
+              разных музеях.
+              </p>
+            </li>
+            <li class="catalog-picture" data-target="GiovanniAntonioBoltraffio">
+              <picture class="lang-picture">
+              <img class="lang-picture-1" src="img/giovanni.jpg" alt="Giovanni Antonio Boltraffio">
+              </picture>
+              <h3 class="catalog-title">Джованни Антонио Больтраффио (Бельтраффио)</h3>
+              <p class="catalog-title-text"> 1467 — 1516.</p>
+              <p class="catalog-title-descripcion">художник происходил из аристократической семьи. Воспитанный в традициях Фоппы, Бернардо Дзенале и Амброджо Бергоньоне,
+              он прошёл обучение в мастерской Леонардо. Его первое произведение «Воскресение Христа, святой Леонард и святая Лючия»
+              выполнено в 1491 году совместно с Марко д'Оджоно для миланской церкви Сан-Джованни-сул-Муро. Был придворным художником
+              Лодовико Моро и славился своими психологическими портретами.
+              
+              Больтраффио умер в возрасте 49 лет и был похоронен на кладбище церкви Св. Паулы в Комито.
+              
+              Историки искусства предполагают, что фигура Младенца на картине Леонардо да Винчи «Мадонна Литта» принадлежит кисти
+              Джованни Антонио Больтраффио. Известны подготовительные рисунки Больтраффио, в точности воспроизводящие эту фигуру.
+              </p>
+            </li>
             <li class="catalog-picture catalog-picture-active" data-target="DomenicoGhirlandaio4">
               <picture class="lang-picture">
               <img class="lang-picture-1" src="img/picture-lang.jpg" alt="Domenico Ghirlandaio">
@@ -635,6 +679,21 @@
                 костюмах того времени).
               </p>
             </li>
+
+            <li class="catalog-picture" data-target="AndreadelVerrocchio">
+              <picture class="lang-picture">
+              <img class="lang-picture-1" src="img/Verrocchio.png" alt=" Andrea del Verrocchio">
+              </picture>
+              <h3 class="catalog-title">Андреа ди Микеле Чони </h3>
+              <p class="catalog-title-text"> 1435 — 1488.</p>
+              <p class="catalog-title-descripcion">скульптор и живописец эпохи Возрождения, представитель Флорентийской школы. Среди его учеников — Сандро Боттичелли,
+              Пьетро Перуджино, Леонардо да Винчи и Лоренцо ди Креди.В эпоху Раннего Возрождения художники работали почти исключительно по заказам, поэтому в то время была велика роль меценатов. Эта практика особенно распространилась во Флоренции XV века, где художественные мастерские осуществляли любые заказы покровителей — от росписи посуды до архитектурных проектов. Верроккьо считался непревзойденным декоратором и режиссёром придворных празднеств.
+
+              В 1465 году он создал надгробие Козимо Медичи (1389—1464). В 1467—1483 годах работал над скульптурной композицией «Уверение Фомы (Верроккьо)» для церкви Орсанмикеле.
+              </p>
+            </li>
+
+
             <li class="catalog-picture" data-target="unfamiliar4">
               <picture class="lang-picture">
               <img class="lang-picture-1 lang-picture-1-unfamiliar" src="img/unfamiliar.png" alt="unfamiliar">
@@ -656,7 +715,7 @@
               <div class="surname-list">
           <ul class="surname-list__item">
             <li class="surname-list__item-li">
-              <button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar4"> Бенедетто ди Биндо
+              <button class="surname-list__btn surname-list__btn-reset" data-path="BenedittidiBindo4"> Бенедетто ди Биндо
               </button>
             </li>
             <li>
@@ -668,7 +727,7 @@
               </button> 
             </li>
             <li>
-              <button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar4"> Больтраффио, Джованни
+              <button class="surname-list__btn surname-list__btn-reset" data-path="GiovanniAntonioBoltraffio"> Больтраффио, Джованни
               </button>
             </li>
             <li>
@@ -692,7 +751,7 @@
             </li>
             <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar4"> Веккьетта 
               </button> </li>
-            <li><button class="surname-list__btn surname-list__btn-reset" data-path="unfamiliar4"> Андреа Верроккьо
+            <li><button class="surname-list__btn surname-list__btn-reset" data-path="AndreadelVerrocchio"> Андреа Верроккьо
               </button> </li>
             <li> <button class="surname-list__btn surname-list__btn-reset surname-list__btn-active" data-path="DomenicoGhirlandaio4"> Доменико Гирландайо
               </button> </li>
@@ -851,7 +910,9 @@
 <!-- Slides -->
         <div class="events-swiper-slide swiper-slide">
           <div class="image-slider-editions">
+            <picture>
             <img src="img/event1.png" alt="">
+            </picture>
           </div>
           <div class="eventсard">
             <p class="gs-text gs-text-bold">Музей им. Щусева</p>
@@ -866,13 +927,17 @@
         </div>      
         <div class="events-swiper-slide swiper-slide">
           <div class="image-slider-editions">
-            <img src="img/event2.png" alt="">
+            <picture>
+              <source srcset="img/event3x318.jpg" media="(max-width:900px)">
+              <source srcset="img/event2.1.png" media="(max-width:1024px)">
+              <img src="img/event2.png" alt="">
+            </picture>
           </div>
           <div class="eventсard">
             <p class="gs-text gs-text-bold">ММОМА</p>
             <p class="gs-text gs-text-bold"> 24 марта 19:00</p>
             <div class="eventсard__text">
-            <h3 class="heading eventсard__title">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
+            <h3 class="heading eventсard__title eventсard__title2">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
             </h3>
             <p class="block-text eventсard__block-text">Высокий уровень
               вовлечения представителей
@@ -884,7 +949,10 @@
         </div>
         <div class="events-swiper-slide swiper-slide">
           <div class="image-slider-editions">
-            <img src="img/event3.png" alt="">
+            <picture>
+              <source srcset="img/event3.1.png" media="(max-width:1024px)">
+              <img src="img/event3.png" alt="">
+            </picture>
           </div>
           <div class="eventсard">
             <p class="gs-text gs-text-bold">Еврейский музей</p>
@@ -903,7 +971,9 @@
         </div>
         <div class="events-swiper-slide swiper-slide">
           <div class="image-slider-editions">
-            <img src="img/event4.png" alt="">
+            <picture>
+              <img src="img/event4.png" alt="">
+            </picture>
           </div>
           <div class="eventсard">
             <p class="gs-text">Третьяковка на Крымском валу
@@ -922,7 +992,9 @@
         </div>
         <div class="events-swiper-slide swiper-slide">
           <div class="image-slider-editions">
-            <img src="img/event5.png" alt="">
+            <picture>
+              <img src="img/event5.png" alt="">
+            </picture>
           </div>
           <div class="eventсard">
             <p class="gs-text ">ММАМ</p>
@@ -951,29 +1023,28 @@
           однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё
           независимые государства
           смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус
-          бесполезности. Прежде всего, постоянное  информационно-пропагандистское
-            <button data-tooltip="Пример современных тенденций - современная методология разработки" aria-describedby="tooltip" class="tooltip-element tooltip-1" aria-label="подробнее">
-              i
-            </button>
-          
+          бесполезности. Прежде всего, постоянное информационно-пропагандистское
+          <button data-tooltip="Пример современных тенденций - современная методология разработки" aria-describedby="tooltip"
+            class="tooltip-element tooltip-1" aria-label="подробнее">
+            i
+          </button>
+      
           обеспечение нашей деятельности
           однозначно фиксирует необходимость экономической целесообразности принимаемых
           решений. И нет
           сомнений,
           что действия представителей оппозиции могут быть рассмотрены
-
-            <button data-tooltip="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции" aria-describedby="tooltip" class="tooltip-element" aria-label="подробнее">
+      
+          <button data-tooltip="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"
+            aria-describedby="tooltip" class="tooltip-element" aria-label="подробнее">
             i
-            </button>исключительно в разрезе маркетинговых и финансовых
-
-            <button  data-tooltip="В стремлении  повысить качество" aria-describedby="tooltip" class="tooltip-element" aria-label="подробнее">
-            i
-            </button>
-            предпосылок. Банальные, но неопровержимые выводы, а также представители современных
+          </button> исключительно в разрезе маркетинговых и финансовых <button data-tooltip="В стремлении  повысить качество"
+            aria-describedby="tooltip" class="tooltip-element" aria-label="подробнее">
+            i</button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных
           социальных резервов призывают нас к новым свершениям, которые, в свою очередь,
           должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:
-            <a href="blanchard-art.ru/projects/about" class="text-link">blanchard-art.ru/projects/about</a>
-          </p>
+          <a href="blanchard-art.ru/projects/about" class="text-link">blanchard-art.ru/projects/about</a>
+        </p>
       </div>
       <div class="projects-text-text projects-text-none2">
         <p class="block-text">
@@ -982,113 +1053,115 @@
           однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё
           независимые государства
           смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус
-          бесполезности. Прежде всего, постоянное  информационно-пропагандистское
-            <button data-tooltip="Пример современных тенденций - современная методология разработки" aria-describedby="tooltip" class="tooltip-element tooltip-1" aria-label="подробнее">
-              i
-            </button>
-          
-          обеспечение нашей деятельности
-          однозначно фиксирует необходимость экономической целесообразности принимаемых
-          решений. И нет
-          сомнений,
-          что действия представителей оппозиции могут быть рассмотрены
-
-            <button data-tooltip="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции" aria-describedby="tooltip" class="tooltip-element" aria-label="подробнее">
-            i
-            </button>исключительно в разрезе маркетинговых и финансовых
-
-            <button  data-tooltip="В стремлении  повысить качество" aria-describedby="tooltip" class="tooltip-element" aria-label="подробнее">
-            i
-            </button>
-            предпосылок. Банальные, но неопровержимые выводы, а также представители современных
-          социальных резервов призывают нас к новым свершениям, которые, в свою очередь,
-          должны быть смешаны
-          </p>
-          <p class="block-text"> с не уникальными данными до степени совершенной неузнаваемости. Подробнее:
-            <a href="blanchard-art.ru/projects/about" class="text-link">blanchard-art.ru/projects</a>
-          </p>
+          бесполезности. Прежде всего, постоянное информационно-пропагандистское <button
+            data-tooltip="Пример современных тенденций - современная методология разработки" aria-describedby="tooltip"
+            class="tooltip-element tooltip-1" aria-label="подробнее">
+            i </button> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности
+          принимаемых
+          решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <button
+            data-tooltip="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"
+            aria-describedby="tooltip" class="tooltip-element" aria-label="подробнее">
+            i </button> исключительно в разрезе маркетинговых
+        </p>
+        <p class="block-text">
+             и финансовых <button
+            data-tooltip="В стремлении  повысить качество" aria-describedby="tooltip" class="tooltip-element"
+            aria-label="подробнее">
+            i</button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных
+          социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны
+        </p>
+        <p class="block-text"> с не уникальными данными до степени совершенной неузнаваемости. Подробнее:
+          <a href="blanchard-art.ru/projects/about" class="text-link">blanchard-art.ru/projects</a>
+        </p>
       </div>
-      <div class="projects-text-text projects-text-none1 ">
+      <div class="projects-text-text projects-text-none1">
         <p class="block-text">
           Предварительные выводы: постоянное информационно-пропагандистское обеспечение
           нашей деятельности
           однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё
           независимые государства
           смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус
-          бесполезности. Прежде всего, постоянное  информационно-пропагандистское
-            <button data-tooltip="Пример современных тенденций - современная методология разработки" aria-describedby="tooltip" class="tooltip-element tooltip-1" aria-label="подробнее">
-              i
-            </button>
-          
-          обеспечение нашей деятельности
-          однозначно фиксирует необходимость экономической целесообразности принимаемых
-          решений. И нет
-          сомнений,
-          что действия представителей оппозиции могут быть рассмотрены
-
-            <button data-tooltip="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции" aria-describedby="tooltip" class="tooltip-element" aria-label="подробнее">
-            i
-            </button> исключительно в разрезе маркетинговых и финансовых
-            </p>
-            <p class="block-text">
-            <button  data-tooltip="В стремлении  повысить качество" aria-describedby="tooltip" class="tooltip-element" aria-label="подробнее">
-            i
-            </button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных
-          социальных резервов призывают нас к новым свершениям, которые, в свою очередь,
-          должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:
-            <a href="blanchard-art.ru/projects/about" class="text-link">blanchard-art.ru/projects/about</a>
-          </p>
+          бесполезности. Прежде всего, постоянное информационно-пропагандистское <button
+            data-tooltip="Пример современных тенденций - современная методология разработки" aria-describedby="tooltip"
+            class="tooltip-element tooltip-1" aria-label="подробнее">
+            i </button> обеспечение нашей деятельности
+          однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия
+          представителей оппозиции могут быть рассмотрены
+          <button data-tooltip="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"
+            aria-describedby="tooltip" class="tooltip-element" aria-label="подробнее">
+            i </button> исключительно в разрезе маркетинговых 
+        </p>
+        <p class="block-text"> и финансовых <button data-tooltip="В стремлении  повысить качество" aria-describedby="tooltip" class="tooltip-element"
+          aria-label="подробнее">
+          i </button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных
+          социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными
+          данными до степени совершенной неузнаваемости. Подробнее:
+          <a href="blanchard-art.ru/projects/about" class="text-link">blanchard-art.ru</a>
+        </p>
       </div>
          <p class="projects-swiper-text">Партнёры проектов:</p>
       <div class="projects-swiper">
         <div class="projects-swiper-container">
 <!-- Additional required wrapper -->
           <div class="projects-swiper-wrapper swiper-wrapper">
-<!-- Slides -->
+            <!-- Slides -->
             <div class="projects-swiper-slide swiper-slide">
-              <a href="/" class="projects-image">
-                <img src="img/projects/projects-1.png" alt=""  class="project-slide-img">
-              </a>
+      
+                <a href="/" class="projects-image">
+                  <img src="img/projects/projects-1.png" alt="" class="project-slide-img project-slide-img-1">
+                </a>
             </div>
             <div class="projects-swiper-slide swiper-slide">
-              <a href="/" class="projects-image">
-                <img src="img/projects/projects-2.png" alt="" class="project-slide-img">
-              </a>
+          
+                <a href="/" class="projects-image">
+                  <img src="img/projects/projects-2.png" alt="" class="project-slide-img project-slide-img-2">
+                </a>
             </div>
             <div class="projects-swiper-slide swiper-slide">
-              <a href="/" class="projects-image">
-                <img src="img/projects/projects-3.png" alt="" class="project-slide-img">
-              </a>
+          
+                <a href="/" class="projects-image">
+                  <img src="img/projects/projects-3.png" alt="" class="project-slide-img project-slide-img-3">
+                </a>
+          
             </div>
             <div class="projects-swiper-slide swiper-slide">
-              <a href="/" class="projects-image">
-                <img src="img/projects/projects-4.png" alt="" class="project-slide-img">
-              </a>
+          
+                <a href="/" class="projects-image">
+                  <img src="img/projects/projects-4.png" alt="" class="project-slide-img project-slide-img-4">
+                </a>
+          
             </div>
             <div class="projects-swiper-slide swiper-slide">
-              <a href="/" class="projects-image">
-                <img src="img/projects/projects-5.png" alt="" class="project-slide-img">
-              </a>
+          
+                <a href="/" class="projects-image">
+                  <img src="img/projects/projects-5.png" alt="" class="project-slide-img project-slide-img-5">
+                </a>
+          
             </div>
             <div class="projects-swiper-slide swiper-slide">
-              <a href="/" class="projects-image">
-                <img src="img/projects/projects-6.png" alt="" class="project-slide-img">
-              </a>
+          
+                <a href="/" class="projects-image">
+                  <img src="img/projects/projects-6.png" alt="" class="project-slide-img project-slide-img-6">
+                </a>
+          
             </div>
             <div class="projects-swiper-slide swiper-slide">
-              <a href="/" class="projects-image">
-                <img src="img/projects/projects-7.png" alt="" class="project-slide-img">
-              </a>
+          
+                <a href="/" class="projects-image">
+                  <img src="img/projects/projects-7.png" alt="" class="project-slide-img project-slide-img-7">
+                </a>
             </div>
             <div class="projects-swiper-slide swiper-slide">
-              <a href="/" class="projects-image">
-                <img src="img/projects/projects-8.png" alt="" class="project-slide-img">
-              </a>
+          
+                <a href="/" class="projects-image">
+                  <img src="img/projects/projects-8.png" alt="" class="project-slide-img project-slide-img-8">
+                </a>
             </div>
             <div class="projects-swiper-slide swiper-slide">
-              <a href="/" class="projects-image">
-                <img src="img/projects/projects-9.png" alt="" class="project-slide-img">
-              </a>
+          
+                <a href="/" class="projects-image">
+                  <img src="img/projects/projects-9.png" alt="" class="project-slide-img project-slide-img-9">
+                </a>
             </div>
           </div>
 <!-- If we need navigation buttons -->

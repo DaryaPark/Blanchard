@@ -27,7 +27,7 @@ new Swiper('.projects-swiper-container',{
     375:{
       slidesPerView:2,
       slidesPerGroup:2,
-      spaceBetween: 33,
+      spaceBetween: 34,
       },
     }
   

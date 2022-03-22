@@ -32,7 +32,7 @@ breakpoints:{
     769:{
     slidesPerView:2,
     slidesPerGroup:2,
-    spaceBetween:34,
+    spaceBetween:35,
     },
 
     500:{

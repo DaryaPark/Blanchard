@@ -29,7 +29,7 @@ new Swiper('.events-swiper-container',{
       375:{
       slidesPerView:2,
       slidesPerGroup:2,
-      spaceBetween:34,
+      spaceBetween:33,
       }
     }
     });
