@@ -22,8 +22,10 @@
    <script src="js/mycode/accordion.js" defer></script>
    <script src="js/mycode/accordion-lang4.js"></script>
    <script src="js/mycode/avtors-photo-select.js"></script>
-   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU">
-   </script>
+   <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+   <script src="https://unpkg.com/@popperjs/core@2" defer></script>
+    <script src="https://unpkg.com/tippy.js@6" defer></script>
+    <script src="js/mycode/tooltip.js" defer></script>
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/style.css">
   </head>
@@ -38,9 +40,9 @@
             <div class="header__burger">
               <span></span>
             </div>
-            <picture class="logo">
+            <a class="logo">
               <img class="logo__img" src="img/icons/logo-burger.svg" alt="логотип Бланчард ">
-            </picture>
+            </a>
           <!-- поиск -->
             <div class="searchview-bar">
           <!-- раскрытие поиска -->
@@ -379,6 +381,7 @@
         <div class="editions-image-text">
           <picture class="image-slider-gallery">
             <source srcset="img/painting.2x290.jpg" media="(max-width:480px)">
+            <source srcset="img/painting.2x315.jpg" media="(max-width:600px)">
             <source srcset="img/painting.1x315.jpg" media="(max-width:900px)">
             <source srcset="img/painting-1.jpg" media="(max-width:1540px)">
             <img tabindex="0" class="gallery-pictures"  src="img/painting-1.1.jpg"  alt="живопись">
@@ -425,7 +428,7 @@
           </picture>
         </div>
       </div>
-      <div class=" gallery-swiper-slide swiper-slide">
+      <div class="gallery-swiper-slide swiper-slide">
         <div class="editions-image-text">
           <picture class="image-slider-gallery">
              <source srcset="img/painting.6x315.jpg" media="(max-width:900px)">
@@ -1022,28 +1025,25 @@
           нашей деятельности
           однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё
           независимые государства
-          смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус
+          смешаны с не уникальными данными  до степени совершенной неузнаваемости, из-за чего возрастает их статус
           бесполезности. Прежде всего, постоянное информационно-пропагандистское
-          <button data-tooltip="Пример современных тенденций - современная методология разработки" aria-describedby="tooltip"
+          <button data-tippy-content="Пример современных тенденций - современная методология разработки" aria-describedby="tooltip"
             class="tooltip-element tooltip-1" aria-label="подробнее">
             i
           </button>
-      
           обеспечение нашей деятельности
           однозначно фиксирует необходимость экономической целесообразности принимаемых
           решений. И нет
           сомнений,
-          что действия представителей оппозиции могут быть рассмотрены
-      
-          <button data-tooltip="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"
+          что действия представителей оппозиции могут быть рассмотрены  <button data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"
             aria-describedby="tooltip" class="tooltip-element" aria-label="подробнее">
             i
-          </button> исключительно в разрезе маркетинговых и финансовых <button data-tooltip="В стремлении  повысить качество"
+          </button> исключительно в разрезе маркетинговых и финансовых  <button data-tippy-content="В стремлении  повысить качество"
             aria-describedby="tooltip" class="tooltip-element" aria-label="подробнее">
-            i</button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных
+             i </button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных
           социальных резервов призывают нас к новым свершениям, которые, в свою очередь,
-          должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее:
-          <a href="blanchard-art.ru/projects/about" class="text-link">blanchard-art.ru/projects/about</a>
+          должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.
+          Подробнее: <a href="blanchard-art.ru/projects/about" class="text-link"> blanchard-art.ru/projects/about</a>
         </p>
       </div>
       <div class="projects-text-text projects-text-none2">
@@ -1054,18 +1054,18 @@
           независимые государства
           смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус
           бесполезности. Прежде всего, постоянное информационно-пропагандистское <button
-            data-tooltip="Пример современных тенденций - современная методология разработки" aria-describedby="tooltip"
+            data-tippy-content="Пример современных тенденций - современная методология разработки" aria-describedby="tooltip"
             class="tooltip-element tooltip-1" aria-label="подробнее">
             i </button> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности
           принимаемых
           решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <button
-            data-tooltip="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"
+            data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"
             aria-describedby="tooltip" class="tooltip-element" aria-label="подробнее">
             i </button> исключительно в разрезе маркетинговых
         </p>
         <p class="block-text">
              и финансовых <button
-            data-tooltip="В стремлении  повысить качество" aria-describedby="tooltip" class="tooltip-element"
+            data-tippy-content="В стремлении  повысить качество" aria-describedby="tooltip" class="tooltip-element"
             aria-label="подробнее">
             i</button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных
           социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны
@@ -1082,16 +1082,16 @@
           независимые государства
           смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус
           бесполезности. Прежде всего, постоянное информационно-пропагандистское <button
-            data-tooltip="Пример современных тенденций - современная методология разработки" aria-describedby="tooltip"
+            data-tippy-content="Пример современных тенденций - современная методология разработки" aria-describedby="tooltip"
             class="tooltip-element tooltip-1" aria-label="подробнее">
             i </button> обеспечение нашей деятельности
           однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия
           представителей оппозиции могут быть рассмотрены
-          <button data-tooltip="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"
+          <button data-tippy-content="Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции"
             aria-describedby="tooltip" class="tooltip-element" aria-label="подробнее">
             i </button> исключительно в разрезе маркетинговых 
         </p>
-        <p class="block-text"> и финансовых <button data-tooltip="В стремлении  повысить качество" aria-describedby="tooltip" class="tooltip-element"
+        <p class="block-text"> и финансовых <button data-tippy-content="В стремлении  повысить качество" aria-describedby="tooltip" class="tooltip-element"
           aria-label="подробнее">
           i </button> предпосылок. Банальные, но неопровержимые выводы, а также представители современных
           социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными

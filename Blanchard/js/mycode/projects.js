@@ -24,11 +24,16 @@ new Swiper('.projects-swiper-container',{
       spaceBetween:50,
       },
 
-    375:{
+    710:{
       slidesPerView:2,
       slidesPerGroup:2,
       spaceBetween: 34,
       },
+
+    200:{
+      slidesPerView:1,
+      slidesPerGroup:1,
+    },
     }
   
 

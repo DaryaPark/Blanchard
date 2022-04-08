@@ -20,13 +20,12 @@ new Swiper('.events-swiper-container',{
       spaceBetween:50,
       },
   
-      769:{
+      900:{
       slidesPerView:3,
       slidesPerGroup:3,
       spaceBetween:27,
       },
-
-      375:{
+      650:{
       slidesPerView:2,
       slidesPerGroup:2,
       spaceBetween:33,

@@ -29,16 +29,21 @@ breakpoints:{
     spaceBetween:34,
     },
 
-    769:{
+  769:{
     slidesPerView:2,
     slidesPerGroup:2,
     spaceBetween:35,
     },
 
-    500:{
+  613:{
     slidesPerView:2,
     slidesPerGroup:2,
     spaceBetween:38,
+    },
+
+  200:{
+    slidesPerView:1,
+    slidesPerGroup:1,
     },
   
 }
