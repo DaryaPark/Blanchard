@@ -16,7 +16,6 @@ new JustValidate('.footer-form', {
       required: true,
       function: (name, value) => {
         const phone = selector.Inputmask.Unmaskedvalue()
-        console.log(phone)
         return Number(phone) && phone.length === 10
       }
     },

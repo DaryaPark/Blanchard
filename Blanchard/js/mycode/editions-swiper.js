@@ -13,6 +13,10 @@ new Swiper('.events-swiper-container',{
         
     },
 
+    mousewheel: {
+      invert: false,
+    },
+
     breakpoints:{
     1540:{
       slidesPerView:3,
@@ -29,6 +33,11 @@ new Swiper('.events-swiper-container',{
       slidesPerView:2,
       slidesPerGroup:2,
       spaceBetween:33,
+      },
+      200:{
+      slidesPerView:1,
+      slidesPerGroup:1,
+      spaceBetween:13,
       }
     }
     });
